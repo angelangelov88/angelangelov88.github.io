@@ -1,0 +1,238 @@
+.projects-container {
+  border: 2px green solid;
+  padding: 30px;
+  @media only screen and (min-width: $break-m) {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 76rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+.project {
+  width: auto;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid #bbbbbb;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  @media only screen and (min-width: $break-s) {
+}
+  @media only screen and (min-width: $break-m) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 26rem;
+  }
+  @media only screen and (min-width: $break-m) {
+    max-width: 271px;
+  }
+  @media only screen and (min-width: $break-xl) {
+   max-width: 341px;
+
+  }
+
+}
+
+
+.project-1 {
+  border: 2px red solid;
+}
+
+.project-2 {
+  border: 2px lightskyblue solid;
+  
+}
+
+.img-container {
+  border: 2px solid greenyellow;
+  overflow: hidden;
+  @media only screen and (min-width: $break-l) {
+  max-height: 19rem;
+  margin-bottom: 0.8rem;
+  }
+}
+
+.project-title{
+  color: $green-brand;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  max-height: 300px;
+  margin: 1rem;
+  @media only screen and (min-width: $break-m) {
+    margin-left: 0.3rem;
+  }
+  @media only screen and (min-width: $break-xl) {
+    margin-left: 1rem;
+  }
+}
+
+.project-title, a {
+  text-decoration: none;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+  color: lighten($color: $green-brand, $amount: 10);
+}
+
+.project-details {
+  margin: 1rem;
+  margin-bottom: -2rem;
+  width: 7rem;
+  @media only screen and (min-width: $break-m) {
+    margin-left: 0.3rem;
+  }
+  @media only screen and (min-width: $break-xl) {
+    margin-left: 1rem;
+  }
+}
+
+.project-details:hover {
+  color: lighten($color: #000000, $amount: 30);
+}
+
+.project-details a {
+  color: black;
+}
+
+.photo-project {
+  width: 100%;
+  margin-bottom: 1rem;
+  @media only screen and (min-width: $break-m) {
+    width: 600px;
+    height: 300px;
+  }
+
+}
+.photo-project:hover {
+  @media only screen and (min-width: $break-l) {
+  transform: scale(1.1);
+  opacity: .7;
+  transition: 0.4s;
+  }
+}
+
+.more-info-btn {
+  display: none;
+  background-color: $green-brand;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  top: -23px;  
+  float: right;
+  margin-right: 1rem;
+  border: none;
+  padding: 10px 20px;
+  @media only screen and (min-width: $break-m) {
+    display: block;
+    top: -5px;
+    left: .5rem;
+  }
+  @media only screen and (min-width: $break-xl) {
+    left: 0;
+  }
+}
+
+.more-info-btn:hover {
+  background-color: darken($color: $green-brand, $amount: 10);
+}
+
+
+.more-info-btn:hover + .text-holder-1{
+  visibility: visible;
+}
+
+.more-info-btn:hover + .text-holder-2{
+  visibility: visible;
+}
+
+.more-info-btn:hover + .text-holder-3{
+  visibility: visible;
+}
+
+.more-info-btn:hover + .text-holder-4{
+  visibility: visible;
+}
+
+.more-info-btn:hover + .text-holder-5{
+  visibility: visible;
+}
+.more-info-btn:hover + .text-holder-6{
+  visibility: visible;
+}
+
+
+
+.text-holder-1 {
+  @include text-holder;
+  @media only screen and (min-width: $break-m) {
+    margin-left: 2rem;
+    bottom: -55%;
+    left: 10.5%;
+}
+  @media only screen and (min-width: $break-l) {
+    left: 8%;
+}
+}
+
+.text-holder-2 {
+  @include text-holder;
+  @media only screen and (min-width: $break-m) {
+    margin-left: 2rem;
+    bottom: -64%;
+    left: 50.5%;
+  }
+  @media only screen and (min-width: $break-l) {
+    left: 36%;
+  }
+}
+
+.text-holder-3 {
+  @include text-holder;
+}
+.text-holder-4 {
+  @include text-holder;
+
+}
+.text-holder-5 {
+  @include text-holder;
+
+}
+.text-holder-6 {
+  @include text-holder;
+
+}
+
+
+// .text-holder-1::after {
+// content: "";
+// position: absolute;
+// top: 100%;
+// left: 64%;
+// margin-left: -5px;
+// border-width: 50px;
+// border-style: solid;
+// border-color: $green-brand transparent transparent transparent;
+// @media only screen and (min-width: $break-m) {
+//   left: 60%;
+// }
+// }
+
+// .text-holder-2::after {
+// content: "";
+// position: absolute;
+// top: 100%;
+// left: 64%;
+// margin-left: -5px;
+// border-width: 50px;
+// border-style: solid;
+// border-color: $green-brand transparent transparent transparent;
+// @media only screen and (min-width: $break-l) {
+//   // margin-left: 15px;
+//   // border-width: 30px;
+//   // left: 30%;
+// }
+// }
