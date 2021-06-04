@@ -1,13 +1,19 @@
 .hero-image {
   background-image: url(/Courses/Netmatters/front_end/Portfolio/images/ny.jpg);
   background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  left: 0rem;
   height: 100vh;
-  min-height: 650px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .hero-image {
+    left: 12rem;
+    width: calc(100% - 12rem);
+  }
 }
 
 .hero-text {
@@ -25,17 +31,22 @@ h1 {
 }
 
 .projects-container {
-  border: 2px green solid;
-  padding: 30px;
+  padding: 30px 19px;
 }
 @media only screen and (min-width: 768px) {
   .projects-container {
+    position: relative;
+    left: 12rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    max-width: 76rem;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+    width: calc(100% - 12rem);
+    padding: 30px 22px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .projects-container {
+    max-width: 1650px;
   }
 }
 
@@ -49,32 +60,28 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   .project {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 26rem;
+    width: 600px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .project {
-    max-width: 271px;
+    margin: 10px;
+    height: 26rem;
+    width: 347px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .project {
-    max-width: 341px;
+    width: 451px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .project {
+    width: 427px;
   }
 }
 
-.project-1 {
-  border: 2px red solid;
-}
-
-.project-2 {
-  border: 2px lightskyblue solid;
-}
-
 .img-container {
-  border: 2px solid greenyellow;
   overflow: hidden;
 }
 @media only screen and (min-width: 992px) {
@@ -90,11 +97,11 @@ h1 {
   font-weight: bold;
   font-size: 1.3rem;
   max-height: 300px;
-  margin: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .project-title {
     margin-left: 0.3rem;
+    margin: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -116,11 +123,6 @@ h1 {
   margin: 1rem;
   margin-bottom: -2rem;
   width: 7rem;
-}
-@media only screen and (min-width: 768px) {
-  .project-details {
-    margin-left: 0.3rem;
-  }
 }
 @media only screen and (min-width: 1200px) {
   .project-details {
@@ -182,30 +184,6 @@ h1 {
 
 .more-info-btn:hover {
   background-color: #3d8b40;
-}
-
-.more-info-btn:hover + .text-holder-1 {
-  visibility: visible;
-}
-
-.more-info-btn:hover + .text-holder-2 {
-  visibility: visible;
-}
-
-.more-info-btn:hover + .text-holder-3 {
-  visibility: visible;
-}
-
-.more-info-btn:hover + .text-holder-4 {
-  visibility: visible;
-}
-
-.more-info-btn:hover + .text-holder-5 {
-  visibility: visible;
-}
-
-.more-info-btn:hover + .text-holder-6 {
-  visibility: visible;
 }
 
 .text-holder-1 {
@@ -296,6 +274,430 @@ h1 {
   padding: 0 1rem;
   position: absolute;
   border: 2px #4CAF50 solid;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 12rem);
+    left: 12rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact {
+    padding-left: 33px;
+    padding-right: 33px;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .contact {
+    max-width: 1650px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-2 {
+    width: 58rem;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .contact-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 83rem;
+  }
+}
+
+.contact h2 {
+  margin-left: 8px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 992px) {
+  .contact h2 {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact h2 {
+    margin-left: -10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .get-in-touch {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-in-touch {
+    max-width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .get-in-touch {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .get-in-touch-2 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .get-in-touch-2 {
+    max-width: none;
+    width: 716px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-in-touch-2 {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form-2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 610px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-form-2 {
+    width: 716px;
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-form-2 {
+    width: 548px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .contact-form-2 {
+    width: 932px;
+  }
+}
+
+.contact-form {
+  padding-left: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .contact-form {
+    max-width: 35rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .contact-form {
+    width: 59rem;
+    max-width: none;
+  }
+}
+
+.contact-ul {
+  list-style-type: none;
+  margin-right: 19px;
+  padding-left: 9px;
+}
+@media only screen and (min-width: 992px) {
+  .contact-ul {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-ul {
+    margin-left: -7px;
+  }
+}
+
+.phone a {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .phone a {
+    font-size: 1.3rem;
+  }
+}
+
+.phone a:hover {
+  color: #4CAF50;
+  text-decoration: underline;
+}
+
+.contact-form input {
+  background-color: #DDDDDD;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 30px;
+  margin: 0.3rem auto;
+  width: 95%;
+  margin-left: 8px;
+}
+@media only screen and (min-width: 576px) {
+  .contact-form input {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-form input {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-form input {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.contact-form input:focus {
+  border: 1px solid #DDDDDD;
+  outline: 0;
+  background-color: white;
+}
+
+.fname {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .fname {
+    width: 37% !important;
+  }
+}
+
+.lname {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .lname {
+    width: 58% !important;
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .lname {
+    width: 62.3% !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .lname {
+    width: 62.2% !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .lname {
+    width: 62.5% !important;
+  }
+}
+
+.email {
+  width: 80%;
+}
+
+.subject {
+  width: 80%;
+}
+
+.message {
+  width: 80%;
+  height: 12rem !important;
+  padding-bottom: 10.3rem;
+}
+
+.submit {
+  background-color: white !important;
+  color: black;
+  border: 2px black solid !important;
+  font-weight: 600;
+  width: 130px !important;
+  height: 40px;
+}
+.navbar {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: block;
+    position: fixed;
+    top: -55px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .navbar {
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+.hamburger {
+  background-color: white;
+  height: 42px;
+  width: 40px;
+  border: 1px #4CAF50 solid;
+  border-radius: 4px;
+  position: fixed;
+  top: 0%;
+}
+@media only screen and (min-width: 576px) {
+  .hamburger {
+    top: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+#menu-lines {
+  padding: 5px 0 4px 3px;
+}
+@media only screen and (min-width: 768px) {
+  #menu-lines {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 33px;
+    margin: 10px auto 5px;
+  }
+}
+
+.menu-line {
+  width: 33px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin-bottom: 5px;
+}
+
+.hamburger-title {
+  font-size: 10px;
+  font-weight: 600;
+  position: relative;
+  top: -8px;
+  left: 5px;
+  color: #4CAF50;
+}
+
+.logo {
+  font-size: 10rem;
+  color: #4CAF50;
+  border-bottom: 2px #4CAF50 solid;
+  line-height: 188px;
+  position: relative;
+  top: 1rem;
+  margin-bottom: 5rem;
+  width: 160px;
+}
+@media only screen and (max-height: 600px) {
+  .logo {
+    margin-bottom: 0;
+    margin-top: -44%;
+  }
+}
+
+.logo a {
+  color: #4CAF50;
+  position: relative;
+  left: 27px;
+}
+
+.navbar-items {
+  font-weight: 600;
+  line-height: 90px;
+  padding-bottom: 2rem;
+}
+
+.navbar-items a {
+  color: black;
+}
+
+.contact-me a {
+  color: black;
+  position: relative;
+  left: -5px;
+}
+
+.about-me {
+  border-bottom: 2px transparent solid;
+  width: 5rem;
+  padding-bottom: 1px;
+  height: 60px;
+}
+
+.about-me:hover {
+  border-bottom: 2px #4CAF50 solid;
+}
+
+.my-portfolio {
+  border-bottom: 2px transparent solid;
+  width: 6rem;
+  padding-bottom: 1px;
+  height: 60px;
+}
+
+.my-portfolio:hover {
+  border-bottom: 2px #4CAF50 solid;
+}
+
+.coding-examples {
+  border-bottom: 2px transparent solid;
+  width: 8rem;
+  padding-bottom: 1px;
+  height: 60px;
+}
+
+.coding-examples:hover {
+  border-bottom: 2px #4CAF50 solid;
+}
+
+.scs {
+  border-bottom: 2px transparent solid;
+  width: 6rem;
+  padding-bottom: 1px;
+  height: 60px;
+}
+
+.scs:hover {
+  border-bottom: 2px #4CAF50 solid;
+}
+
+.contact-me {
+  font-weight: 600;
+  border-bottom: 2px #4CAF50 solid;
+  border-top: 2px #4CAF50 solid;
+  width: 160px;
+  padding: 8px;
+}
+
+.social-links {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.linkedin {
+  color: #4CAF50;
+  padding: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

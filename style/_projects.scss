@@ -1,13 +1,24 @@
 .projects-container {
-  border: 2px green solid;
-  padding: 30px;
+  //border: 2px orange solid;
+  padding: 30px 19px;
   @media only screen and (min-width: $break-m) {  
+    position: relative;
+    left: 12rem;
     display: flex;
+    justify-content: center;;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 76rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: calc(100% - 12rem);
+    padding: 30px 22px;
+    // margin-left: auto;
+    // margin-right: auto;
+}
+@media only screen and (min-width: $break-xl) {
+
+}
+@media only screen and (min-width: $break-xxl) {
+  max-width: 1650px;
+  //margin-left: auto;
+  //margin-right: auto;
 }
 }
 
@@ -18,35 +29,31 @@
   border-radius: 15px;
   border: 1px solid #bbbbbb;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  @media only screen and (min-width: $break-s) {
+  @media only screen and (min-width: $break-m) {
+    width: 600px;
 }
-  @media only screen and (min-width: $break-m) {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  @media only screen and (min-width: $break-l) {
+    margin: 10px;
+    //margin-right: 54px;
     height: 26rem;
-  }
-  @media only screen and (min-width: $break-m) {
-    max-width: 271px;
+    width: 347px;
+
   }
   @media only screen and (min-width: $break-xl) {
-   max-width: 341px;
+   width: 451px;
 
   }
+  @media only screen and (min-width: $break-xxl) {
+    width: 427px;
 
-}
-
-
-.project-1 {
-  border: 2px red solid;
-}
-
-.project-2 {
-  border: 2px lightskyblue solid;
+  }
   
+
 }
+
 
 .img-container {
-  border: 2px solid greenyellow;
+  //border: 2px solid greenyellow;
   overflow: hidden;
   @media only screen and (min-width: $break-l) {
   max-height: 19rem;
@@ -60,9 +67,10 @@
   font-weight: bold;
   font-size: 1.3rem;
   max-height: 300px;
-  margin: 1rem;
   @media only screen and (min-width: $break-m) {
     margin-left: 0.3rem;
+    margin: 1rem;
+
   }
   @media only screen and (min-width: $break-xl) {
     margin-left: 1rem;
@@ -83,7 +91,7 @@
   margin-bottom: -2rem;
   width: 7rem;
   @media only screen and (min-width: $break-m) {
-    margin-left: 0.3rem;
+    //margin-left: 0.3rem;
   }
   @media only screen and (min-width: $break-xl) {
     margin-left: 1rem;
@@ -141,28 +149,28 @@
 }
 
 
-.more-info-btn:hover + .text-holder-1{
-  visibility: visible;
-}
+// .more-info-btn:hover + .text-holder-1{
+//   visibility: visible;
+// }
 
-.more-info-btn:hover + .text-holder-2{
-  visibility: visible;
-}
+// .more-info-btn:hover + .text-holder-2{
+//   visibility: visible;
+// }
 
-.more-info-btn:hover + .text-holder-3{
-  visibility: visible;
-}
+// .more-info-btn:hover + .text-holder-3{
+//   visibility: visible;
+// }
 
-.more-info-btn:hover + .text-holder-4{
-  visibility: visible;
-}
+// .more-info-btn:hover + .text-holder-4{
+//   visibility: visible;
+// }
 
-.more-info-btn:hover + .text-holder-5{
-  visibility: visible;
-}
-.more-info-btn:hover + .text-holder-6{
-  visibility: visible;
-}
+// .more-info-btn:hover + .text-holder-5{
+//   visibility: visible;
+// }
+// .more-info-btn:hover + .text-holder-6{
+//   visibility: visible;
+// }
 
 
 

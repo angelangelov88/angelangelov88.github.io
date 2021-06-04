@@ -6,14 +6,18 @@
 .hero-image {
   background-image: url(/Courses/Netmatters/front_end/Portfolio/images/ny.jpg);
   background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  left: 0rem;
 	height: 100vh;
-	min-height: 650px;
-
+  width: 100%;
+  @media only screen and (min-width: $break-m) {
+    left: 12rem;
+  width: calc(100% - 12rem);
+	//min-height: 650px;
+  }
 }
 
 .hero-text {

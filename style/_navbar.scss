@@ -1,0 +1,179 @@
+.navbar {
+  display: none;
+
+  @media only screen and (min-width: $break-m) {
+    display: block;
+    position: fixed;
+    top: -55px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  
+}
+
+//code for small height of the screen
+@media only screen and (max-height: $break-hs) {
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+
+}
+}
+
+.hamburger {
+  background-color: white;
+  height: 42px;
+  width: 40px;
+  border: 1px $green-brand solid;
+  border-radius: 4px;
+  position: fixed;
+  top: 0%;
+  @media only screen and (min-width: $break-s) {
+    top: 40%;
+}
+  @media only screen and (min-width: $break-m) {
+    display: none;
+  }
+}
+
+#menu-lines {
+  padding: 5px 0 4px 3px;
+  @media only screen and (min-width: $break-m) {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 33px;
+  margin: 10px auto 5px;
+}
+}
+
+.menu-line {
+  width: 33px;
+  height: 3px;
+  background-color: $green-brand;
+  margin-bottom: 5px;
+}
+
+.hamburger-title {
+  font-size: 10px;
+  font-weight: 600;
+  position: relative;
+  top: -8px;
+  left: 5px;
+  color: $green-brand;
+}
+
+
+.logo {  
+  @media only screen and (max-height: $break-hs) {
+  margin-bottom: 0;
+  margin-top: -44%;
+  }
+
+  font-size: 10rem;
+  color: $green-brand;
+  border-bottom: 2px $green-brand solid;
+  line-height: 188px;
+  position: relative;
+  top: 1rem;
+  margin-bottom: 5rem;
+  width: 160px;
+  
+}
+
+.logo a {
+  color: $green-brand;
+  position: relative;
+  left: 27px;
+}
+
+
+.navbar-items {
+  font-weight: 600;
+  //border-bottom: 2px $green-brand solid;
+  line-height: 90px;
+  padding-bottom: 2rem;
+}
+
+.navbar-items a {
+  color: black;
+}
+
+.contact-me a {
+  color: black;
+  position: relative;
+  left: -5px;
+}
+
+
+.about-me {
+  border-bottom: 2px transparent solid;
+  width: 5rem;
+  padding-bottom: 1px;
+  height: 60px;
+}
+
+.about-me:hover {
+  border-bottom: 2px $green-brand solid;
+}
+
+.my-portfolio {
+  border-bottom: 2px transparent solid;
+  width: 6rem;
+  padding-bottom: 1px;
+  height: 60px;
+
+}
+
+.my-portfolio:hover {
+  border-bottom: 2px $green-brand solid;
+}
+
+.coding-examples {
+  border-bottom: 2px transparent solid;
+  width: 8rem;
+  padding-bottom: 1px;
+  height: 60px;
+
+}
+
+.coding-examples:hover {
+  border-bottom: 2px $green-brand solid;
+}
+
+.scs {
+  border-bottom: 2px transparent solid;
+  width: 6rem;
+  padding-bottom: 1px;
+  height: 60px;
+
+}
+
+.scs:hover {
+  border-bottom: 2px $green-brand solid;
+}
+
+
+
+.contact-me {
+  font-weight: 600;
+  border-bottom: 2px $green-brand solid;
+  border-top: 2px $green-brand solid;
+  width: 160px;
+  padding: 8px;
+
+}
+
+.social-links {
+  //border: 2px red solid;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.facebook,
+.twitter, 
+.instagram, 
+.linkedin {
+  color: $green-brand;
+  padding: 8px;
+}
+

@@ -1,9 +1,14 @@
-//Breakpoints
+//Breakpoints for screen width:
 $break-xs: 575px;
 $break-s: 576px;
 $break-m: 768px;
 $break-l: 992px;
 $break-xl: 1200px;
+$break-xxl: 1600px;
+
+//Breakpoint for screen height:
+$break-hs: 600px;
+
 
 //Colours
 $green-brand: #4CAF50;
