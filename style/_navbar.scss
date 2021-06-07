@@ -12,7 +12,7 @@
 
 //code for small height of the screen
 @media only screen and (max-height: $break-hs) {
-  top: 0;
+  top: 5px;
   height: 100vh;
   overflow-y: auto;
 
@@ -27,6 +27,7 @@
   border-radius: 4px;
   position: fixed;
   top: 0%;
+  z-index: 1;
   @media only screen and (min-width: $break-s) {
     top: 40%;
 }
@@ -83,7 +84,7 @@
 .logo a {
   color: $green-brand;
   position: relative;
-  left: 27px;
+  left: 0;
 }
 
 
@@ -107,7 +108,7 @@
 
 .about-me {
   border-bottom: 2px transparent solid;
-  width: 5rem;
+  width: 6rem;
   padding-bottom: 1px;
   height: 60px;
 }
@@ -118,7 +119,7 @@
 
 .my-portfolio {
   border-bottom: 2px transparent solid;
-  width: 6rem;
+  width: 7rem;
   padding-bottom: 1px;
   height: 60px;
 
@@ -130,7 +131,7 @@
 
 .coding-examples {
   border-bottom: 2px transparent solid;
-  width: 8rem;
+  width: 10rem;
   padding-bottom: 1px;
   height: 60px;
 
@@ -142,7 +143,7 @@
 
 .scs {
   border-bottom: 2px transparent solid;
-  width: 6rem;
+  width: 7rem;
   padding-bottom: 1px;
   height: 60px;
 
