@@ -67,7 +67,9 @@
   font-weight: bold;
   font-size: 1.3rem;
   max-height: 300px;
+  padding-left: 7px;
   @media only screen and (min-width: $break-m) {
+    padding-left: 0;
     margin-left: 0.3rem;
     margin: 1rem;
 
@@ -89,7 +91,7 @@
 .project-details {
   margin: 1rem;
   margin-bottom: -2rem;
-  width: 7rem;
+  width: 8rem;
   @media only screen and (min-width: $break-m) {
     //margin-left: 0.3rem;
   }

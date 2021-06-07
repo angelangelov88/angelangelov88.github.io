@@ -5,3 +5,13 @@
 @import "mixins";
 @import "contact";
 @import "navbar";
+@import "about-me";
+@import "coding-examples";
+@import "scs-scheme.scss";
+
+body {
+font-size: 1rem;
+font-weight: 400;
+font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+letter-spacing: .4px;  
+}
