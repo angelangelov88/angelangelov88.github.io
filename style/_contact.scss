@@ -101,7 +101,7 @@ width: 716px;
     max-width: 610px;
   }  
   @media only screen and (min-width: $break-l) {
-    width: 716px;
+    width: 750px;
 max-width: none;
   }
   @media only screen and (min-width: $break-xl) {
@@ -172,10 +172,9 @@ max-width: none;
   padding-left: 10px;
   height: 30px;
   margin: .3rem auto;
-  width: 85%;
+  width: 93%;
   margin-left: 8px;
   @media only screen and (min-width: $break-s) {
-    width: 93%;
   }
   @media only screen and (min-width: $break-m) {
     width: 96%;
@@ -188,10 +187,10 @@ max-width: none;
 
   }
   @media only screen and (min-width: $break-xl) {
-    //width: 100%;
+    width: 97%;
   }
   @media only screen and (min-width: $break-xxl) {
-    width: 98.8%;
+    width: 98%;
 
   }
 }
@@ -223,13 +222,13 @@ max-width: none;
   width: 58.9% !important;
   }
   @media only screen and (min-width: $break-xl) {
-    width: 57.7% !important;
+    width: 57% !important;
 
   
 }
 
 @media only screen and (min-width: $break-xxl) {
-  width: 59.9% !important;
+  width: 59% !important;
 
 
 }
