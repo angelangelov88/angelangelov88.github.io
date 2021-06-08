@@ -451,7 +451,7 @@ h1 {
 }
 @media only screen and (min-width: 992px) {
   .contact-form-2 {
-    width: 716px;
+    width: 750px;
     max-width: none;
   }
 }
@@ -522,13 +522,8 @@ h1 {
   padding-left: 10px;
   height: 30px;
   margin: 0.3rem auto;
-  width: 85%;
+  width: 93%;
   margin-left: 8px;
-}
-@media only screen and (min-width: 576px) {
-  .contact-form input {
-    width: 93%;
-  }
 }
 @media only screen and (min-width: 768px) {
   .contact-form input {
@@ -541,9 +536,14 @@ h1 {
     margin-left: 0px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .contact-form input {
+    width: 97%;
+  }
+}
 @media only screen and (min-width: 1600px) {
   .contact-form input {
-    width: 98.8%;
+    width: 98%;
   }
 }
 
@@ -578,12 +578,12 @@ h1 {
 }
 @media only screen and (min-width: 1200px) {
   .lname {
-    width: 57.7% !important;
+    width: 57% !important;
   }
 }
 @media only screen and (min-width: 1600px) {
   .lname {
-    width: 59.9% !important;
+    width: 59% !important;
   }
 }
 
@@ -691,7 +691,7 @@ h1 {
 @media only screen and (max-height: 600px) {
   .logo {
     margin-bottom: 0;
-    margin-top: -44%;
+    margin-top: -30%;
   }
 }
 
@@ -865,7 +865,6 @@ h1 {
   position: relative;
   left: 0rem;
   height: 30vh;
-  width: 80%;
   padding: 3rem;
   max-width: 1000px;
   margin-left: auto;
