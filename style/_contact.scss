@@ -1,19 +1,21 @@
 .contact {
   //border: 2px red solid;
   @media only screen and (min-width: $break-m) {
-    position: relative;
+    //position: relative;
+    //left: 12rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: calc(100% - 12rem);
-    left: 12rem;
+    //width: calc(100% - 12rem);
+    width: 100%;
 }
 
 
   @media only screen and (min-width: $break-xl) {
-    padding-left: 33px;
-    padding-right: 33px;
+    // padding-left: 33px;
+    // padding-right: 33px;
     flex-direction: row;
+    margin-top: 2rem;
 }
 
   @media only screen and (min-width: $break-xxl) {
@@ -104,7 +106,7 @@ max-width: none;
   }
   @media only screen and (min-width: $break-xl) {
     width: 548px;
-
+    margin-top: 1rem;
   }
   @media only screen and (min-width: $break-xxl) {
     width: 932px;
@@ -126,7 +128,7 @@ max-width: none;
     // position: relative;
     // left: 25rem;
     // top: -23rem;
-  
+
 
   }
   @media only screen and (min-width: $break-xxl) {
@@ -170,10 +172,10 @@ max-width: none;
   padding-left: 10px;
   height: 30px;
   margin: .3rem auto;
-  width: 95%;
+  width: 85%;
   margin-left: 8px;
   @media only screen and (min-width: $break-s) {
-    width: 96%;
+    width: 93%;
   }
   @media only screen and (min-width: $break-m) {
     width: 96%;
@@ -181,7 +183,7 @@ max-width: none;
 
   }
   @media only screen and (min-width: $break-l) {
-    width: 100%;
+    width: 98.2%;
     margin-left: 0px;
 
   }
@@ -189,7 +191,7 @@ max-width: none;
     //width: 100%;
   }
   @media only screen and (min-width: $break-xxl) {
-    //width: 100%;
+    width: 98.8%;
 
   }
 }
@@ -206,6 +208,7 @@ max-width: none;
 
   width: 37% !important;
 }
+
 }
 
 .lname {  
@@ -213,20 +216,20 @@ max-width: none;
   @media only screen and (min-width: $break-m) {
 
 
-  width: 58% !important;  
+  width: 56% !important;  
   margin-left: 0 !important;
   }
   @media only screen and (min-width: $break-l) {
-  width: 62.3% !important;
+  width: 58.9% !important;
   }
   @media only screen and (min-width: $break-xl) {
-    width: 62.1% !important;
+    width: 57.7% !important;
 
   
 }
 
 @media only screen and (min-width: $break-xxl) {
-  width: 62.5% !important;
+  width: 59.9% !important;
 
 
 }
@@ -244,8 +247,15 @@ max-width: none;
 
 .message {
   width: 80%;
-  height: 12rem !important;
+  height: 2rem !important;
   padding-bottom: 10.3rem;
+
+  //code to get rid of the white space issue on the bottom of the page 
+  @media only screen and (min-width: $break-m) {
+    //height: 12rem !important;
+  // height: 27rem !important;
+  // padding-bottom: 24.3rem;
+  }
 }
 
 .submit {
