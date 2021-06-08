@@ -23,6 +23,7 @@
 
 .about-me-text {
   padding: 1rem;
+  line-height: 30px;
   @media only screen and (min-width: $break-m) {
     margin-left: 12rem;
     width: calc(100% - 14rem);
@@ -37,4 +38,13 @@
 
 .hamburger-about-me {
   z-index: 1;
+}
+
+.about-me-links {
+  color: $green-brand;
+}
+
+.about-me-links:hover {
+  color: $green-brand;
+  text-decoration: underline;
 }

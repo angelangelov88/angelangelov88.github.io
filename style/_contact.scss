@@ -21,6 +21,7 @@
   @media only screen and (min-width: $break-xxl) {
     max-width: 1650px;
     justify-content: space-between;
+    //padding-left: 2rem;
 }
 }
 
@@ -154,7 +155,7 @@ max-width: none;
   color: black;
   font-size: 1.3rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 14px;
   @media only screen and (min-width: $break-m) {
     font-size: 1.3rem;
 }
@@ -172,7 +173,7 @@ max-width: none;
   padding-left: 10px;
   height: 30px;
   margin: .3rem auto;
-  width: 93%;
+  width: 83%;
   margin-left: 8px;
   @media only screen and (min-width: $break-s) {
   }
@@ -264,6 +265,7 @@ max-width: none;
   font-weight: 600;
   width: 130px !important;
   height: 40px;
+  padding-right: 12px;
   @media only screen and (min-width: $break-xl) {
     // position: relative;
     // top: 12.5rem;
