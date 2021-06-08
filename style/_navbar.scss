@@ -5,17 +5,19 @@
     display: block;
     position: fixed;
     top: -55px;
+    left: -32px;
+    height: 108vh;
     margin-left: 2rem;
     margin-right: 2rem;
-  
+    border-right: 2px $green-brand solid;
+    z-index: 1;
 }
 
 //code for small height of the screen
 @media only screen and (max-height: $break-hs) {
   top: 5px;
   height: 100vh;
-  overflow-y: auto;
-
+  overflow-y: overlay;
 }
 }
 
@@ -29,7 +31,7 @@
   top: 0%;
   z-index: 1;
   @media only screen and (min-width: $break-s) {
-    top: 40%;
+    //top: 40%;
 }
   @media only screen and (min-width: $break-m) {
     display: none;
@@ -77,7 +79,9 @@
   position: relative;
   top: 1rem;
   margin-bottom: 5rem;
+  margin-top: 1rem;
   width: 160px;
+  padding-left: 2rem;
   
 }
 
@@ -93,6 +97,7 @@
   //border-bottom: 2px $green-brand solid;
   line-height: 90px;
   padding-bottom: 2rem;
+  padding-left: 28px;
 }
 
 .navbar-items a {
@@ -160,7 +165,7 @@
   border-bottom: 2px $green-brand solid;
   border-top: 2px $green-brand solid;
   width: 144px;
-  padding: 8px;
+  padding: 8px 14px 8px 34px;
 
 }
 
@@ -168,6 +173,7 @@
   //border: 2px red solid;
   display: flex;
   margin-top: 1rem;
+  padding-left: 24px;
 }
 
 .facebook,

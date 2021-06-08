@@ -6,6 +6,7 @@
   background-size: cover;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 @media screen and (-ms-high-contrast: none) {
   .hero-image {
@@ -22,56 +23,12 @@
   color: white;
   font-weight: 800;
 }
-@media only screen and (min-width: 768px) {
-  .hero-text {
-    left: 63%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero-text {
-    left: 57%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-text {
-    left: 58%;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .hero-text {
-    left: 50%;
-  }
-}
 
 .scroll {
   position: absolute;
-  left: 38%;
-  bottom: 4%;
-}
-@media only screen and (min-width: 576px) {
-  .scroll {
-    left: 42%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .scroll {
-    left: 57%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .scroll {
-    left: 52%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .scroll {
-    left: 54%;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .scroll {
-    left: 47%;
-  }
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
 }
 
 .fa-chevron-down {
@@ -93,6 +50,10 @@
 .scroll-up {
   max-width: 1650px;
   text-align: center;
+}
+
+.scroll-up-text:visited {
+  color: black;
 }
 
 h1 {
@@ -502,7 +463,7 @@ h1 {
   color: black;
   font-size: 1.3rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 14px;
 }
 @media only screen and (min-width: 768px) {
   .phone a {
@@ -522,7 +483,7 @@ h1 {
   padding-left: 10px;
   height: 30px;
   margin: 0.3rem auto;
-  width: 93%;
+  width: 83%;
   margin-left: 8px;
 }
 @media only screen and (min-width: 768px) {
@@ -607,6 +568,7 @@ h1 {
   font-weight: 600;
   width: 130px !important;
   height: 40px;
+  padding-right: 12px;
 }
 .navbar {
   display: none;
@@ -616,15 +578,19 @@ h1 {
     display: block;
     position: fixed;
     top: -55px;
+    left: -32px;
+    height: 108vh;
     margin-left: 2rem;
     margin-right: 2rem;
+    border-right: 2px #4CAF50 solid;
+    z-index: 1;
   }
 }
 @media only screen and (max-height: 600px) {
   .navbar {
     top: 5px;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: overlay;
   }
 }
 
@@ -637,11 +603,6 @@ h1 {
   position: fixed;
   top: 0%;
   z-index: 1;
-}
-@media only screen and (min-width: 576px) {
-  .hamburger {
-    top: 40%;
-  }
 }
 @media only screen and (min-width: 768px) {
   .hamburger {
@@ -686,7 +647,9 @@ h1 {
   position: relative;
   top: 1rem;
   margin-bottom: 5rem;
+  margin-top: 1rem;
   width: 160px;
+  padding-left: 2rem;
 }
 @media only screen and (max-height: 600px) {
   .logo {
@@ -705,6 +668,7 @@ h1 {
   font-weight: 600;
   line-height: 90px;
   padding-bottom: 2rem;
+  padding-left: 28px;
 }
 
 .navbar-items a {
@@ -766,12 +730,13 @@ h1 {
   border-bottom: 2px #4CAF50 solid;
   border-top: 2px #4CAF50 solid;
   width: 144px;
-  padding: 8px;
+  padding: 8px 14px 8px 34px;
 }
 
 .social-links {
   display: flex;
   margin-top: 1rem;
+  padding-left: 24px;
 }
 
 .facebook,
@@ -812,6 +777,7 @@ h1 {
 
 .about-me-text {
   padding: 1rem;
+  line-height: 30px;
 }
 @media only screen and (min-width: 768px) {
   .about-me-text {
@@ -829,6 +795,15 @@ h1 {
 
 .hamburger-about-me {
   z-index: 1;
+}
+
+.about-me-links {
+  color: #4CAF50;
+}
+
+.about-me-links:hover {
+  color: #4CAF50;
+  text-decoration: underline;
 }
 
 .coding-examples-container {
@@ -884,8 +859,6 @@ h1 {
 }
 
 .hamburger-scs {
-  position: absolute;
-  top: 0;
   z-index: 1;
 }
 
