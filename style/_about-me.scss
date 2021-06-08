@@ -23,11 +23,9 @@
 
 .about-me-text {
   padding: 1rem;
-  position: relative;
-  left: 0rem;
   @media only screen and (min-width: $break-m) {
-    left: 12rem;
-    width: calc(100% - 12rem);
+    margin-left: 12rem;
+    width: calc(100% - 14rem);
   }
   @media only screen and (min-width: $break-xxl) {
     max-width: 1000px;
