@@ -1,3 +1,4 @@
+//The image container
 .coding-examples-container {
   background-image: url(../images/coding-examples.jpg);
   background-color: #cccccc;
@@ -8,15 +9,10 @@
   left: 0rem;
 	height: 100vh;
   width: 100%;
-  @media only screen and (min-width: $break-s) {
-    }
   @media only screen and (min-width: $break-m) {
     left: 12rem;
     width: calc(100% - 12rem);
-	//min-height: 650px;
-  }
-  @media only screen and (min-width: $break-xl) {
-  }
+}
 }
 
 .coding-examples-container h1 {
@@ -27,6 +23,5 @@
   left: 20%;
   @media only screen and (min-width: $break-s) {
     left: 30%;
-  }
-
+}
 }

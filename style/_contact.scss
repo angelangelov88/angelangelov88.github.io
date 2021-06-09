@@ -1,156 +1,124 @@
+//Contact area container
 .contact {
-  //border: 2px red solid;
   @media only screen and (min-width: $break-m) {
-    //position: relative;
-    //left: 12rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    //width: calc(100% - 12rem);
     width: 100%;
 }
-
-
   @media only screen and (min-width: $break-xl) {
-    // padding-left: 33px;
-    // padding-right: 33px;
     flex-direction: row;
     margin-top: 2rem;
 }
-
   @media only screen and (min-width: $break-xxl) {
     max-width: 1650px;
     justify-content: space-between;
-    //padding-left: 2rem;
 }
 }
 
+//I have added second container in order to fix the position of the elements for all screen sizes
 .contact-2 {
-  //border: 10px solid rgb(235, 197, 27);
   @media only screen and (min-width: $break-xl) {
     width: 58rem;
     display: flex;
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     margin-left: auto;
     margin-right: auto;
     width: 83rem;
-  }
+}
 }
 
+//The Get In Touch title text styling 
 .contact h2 {
   margin-left: 8px;
   font-weight: 600;
-  @media only screen and (min-width: $break-m) {
-
-  }
   @media only screen and (min-width: $break-l) {
-  margin-left: 0;
-  }
+    margin-left: 0;
+}
   @media only screen and (min-width: $break-xl) {
     margin-left: -10px;
-  }
-
+}
 }
 
+//Get In Touch part of the contact styling
 .get-in-touch {
-  //border: 2px rgb(51, 146, 255) solid;
   @media only screen and (min-width: $break-m) {
-  //margin-left: auto;
-   //margin-right: auto;
-overflow: hidden;
-  }
-  @media only screen and (min-width: $break-l) {
-    // width: 716px;
-  }
+    overflow: hidden;
+}
   @media only screen and (min-width: $break-xl) {
     max-width: 23rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     margin-left: 0;
-
-  }
+}
 }
 
 .get-in-touch-2 {
-  //border: 2px green solid;
   padding-left: 11px;
   @media only screen and (min-width: $break-m) {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
-@media only screen and (min-width: $break-l) {
-  padding-left: 0;
+  @media only screen and (min-width: $break-l) {
+    padding-left: 0;
+    max-width: none;
+    width: 716px;
+}
+  @media only screen and (min-width: $break-xl) {
+    width: 350px;
+}
+}
 
-max-width: none;
-width: 716px;
-}
-@media only screen and (min-width: $break-xl) {
-  width: 350px;
-}
-}
-
+//The contact form itself
 .contact-form-2 {
-  //border: 2px gold solid;
   @media only screen and (min-width: $break-m) {
     margin-left: auto;
     margin-right: auto;
     max-width: 610px;
-  }  
+}  
   @media only screen and (min-width: $break-l) {
     width: 750px;
-max-width: none;
-  }
+    max-width: none;
+}
   @media only screen and (min-width: $break-xl) {
     width: 548px;
     margin-top: 1rem;
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     width: 932px;
-  }
 }
+}
+
 .contact-form {
-  //border:springgreen 2px solid ;
-  //margin-left: 19px;
   padding-left: 10px;
-  @media only screen and (min-width: $break-m) {
-  //   width: 600px;
-  //   margin-left: auto;
-  // margin-right: auto; 
-  //overflow: hidden;  
-  }
   @media only screen and (min-width: $break-xl) {
     max-width: 35rem;
-    //margin-left: 0;
-    // position: relative;
-    // left: 25rem;
-    // top: -23rem;
-
-
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     width: 59rem;
-max-width: none;
-  }
+    max-width: none;
+}
 }
 
+//The list of items in the Get In Touch part
 .contact-ul {
   list-style-type: none;
   margin-right: 19px;
-  //padding: 0;
   padding-left: 9px;
   @media only screen and (min-width: $break-l) {
     padding-left: 0;
-  }
+}
   @media only screen and (min-width: $break-xl) {
     margin-left: -7px;
-  }
+}
 }
 
+//Styling of the phone number and email address
 .phone a{
   color: black;
   font-size: 1.3rem;
@@ -166,6 +134,7 @@ max-width: none;
   text-decoration: underline;
 }
 
+//The contact form styling
 .contact-form input {
   background-color: #DDDDDD;
   border: none;
@@ -173,89 +142,58 @@ max-width: none;
   padding-left: 10px;
   height: 30px;
   margin: .3rem auto;
-  width: 83%;
+  width: 93%;
   margin-left: 8px;
-  @media only screen and (min-width: $break-s) {
-  }
   @media only screen and (min-width: $break-m) {
     width: 96%;
-    // margin-left: 28px;
-
-  }
+}
   @media only screen and (min-width: $break-l) {
     width: 98.2%;
     margin-left: 0px;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     width: 97%;
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     width: 98%;
-
-  }
+}
 }
 
+//Form styling on focus
 .contact-form input:focus {
   border: 1px solid #DDDDDD;
   outline: 0;
   background-color: white;
 }
 
+//Specific styling for each element of the form
 .fname {
   width: 100%;
   @media only screen and (min-width: $break-m) {
-
-  width: 37% !important;
+    width: 37% !important;
 }
-
 }
 
 .lname {  
   width: 100%;
   @media only screen and (min-width: $break-m) {
-
-
-  width: 56% !important;  
-  margin-left: 0 !important;
-  }
+    width: 56% !important;  
+    margin-left: 0 !important;
+}
   @media only screen and (min-width: $break-l) {
-  width: 58.9% !important;
-  }
+    width: 58.9% !important;
+}
   @media only screen and (min-width: $break-xl) {
     width: 57% !important;
-
-  
 }
-
-@media only screen and (min-width: $break-xxl) {
-  width: 59% !important;
-
-
+  @media only screen and (min-width: $break-xxl) {
+    width: 59% !important;
 }
-
-}
-
-.email {
-  width: 80%;
-}
-
-.subject {
-  width: 80%;
-
 }
 
 .message {
-  width: 80%;
   height: 2rem !important;
   padding-bottom: 10.3rem;
-
-  //code to get rid of the white space issue on the bottom of the page 
-  @media only screen and (min-width: $break-m) {
-    //height: 12rem !important;
-  // height: 27rem !important;
-  // padding-bottom: 24.3rem;
-  }
 }
 
 .submit {
@@ -266,15 +204,6 @@ max-width: none;
   width: 130px !important;
   height: 40px;
   padding-right: 12px;
-  @media only screen and (min-width: $break-xl) {
-    // position: relative;
-    // top: 12.5rem;
-    // left: -34.2rem;
-  }
-  //   @media only screen and (min-width: $break-xxl) {
-  //     left: -58.2rem;
-
-  //   }
 }
 
 

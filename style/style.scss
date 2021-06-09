@@ -10,15 +10,15 @@
 @import "scs-scheme.scss";
 
 body {
-font-size: 1rem;
-font-weight: 400;
-font-family: "Poppins", "Helvetica", "Arial", sans-serif;
-letter-spacing: .4px;  
-margin: 0; //Code for the hero image to appear to the edges
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  letter-spacing: .4px;  
+  margin: 0; //Code for the hero image to appear to the edges
 }
 
+//I decided to use margin to a container I added to wrap all the content in order to avoid using relative positioning
 .content {
-
   @media only screen and (min-width: $break-m) {
     margin-left: 12rem;
 }
