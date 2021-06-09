@@ -1,29 +1,18 @@
+//Container of the projects
 .projects-container {
-  //border: 2px orange solid;
   padding: 30px 19px;
   @media only screen and (min-width: $break-m) {  
-    // position: relative;
-    // left: 12rem;
     display: flex;
     justify-content: center;;
     flex-wrap: wrap;
-    //width: calc(100% - 12rem);
-    //width: 100%;
     padding: 30px 22px;
-    // margin-left: auto;
-    // margin-right: auto;
 }
-@media only screen and (min-width: $break-l) {
-    //width: 100%;
-
-}
-@media only screen and (min-width: $break-xxl) {
-  max-width: 1650px;
-  //margin-left: auto;
-  //margin-right: auto;
+  @media only screen and (min-width: $break-xxl) {
+    max-width: 1650px;
 }
 }
 
+//The project card container. This code applies to all cards. I have changed the width of the cards to make them looks the same and act the same on different screen sizes
 .project {
   width: auto;
   margin-bottom: 1rem;
@@ -37,31 +26,24 @@
 }
   @media only screen and (min-width: $break-l) {
     margin: 10px;
-    //margin-right: 54px;
     height: 26rem;
     width: 340px;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
    width: 444px;
-
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     width: 427px;
-
-  }
-  
-
+}
 }
 
-
+//Container for the photo. I added it in order to make sure that the hover effect works fine
 .img-container {
-  //border: 2px solid greenyellow;
   overflow: hidden;
   @media only screen and (min-width: $break-l) {
-  max-height: 19rem;
-  margin-bottom: 0.8rem;
-  }
+    max-height: 19rem;
+    margin-bottom: 0.8rem;
+}
 }
 
 .project-title{
@@ -76,11 +58,10 @@
     padding-left: 0;
     margin-left: 0.3rem;
     margin: 1rem;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     margin-left: 1rem;
-  }
+}
 }
 
 .project-title, a {
@@ -92,16 +73,14 @@
   color: lighten($color: $green-brand, $amount: 10);
 }
 
+//Button View Project
 .project-details {
   margin: 1rem;
   margin-bottom: -2rem;
   width: 8rem;
-  @media only screen and (min-width: $break-m) {
-    //margin-left: 0.3rem;
-  }
   @media only screen and (min-width: $break-xl) {
     margin-left: 1rem;
-  }
+}
 }
 
 .project-details:hover {
@@ -112,21 +91,22 @@
   color: black;
 }
 
+//Photo in the project styling
 .photo-project {
   width: 100%;
   margin-bottom: 1rem;
   @media only screen and (min-width: $break-m) {
     width: 600px;
     height: 300px;
-  }
-
 }
+}
+
 .photo-project:hover {
   @media only screen and (min-width: $break-l) {
   transform: scale(1.1);
   opacity: .7;
   transition: 0.4s;
-  }
+}
 }
 
 .more-info-btn {
@@ -144,44 +124,17 @@
   @media only screen and (min-width: $break-m) {
     display: block;
     top: -26px;
-  }
+}
   @media only screen and (min-width: $break-l) {
-  top: 0;
-  }
-  @media only screen and (min-width: $break-xl) {
-  }
+    top: 0;
+}
 }
 
 .more-info-btn:hover {
   background-color: darken($color: $green-brand, $amount: 10);
 }
 
-
-// .more-info-btn:hover + .text-holder-1{
-//   visibility: visible;
-// }
-
-// .more-info-btn:hover + .text-holder-2{
-//   visibility: visible;
-// }
-
-// .more-info-btn:hover + .text-holder-3{
-//   visibility: visible;
-// }
-
-// .more-info-btn:hover + .text-holder-4{
-//   visibility: visible;
-// }
-
-// .more-info-btn:hover + .text-holder-5{
-//   visibility: visible;
-// }
-// .more-info-btn:hover + .text-holder-6{
-//   visibility: visible;
-// }
-
-
-
+//I added this extra code for future - once I add JS and the More info button should display the info
 .text-holder-1 {
   @include text-holder;
   @media only screen and (min-width: $break-m) {
@@ -200,10 +153,10 @@
     margin-left: 2rem;
     bottom: -64%;
     left: 50.5%;
-  }
+}
   @media only screen and (min-width: $break-l) {
     left: 36%;
-  }
+}
 }
 
 .text-holder-3 {
@@ -211,15 +164,12 @@
 }
 .text-holder-4 {
   @include text-holder;
-
 }
 .text-holder-5 {
   @include text-holder;
-
 }
 .text-holder-6 {
   @include text-holder;
-
 }
 
 

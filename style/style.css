@@ -217,6 +217,7 @@ h1 {
     top: 0;
   }
 }
+
 .more-info-btn:hover {
   background-color: #3d8b40;
 }
@@ -483,7 +484,7 @@ h1 {
   padding-left: 10px;
   height: 30px;
   margin: 0.3rem auto;
-  width: 83%;
+  width: 93%;
   margin-left: 8px;
 }
 @media only screen and (min-width: 768px) {
@@ -548,19 +549,11 @@ h1 {
   }
 }
 
-.email {
-  width: 80%;
-}
-
-.subject {
-  width: 80%;
-}
-
 .message {
-  width: 80%;
   height: 2rem !important;
   padding-bottom: 10.3rem;
 }
+
 .submit {
   background-color: white !important;
   color: black;
@@ -570,6 +563,7 @@ h1 {
   height: 40px;
   padding-right: 12px;
 }
+
 .navbar {
   display: none;
 }
@@ -793,10 +787,6 @@ h1 {
   }
 }
 
-.hamburger-about-me {
-  z-index: 1;
-}
-
 .about-me-links {
   color: #4CAF50;
 }
@@ -823,6 +813,7 @@ h1 {
     width: calc(100% - 12rem);
   }
 }
+
 .coding-examples-container h1 {
   color: white;
   text-align: center;
@@ -856,10 +847,6 @@ h1 {
   .scs-container {
     height: 50vh;
   }
-}
-
-.hamburger-scs {
-  z-index: 1;
 }
 
 .scs-title {

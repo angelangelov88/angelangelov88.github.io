@@ -1,3 +1,4 @@
+//Image on top of the page container
 .about-me-image-container {
   background-image: url(../images/about-me-image.jpg);
   background-color: #cccccc;
@@ -9,35 +10,30 @@
 	height: 30vh;
   width: 100%;
   @media only screen and (min-width: $break-s) {
-  height: 49vh;
-    }
+    height: 49vh;
+}
   @media only screen and (min-width: $break-m) {
     left: 12rem;
     width: calc(100% - 12rem);
-	//min-height: 650px;
-  }
+}
   @media only screen and (min-width: $break-xl) {
     height: 50vh;
-  }
+}
 }
 
+//Stylining of the text in the section
 .about-me-text {
   padding: 1rem;
   line-height: 30px;
   @media only screen and (min-width: $break-m) {
     margin-left: 12rem;
     width: calc(100% - 14rem);
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  
-  }
 }
-
-.hamburger-about-me {
-  z-index: 1;
 }
 
 .about-me-links {
