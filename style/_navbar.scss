@@ -166,9 +166,16 @@
 
 .facebook,
 .twitter, 
-.instagram, 
+.github, 
 .linkedin {
   color: $green-brand;
   padding: 8px;
 }
 
+.social-logo {
+  font-size: 25px;
+}
+
+.social-logo:hover {
+     color: black;
+ }
