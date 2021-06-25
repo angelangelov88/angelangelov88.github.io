@@ -1,7 +1,8 @@
 //Mixins
 
 @mixin text-holder {
-  visibility: hidden;
+  //visibility: hidden;
+  display: none;
   width: 235px;
   background-color: $green-brand;
   color: white;
@@ -9,5 +10,18 @@
   padding: 0 1rem;
   position: absolute;
   border: 2px $green-brand solid;
-
+  overflow-y: auto;
+  position: absolute;    
+  @media only screen and (min-width: $break-m) {
+    bottom: 27%;
+    width: 94%;
+    height: auto;
+    max-height: 72%;
+}
+  @media only screen and (min-width: $break-l) {
+    width: 90%;
+}
+  @media only screen and (min-width: $break-xl) {
+    width: 92%;
+}
 }

@@ -20,14 +20,17 @@
   border-radius: 15px;
   border: 1px solid #bbbbbb;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  padding-bottom: 10px;
+  padding-bottom: 23px;
+  position: relative;
   @media only screen and (min-width: $break-m) {
     width: 600px;
+    padding-bottom: 9px;
 }
   @media only screen and (min-width: $break-l) {
     margin: 10px;
     height: 26rem;
     width: 340px;
+    padding-bottom: 0;
 }
   @media only screen and (min-width: $break-xl) {
    width: 444px;
@@ -75,11 +78,18 @@
 
 //Button View Project
 .project-details {
-  margin: 1rem;
-  margin-bottom: -2rem;
-  width: 8rem;
+  // margin: 1rem;
+  // margin-bottom: -2rem;
+  // width: 8rem;
+  display: none;
+  position: absolute;
+  left: 1rem;
+  top: 23rem;
+  @media only screen and (min-width: $break-l) {
+    display: block;
+}
   @media only screen and (min-width: $break-xl) {
-    margin-left: 1rem;
+    //margin-left: 1rem;
 }
 }
 
@@ -109,7 +119,7 @@
 }
 }
 
-.more-info-btn {
+.btn-project {
   display: none;
   background-color: $green-brand;
   color: white;
@@ -123,82 +133,24 @@
   font-size: 17px;
   @media only screen and (min-width: $break-m) {
     display: block;
-    top: -26px;
+    top: -9px;
 }
   @media only screen and (min-width: $break-l) {
-    top: 0;
+    top: 12px;
+    right: -7px;
 }
+@media only screen and (min-width: $break-xl) {
+  top: 41px;
 }
 
-.more-info-btn:hover {
+}
+
+.btn-project:hover {
   background-color: darken($color: $green-brand, $amount: 10);
+  cursor: pointer;
 }
 
 //I added this extra code for future - once I add JS and the More info button should display the info
-.text-holder-1 {
-  @include text-holder;
-  @media only screen and (min-width: $break-m) {
-    margin-left: 2rem;
-    bottom: -55%;
-    left: 10.5%;
-}
-  @media only screen and (min-width: $break-l) {
-    left: 8%;
-}
-}
-
-.text-holder-2 {
-  @include text-holder;
-  @media only screen and (min-width: $break-m) {
-    margin-left: 2rem;
-    bottom: -64%;
-    left: 50.5%;
-}
-  @media only screen and (min-width: $break-l) {
-    left: 36%;
-}
-}
-
-.text-holder-3 {
+.text-holder {
   @include text-holder;
 }
-.text-holder-4 {
-  @include text-holder;
-}
-.text-holder-5 {
-  @include text-holder;
-}
-.text-holder-6 {
-  @include text-holder;
-}
-
-
-// .text-holder-1::after {
-// content: "";
-// position: absolute;
-// top: 100%;
-// left: 64%;
-// margin-left: -5px;
-// border-width: 50px;
-// border-style: solid;
-// border-color: $green-brand transparent transparent transparent;
-// @media only screen and (min-width: $break-m) {
-//   left: 60%;
-// }
-// }
-
-// .text-holder-2::after {
-// content: "";
-// position: absolute;
-// top: 100%;
-// left: 64%;
-// margin-left: -5px;
-// border-width: 50px;
-// border-style: solid;
-// border-color: $green-brand transparent transparent transparent;
-// @media only screen and (min-width: $break-l) {
-//   // margin-left: 15px;
-//   // border-width: 30px;
-//   // left: 30%;
-// }
-// }

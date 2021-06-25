@@ -89,11 +89,13 @@ h1 {
   border-radius: 15px;
   border: 1px solid #bbbbbb;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
+  padding-bottom: 23px;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .project {
     width: 600px;
+    padding-bottom: 9px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -101,6 +103,7 @@ h1 {
     margin: 10px;
     height: 26rem;
     width: 340px;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -156,16 +159,16 @@ h1 {
 }
 
 .project-details {
-  margin: 1rem;
-  margin-bottom: -2rem;
-  width: 8rem;
+  display: none;
+  position: absolute;
+  left: 1rem;
+  top: 23rem;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .project-details {
-    margin-left: 1rem;
+    display: block;
   }
 }
-
 .project-details:hover {
   color: #4d4d4d;
 }
@@ -193,7 +196,7 @@ h1 {
   }
 }
 
-.more-info-btn {
+.btn-project {
   display: none;
   background-color: #4CAF50;
   color: white;
@@ -207,23 +210,30 @@ h1 {
   font-size: 17px;
 }
 @media only screen and (min-width: 768px) {
-  .more-info-btn {
+  .btn-project {
     display: block;
-    top: -26px;
+    top: -9px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .more-info-btn {
-    top: 0;
+  .btn-project {
+    top: 12px;
+    right: -7px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn-project {
+    top: 41px;
   }
 }
 
-.more-info-btn:hover {
+.btn-project:hover {
   background-color: #3d8b40;
+  cursor: pointer;
 }
 
-.text-holder-1 {
-  visibility: hidden;
+.text-holder {
+  display: none;
   width: 235px;
   background-color: #4CAF50;
   color: white;
@@ -231,85 +241,26 @@ h1 {
   padding: 0 1rem;
   position: absolute;
   border: 2px #4CAF50 solid;
+  overflow-y: auto;
+  position: absolute;
 }
 @media only screen and (min-width: 768px) {
-  .text-holder-1 {
-    margin-left: 2rem;
-    bottom: -55%;
-    left: 10.5%;
+  .text-holder {
+    bottom: 27%;
+    width: 94%;
+    height: auto;
+    max-height: 72%;
   }
 }
 @media only screen and (min-width: 992px) {
-  .text-holder-1 {
-    left: 8%;
+  .text-holder {
+    width: 90%;
   }
 }
-
-.text-holder-2 {
-  visibility: hidden;
-  width: 235px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: left;
-  padding: 0 1rem;
-  position: absolute;
-  border: 2px #4CAF50 solid;
-}
-@media only screen and (min-width: 768px) {
-  .text-holder-2 {
-    margin-left: 2rem;
-    bottom: -64%;
-    left: 50.5%;
+@media only screen and (min-width: 1200px) {
+  .text-holder {
+    width: 92%;
   }
-}
-@media only screen and (min-width: 992px) {
-  .text-holder-2 {
-    left: 36%;
-  }
-}
-
-.text-holder-3 {
-  visibility: hidden;
-  width: 235px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: left;
-  padding: 0 1rem;
-  position: absolute;
-  border: 2px #4CAF50 solid;
-}
-
-.text-holder-4 {
-  visibility: hidden;
-  width: 235px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: left;
-  padding: 0 1rem;
-  position: absolute;
-  border: 2px #4CAF50 solid;
-}
-
-.text-holder-5 {
-  visibility: hidden;
-  width: 235px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: left;
-  padding: 0 1rem;
-  position: absolute;
-  border: 2px #4CAF50 solid;
-}
-
-.text-holder-6 {
-  visibility: hidden;
-  width: 235px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: left;
-  padding: 0 1rem;
-  position: absolute;
-  border: 2px #4CAF50 solid;
 }
 
 @media only screen and (min-width: 768px) {
@@ -458,6 +409,11 @@ h1 {
   .contact-ul {
     margin-left: -7px;
   }
+}
+
+.phone {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .phone a {
@@ -747,7 +703,7 @@ h1 {
 }
 
 .social-logo:hover {
-  color: black;
+  transform: scale(1.5);
 }
 
 .about-me-image-container {
@@ -781,6 +737,7 @@ h1 {
 .about-me-text {
   padding: 1rem;
   line-height: 30px;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .about-me-text {
@@ -794,6 +751,16 @@ h1 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icons-container h4 {
+  margin-top: 10px;
 }
 
 .about-me-links {
@@ -816,7 +783,9 @@ h1 {
 
 .sass-icon,
 .html-icon,
-.css-icon {
+.css-icon,
+.axure-icon,
+.js-icon {
   content: "";
   background-color: #4CAF50;
   width: 100px;
@@ -826,24 +795,18 @@ h1 {
   color: #21244a;
   transition: 0.2s ease all;
   cursor: default;
+  margin: 7px;
 }
 
 .axure-icon img {
-  content: "";
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: relative;
-  color: #21244a;
-  transition: 0.2s ease all;
-  cursor: default;
+  width: 50%;
 }
 
 .sass-icon:hover,
 .html-icon:hover,
 .css-icon:hover,
-.axure-icon:hover {
+.axure-icon:hover,
+.js-icon:hover {
   transform: scale(1.2);
 }
 
