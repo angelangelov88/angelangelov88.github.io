@@ -15,6 +15,7 @@
 //The project card container. This code applies to all cards. I have changed the width of the cards to make them looks the same and act the same on different screen sizes
 .project {
   width: auto;
+  height: auto;
   margin-bottom: 1rem;
   overflow: hidden;
   border-radius: 15px;
@@ -22,8 +23,12 @@
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   padding-bottom: 23px;
   position: relative;
+  @media only screen and (min-width: $break-s) {
+    //height: 332px;
+  }
   @media only screen and (min-width: $break-m) {
     width: 600px;
+    height: 354px;
     padding-bottom: 9px;
 }
   @media only screen and (min-width: $break-l) {
@@ -56,11 +61,17 @@
   font-size: 1rem;
   max-height: 300px;
   padding-left: 7px;
+  margin-top: -9px;
+  margin-bottom: -10px;
+  @media only screen and (min-width: $break-s) {
+    margin-bottom: -45px;
+
+}
   @media only screen and (min-width: $break-m) {
     font-size: 1.3rem;
     padding-left: 0;
     margin-left: 0.3rem;
-    margin: 1rem;
+    //margin: 1rem;
 }
   @media only screen and (min-width: $break-xl) {
     margin-left: 1rem;
@@ -85,6 +96,7 @@
   position: absolute;
   left: 1rem;
   top: 23rem;
+  color: black;
   @media only screen and (min-width: $break-l) {
     display: block;
 }
@@ -94,12 +106,9 @@
 }
 
 .project-details:hover {
-  color: lighten($color: #000000, $amount: 30);
+  color: lighten($color: #000000, $amount: 50);
 }
 
-.project-details a {
-  color: black;
-}
 
 //Photo in the project styling
 .photo-project {
@@ -125,22 +134,21 @@
   color: white;
   border-radius: 5px;
   position: relative;
-  top: -23px;  
+  top: 13px;  
   float: right;
   margin-right: 1rem;
   border: none;
   padding: 10px 20px;
   font-size: 17px;
-  @media only screen and (min-width: $break-m) {
+  @media only screen and (min-width: $break-s) {
     display: block;
-    top: -9px;
+}
+  @media only screen and (min-width: $break-m) {
+    top: 10px;
 }
   @media only screen and (min-width: $break-l) {
-    top: 12px;
+    top: 66px;
     right: -7px;
-}
-@media only screen and (min-width: $break-xl) {
-  top: 41px;
 }
 
 }

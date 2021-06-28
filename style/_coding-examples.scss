@@ -1,27 +1,197 @@
 //The image container
 .coding-examples-container {
+  //border: springgreen 2px solid;
+  @media only screen and (min-width: $break-m) {
+    margin-left: 12rem;
+}
+}
+.coding-examples-hero {
   background-image: url(../images/coding-examples.jpg);
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  left: 0rem;
+  left: 0%;
 	height: 100vh;
-  width: 100%;
-  @media only screen and (min-width: $break-m) {
-    left: 12rem;
-    width: calc(100% - 12rem);
+  
+  @media only screen and (min-width: $break-s) {
+    width: 100%;
+
 }
 }
 
-.coding-examples-container h1 {
+.coding-examples-hero h1 {
   color: white;
   text-align: center;
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //width: 94%;
   @media only screen and (min-width: $break-s) {
-    left: 30%;
 }
+}
+
+.coding-examples-content-container {
+  //border: 2px red solid;
+  //padding: 30px 19px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media only screen and (min-width: $break-m) {  
+    display: flex;
+
+}
+  @media only screen and (min-width: $break-xxl) {
+}
+}
+
+.coding-example {
+  //border: 2px hotpink solid;
+  margin: 0.2rem;
+  //max-height: 300px;
+  //max-width: 350px;
+  width: 100%;
+
+
+
+  
+  @media only screen and (min-width: $break-s) {
+    margin: 0.2rem;
+    width: 100%;
+
+
+  }
+  @media only screen and (min-width: $break-xxl) {
+    margin: 2rem;
+
+
+}
+}
+
+.scroll-up-examples {
+  max-width: 1650px;
+  text-align: center;
+  @media only screen and (min-width: $break-m) {
+    margin-left: 12rem;
+  }
+}
+
+.coding-example img {
+  width: 240px;
+  height: auto;
+}
+
+.coding-example-1 img,
+.coding-example-2 img {
+  height: 165px;
+}
+
+
+.coding-text {
+  //display: none;
+  float: right;
+}
+
+.coding-text-1 {
+  margin-left: 10px;
+  margin-top: 11rem;
+  @media only screen and (min-width: $break-s) {
+    margin-top: 0;
+    margin-left: 20rem;
+}
+}
+
+.coding-text-2 {
+  margin-left: 10px;
+  margin-top: 9rem;
+  @media only screen and (min-width: $break-s) {
+    margin-top: 14rem;
+  }
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0;
+    margin-left: 29rem;
+}
+}
+
+.coding-text-3 {
+  margin-left: 10px;
+  margin-top: 10rem;
+  @media only screen and (min-width: $break-s) {
+  }
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0;
+    margin-left: 28rem;
+}
+}
+
+.coding-text-4 {
+  margin-left: 10px;
+  margin-top: 10rem;
+  @media only screen and (min-width: $break-s) {
+  }
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0;
+    margin-left: 28rem;
+}
+}
+
+.coding-text-5 {
+  margin-left: 10px;
+  margin-top: 10rem;
+  @media only screen and (min-width: $break-s) {
+  }
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0;
+    margin-left: 28rem;
+}
+}
+.coding-text-6 {
+  margin-left: 10px;
+  margin-top: 10rem;
+  @media only screen and (min-width: $break-s) {
+  }
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0;
+    margin-left: 28rem;
+}
+}
+//I added this to the html in order to be able to add JS and copy the code
+.coding-snippet {
+  //display: none;
+  //border: springgreen 2px solid;
+  //max-width: 17%;
+  // position: relative;
+  // left: 50rem;
+  // top: -16rem;
+  background-color: black;
+  color: white;
+}
+
+.coding-snippet-1 {
+  //max-width: 296px;
+  max-width: 310px;
+}
+
+.coding-snippet-2 {
+  max-width: 458px;
+  font-size: 10px;
+  @media only screen and (min-width: $break-s) {
+    font-size: large;
+  }
+}
+.coding-snippet-3 {
+  max-width: 438px;
+}
+
+.coding-snippet-4 {
+  max-width: 438px;
+}
+.coding-snippet-5 {
+  max-width: 438px;
+}
+
+.coding-snippet-6 {
+  max-width: 438px;
 }
