@@ -53,8 +53,7 @@ function MoreInfoFunction1() {
     moreInfoButton1.innerHTML = 'More Info...';
     textHolder1.style.display = 'none';
 } 
-   else { 
-   //(textHolder.style.display === 'block')  
+  else { 
     moreInfoButton1.innerHTML = 'Close';
     textHolder1.style.display = 'block';
 }
@@ -67,7 +66,6 @@ function MoreInfoFunction2() {
     textHolder2.style.display = 'none';
 } 
    else { 
-   //(textHolder.style.display === 'block')  
     moreInfoButton2.innerHTML = 'Close';
     textHolder2.style.display = 'block';
 }
@@ -79,7 +77,6 @@ function MoreInfoFunction3() {
     textHolder3.style.display = 'none';
 } 
    else { 
-   //(textHolder.style.display === 'block')  
     moreInfoButton3.innerHTML = 'Close';
     textHolder3.style.display = 'block';
 }
@@ -91,7 +88,6 @@ function MoreInfoFunction4() {
     textHolder4.style.display = 'none';
 } 
    else { 
-   //(textHolder.style.display === 'block')  
     moreInfoButton4.innerHTML = 'Close';
     textHolder4.style.display = 'block';
 }
@@ -103,7 +99,6 @@ function MoreInfoFunction5() {
     textHolder5.style.display = 'none';
 } 
    else { 
-   //(textHolder.style.display === 'block')  
     moreInfoButton5.innerHTML = 'Close';
     textHolder5.style.display = 'block';
 }
@@ -115,11 +110,13 @@ function MoreInfoFunction6() {
     textHolder6.style.display = 'none';
 } 
    else { 
-   //(textHolder.style.display === 'block')  
     moreInfoButton6.innerHTML = 'Close';
     textHolder6.style.display = 'block';
 }
 };
+
+
+
 
 
 
@@ -169,7 +166,7 @@ function MoreInfoFunction6() {
 //    $(".more-info-close").text("More Info...").toggleClass('more-info-close more-info-btn');
 //   });
 
-  
+
 
 
 
