@@ -267,6 +267,10 @@ h1 {
   }
 }
 
+.shown {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
   .contact {
     display: flex;
@@ -854,6 +858,7 @@ h1 {
     display: flex;
   }
 }
+
 .coding-example {
   margin: 0.2rem;
   width: 100%;
@@ -873,6 +878,7 @@ h1 {
 .scroll-up-examples {
   max-width: 1650px;
   text-align: center;
+  color: black;
 }
 @media only screen and (min-width: 768px) {
   .scroll-up-examples {
@@ -880,28 +886,23 @@ h1 {
   }
 }
 
-.coding-example img {
-  width: 240px;
-  height: auto;
-}
-
-.coding-example-1 img,
-.coding-example-2 img {
-  height: 165px;
-}
-
 .coding-text {
   float: right;
 }
+@media only screen and (min-width: 992px) {
+  .coding-text {
+    margin-top: 0 !important;
+    margin-left: 36rem !important;
+  }
+}
 
 .coding-text-1 {
-  margin-left: 10px;
+  margin-left: 8px;
   margin-top: 11rem;
 }
 @media only screen and (min-width: 576px) {
   .coding-text-1 {
-    margin-top: 0;
-    margin-left: 20rem;
+    margin-top: 18rem;
   }
 }
 
@@ -914,90 +915,41 @@ h1 {
     margin-top: 14rem;
   }
 }
-@media only screen and (min-width: 992px) {
-  .coding-text-2 {
-    margin-top: 0;
-    margin-left: 29rem;
-  }
-}
 
 .coding-text-3 {
   margin-left: 10px;
   margin-top: 10rem;
-}
-@media only screen and (min-width: 992px) {
-  .coding-text-3 {
-    margin-top: 0;
-    margin-left: 28rem;
-  }
 }
 
 .coding-text-4 {
   margin-left: 10px;
   margin-top: 10rem;
 }
-@media only screen and (min-width: 992px) {
-  .coding-text-4 {
-    margin-top: 0;
-    margin-left: 28rem;
-  }
-}
 
 .coding-text-5 {
   margin-left: 10px;
   margin-top: 10rem;
-}
-@media only screen and (min-width: 992px) {
-  .coding-text-5 {
-    margin-top: 0;
-    margin-left: 28rem;
-  }
 }
 
 .coding-text-6 {
   margin-left: 10px;
   margin-top: 10rem;
 }
-@media only screen and (min-width: 992px) {
-  .coding-text-6 {
-    margin-top: 0;
-    margin-left: 28rem;
-  }
-}
 
 .coding-snippet {
   background-color: black;
   color: white;
-}
-
-.coding-snippet-1 {
-  max-width: 310px;
-}
-
-.coding-snippet-2 {
-  max-width: 458px;
   font-size: 10px;
 }
 @media only screen and (min-width: 576px) {
-  .coding-snippet-2 {
+  .coding-snippet {
     font-size: large;
   }
 }
-
-.coding-snippet-3 {
-  max-width: 438px;
-}
-
-.coding-snippet-4 {
-  max-width: 438px;
-}
-
-.coding-snippet-5 {
-  max-width: 438px;
-}
-
-.coding-snippet-6 {
-  max-width: 438px;
+@media only screen and (min-width: 992px) {
+  .coding-snippet {
+    max-width: 560px;
+  }
 }
 
 .scs-container {

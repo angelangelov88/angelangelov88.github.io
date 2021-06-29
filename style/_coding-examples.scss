@@ -5,6 +5,8 @@
     margin-left: 12rem;
 }
 }
+
+//Hero image
 .coding-examples-hero {
   background-image: url(../images/coding-examples.jpg);
   background-color: #cccccc;
@@ -14,13 +16,12 @@
   position: relative;
   left: 0%;
 	height: 100vh;
-  
   @media only screen and (min-width: $break-s) {
     width: 100%;
-
 }
 }
 
+//Text in hero image
 .coding-examples-hero h1 {
   color: white;
   text-align: center;
@@ -33,73 +34,56 @@
 }
 }
 
+//Container for all examples
 .coding-examples-content-container {
   //border: 2px red solid;
-  //padding: 30px 19px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   @media only screen and (min-width: $break-m) {  
     display: flex;
-
-}
-  @media only screen and (min-width: $break-xxl) {
 }
 }
 
+//Container for each example
 .coding-example {
   //border: 2px hotpink solid;
   margin: 0.2rem;
-  //max-height: 300px;
-  //max-width: 350px;
   width: 100%;
-
-
-
-  
   @media only screen and (min-width: $break-s) {
     margin: 0.2rem;
     width: 100%;
-
-
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     margin: 2rem;
-
-
 }
 }
 
+//Scroll-up button tailored to this page as the one from the index file does not centre correctly here
 .scroll-up-examples {
   max-width: 1650px;
   text-align: center;
+  color: black;
   @media only screen and (min-width: $break-m) {
     margin-left: 12rem;
-  }
+}
 }
 
-.coding-example img {
-  width: 240px;
-  height: auto;
-}
-
-.coding-example-1 img,
-.coding-example-2 img {
-  height: 165px;
-}
-
-
+//The text I have added to each example with explanation. I added code for all of them but then had to add some more for each separately as they have different length
 .coding-text {
-  //display: none;
   float: right;
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0 !important;
+    margin-left: 36rem !important;
+}
 }
 
 .coding-text-1 {
-  margin-left: 10px;
+  //border: aqua 2px solid;
+  margin-left: 8px;
   margin-top: 11rem;
   @media only screen and (min-width: $break-s) {
-    margin-top: 0;
-    margin-left: 20rem;
+    margin-top: 18rem;
 }
 }
 
@@ -108,90 +92,39 @@
   margin-top: 9rem;
   @media only screen and (min-width: $break-s) {
     margin-top: 14rem;
-  }
-  @media only screen and (min-width: $break-l) {
-    margin-top: 0;
-    margin-left: 29rem;
 }
 }
 
 .coding-text-3 {
   margin-left: 10px;
   margin-top: 10rem;
-  @media only screen and (min-width: $break-s) {
-  }
-  @media only screen and (min-width: $break-l) {
-    margin-top: 0;
-    margin-left: 28rem;
-}
 }
 
 .coding-text-4 {
   margin-left: 10px;
   margin-top: 10rem;
-  @media only screen and (min-width: $break-s) {
-  }
-  @media only screen and (min-width: $break-l) {
-    margin-top: 0;
-    margin-left: 28rem;
-}
 }
 
 .coding-text-5 {
   margin-left: 10px;
   margin-top: 10rem;
-  @media only screen and (min-width: $break-s) {
-  }
-  @media only screen and (min-width: $break-l) {
-    margin-top: 0;
-    margin-left: 28rem;
 }
-}
+
 .coding-text-6 {
   margin-left: 10px;
   margin-top: 10rem;
-  @media only screen and (min-width: $break-s) {
-  }
-  @media only screen and (min-width: $break-l) {
-    margin-top: 0;
-    margin-left: 28rem;
 }
-}
-//I added this to the html in order to be able to add JS and copy the code
+
+//I added a snippet of the code so that users can copy it
 .coding-snippet {
-  //display: none;
   //border: springgreen 2px solid;
-  //max-width: 17%;
-  // position: relative;
-  // left: 50rem;
-  // top: -16rem;
   background-color: black;
   color: white;
-}
-
-.coding-snippet-1 {
-  //max-width: 296px;
-  max-width: 310px;
-}
-
-.coding-snippet-2 {
-  max-width: 458px;
   font-size: 10px;
   @media only screen and (min-width: $break-s) {
     font-size: large;
-  }
+}  
+  @media only screen and (min-width: $break-l) {
+    max-width: 560px;
 }
-.coding-snippet-3 {
-  max-width: 438px;
-}
-
-.coding-snippet-4 {
-  max-width: 438px;
-}
-.coding-snippet-5 {
-  max-width: 438px;
-}
-
-.coding-snippet-6 {
-  max-width: 438px;
 }
