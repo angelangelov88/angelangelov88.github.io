@@ -12,6 +12,15 @@
 }
 }
 
+
+//Gradient div
+.gradient-div-brand {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
 //The project card container. This code applies to all cards. I have changed the width of the cards to make them looks the same and act the same on different screen sizes
 .project {
   width: auto;

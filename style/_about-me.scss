@@ -28,7 +28,8 @@
   text-align: center;
   @media only screen and (min-width: $break-m) {
     margin-left: 12rem;
-    width: calc(100% - 14rem);
+    //width: calc(100% - 14rem);
+    padding: 0 9rem;
 }
   @media only screen and (min-width: $break-xxl) {
     max-width: 1000px;
