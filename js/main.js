@@ -4,7 +4,7 @@ var app = document.getElementById('app');
 var typewriter = new Typewriter(app, {
   loop: false,
   cursor: "",
-  delay: 90
+  delay: 50
 });
 
 typewriter.typeString('<h1>My Name is Angel Angelov</h1>').pauseFor(50).typeString('<h2 class="strapline">I\'m a Web Developer').start(); 
