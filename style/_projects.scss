@@ -160,5 +160,30 @@
 
 //I added this extra code for future - once I add JS and the More info button should display the info
 .text-holder {
-  @include text-holder;
+  display: none;
+  background-color: $green-brand;
+  color: white;
+  text-align: left;
+  padding: 0 1rem;
+  border: 2px $green-brand solid;
+  overflow-y: auto;
+  position: absolute;    
+  bottom: 57px;
+  @media only screen and (min-width: $break-m) {
+    bottom: 17%;
+    width: 94%;
+    height: auto;
+    max-height: 72%;
+}
+  @media only screen and (min-width: $break-l) {
+    width: 90%;
+    bottom: 28%;
+}
+  @media only screen and (min-width: $break-xl) {
+    width: 92%;
+}
+}
+
+.shown {
+  display: block;
 }

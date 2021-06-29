@@ -20,8 +20,8 @@
 
     <title>Coding Examples</title>
 
-    <!-- jQuery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+
 
   </head>
   <body>
@@ -81,8 +81,10 @@
     </header>
     <div class="coding-examples-container">
       <div class="coding-examples-hero">
-        <h1>More examples coming Soon...</h1>
-        <!-- Scroll down text and arrow -->
+        <h1>More Examples Coming Soon...</h1>
+
+
+<!-- Scroll down text and arrow -->
         <div class="scroll">
           <a href="#coding-link" class="scroll-down-arrow">Scroll Down
             <br>
@@ -90,29 +92,40 @@
           </a>
         </div>
       </div>
+
+
+<!-- CODING EXAMPLES -->
       <div id="coding-link" class="coding-examples-content-container">
         
-        <!-- Coding example 1 -->
+
+<!-- Coding example 1 -->
         <div class="coding-example-1 coding-example">
-              <h4 class="coding-title">jQuery plugin for typing effect for the brand text</h4>
-              <p class="coding-text coding-text-1">I used this code to implement a typing effect to the brand text on my portfolio website. I decided to go with a jQuery plugin which worked perfectly. It is a little line of code that does the job. There are many options in the plugin which can customise it as required. It is easy to use and user friendly plugin.
-              </p>
-                <pre class="coding-snippet-1 coding-snippet"> 
-  new TypeIt(".hero-text h1", {
-  strings: '',
-  speed: 75,
-  loop: false,
-  cursor: false,
-  nextStringDelay: 7500| 100
-  }).go(); 
-                </pre>              
-        </div>
-        <!-- Coding example 2 -->
+          <h4 class="coding-title">jQuery plugin for typing effect for the brand text</h4>
+          <p class="coding-text coding-text-1">I used this code to implement a typing effect to the brand text on my portfolio website. I decided to go with a jQuery plugin which worked perfectly. It is a little line of code that does the job. There are many options in the plugin which can customise it as required. It is easy to use and user friendly plugin and most importantly works in Internet Explorer.
+          </p>
+          <pre class="coding-snippet-1 coding-snippet"> 
+  var app = document.getElementById('app');
+  var typewriter = new Typewriter(app, {
+    loop: false,
+    cursor: "",
+    delay: 90
+  });
+
+  typewriter.typeString
+  ("&lth1>My Name is Angel Angelov&lt/h1>")
+  .pauseFor(50).typeString
+  ('&lth2 class="strapline">I\'m a Web 
+  Developer').start();
+            </pre>              
+          </div>
+
+
+<!-- Coding example 2 -->
         <div class="coding-example-2 coding-example">
-            <h4 class="coding-title">JavaScript function to show/hide button in the projects page</h4>
-            <p class="coding-text coding-text-2">That was my first function in JavaScript. I created it in order to make the button in my projects page change and show additional information about my projects. It basically toggles in order to show or hide the additional information. 
-            </p>
-            <pre class="coding-snippet-2 coding-snippet">
+          <h4 class="coding-title">JavaScript function to show/hide button in the projects page</h4>
+          <p class="coding-text coding-text-2">That was my first function in JavaScript. I created it in order to make the button in my projects page change and show additional information about my projects. It basically toggles in order to show or hide the additional information. 
+          </p>
+          <pre class="coding-snippet-2 coding-snippet">
   function MoreInfoFunction1() {
     if (textHolder1.style.display === 'block') {
       moreInfoButton1.innerHTML = 'More Info...';
@@ -124,67 +137,76 @@
   }
   };
             </pre>
-        </div>
-        <!-- Coding example 3 -->
+          </div>
+
+
+<!-- Coding example 3 -->
         <div class="coding-example-3 coding-example">
-            <h4 class="coding-title">Coding Example 3</h4>
-            <p class="coding-text coding-text-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <pre class="coding-snippet-3 coding-snippet"> 
+          <h4 class="coding-title">Coding Example 3</h4>
+          <p class="coding-text coding-text-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <pre class="coding-snippet-3 coding-snippet"> 
 
 
 Example code
 
 
 
-            </pre>
+          </pre>
         </div>
-        <!-- Coding example 4 -->
+
+
+<!-- Coding example 4 -->
         <div class="coding-example-4 coding-example">
-            <h4 class="coding-title">Coding Example 4</h4>
-            <p class="coding-text coding-text-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <pre class="coding-snippet-4 coding-snippet">
+          <h4 class="coding-title">Coding Example 4</h4>
+          <p class="coding-text coding-text-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <pre class="coding-snippet-4 coding-snippet">
 
 
 Example code
 
 
 
-            </pre>     
+          </pre>     
         </div>
-        <!-- Coding example 5 -->
+
+
+<!-- Coding example 5 -->
         <div class="coding-example-5 coding-example">
-            <h4 class="coding-title">Coding Example 5</h4>
-            <p class="coding-text coding-text-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <pre class="coding-snippet-5 coding-snippet">
+          <h4 class="coding-title">Coding Example 5</h4>
+          <p class="coding-text coding-text-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <pre class="coding-snippet-5 coding-snippet">
 
 
 Example code
 
 
 
-            </pre>            
+          </pre>            
         </div>
-        <!-- Coding example 6 -->
+
+
+<!-- Coding example 6 -->
         <div class="coding-example-6 coding-example">
-            <h4 class="coding-title">Coding Example 6</h4>
-            <p class="coding-text coding-text-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <pre class="coding-snippet-6 coding-snippet">
+          <h4 class="coding-title">Coding Example 6</h4>
+          <p class="coding-text coding-text-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <pre class="coding-snippet-6 coding-snippet">
 
 
 Example code
 
 
 
-            </pre>            
+          </pre>            
         </div>
-
       </div>
-   
+    </div>
+  </div>
 
+  
 <!--Scroll up button  -->
     <div class="scroll-up-examples">
       <a href="#" class="scroll-up-text">
@@ -192,13 +214,11 @@ Example code
       <br>
       Back To Top
       </a>
-    </div>
-    </div>  
-    
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-    <script src="js/main.js"></script>
 
+      <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
-
+      <script src="../js/main.js"></script>
+  
+  
   </body>
   </html>
