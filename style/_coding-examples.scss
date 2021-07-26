@@ -133,7 +133,32 @@
 
 .coding-text-3 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 11rem;
+  @media only screen and (min-width: $break-s) {
+    margin-top: 16rem;
+}
+}
+
+//Code to move the table to the right place 
+.example-3-table {
+  float: left;
+  margin-left: 10px;
+  border-collapse: collapse;
+  @media only screen and (min-width: $break-l) {
+    margin-top: 0 !important;
+    margin-left: 36rem !important;
+}
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #4caf50;
+  color: white;
 }
 
 .coding-text-4 {
@@ -164,3 +189,4 @@
     max-width: 560px;
 }
 }
+
