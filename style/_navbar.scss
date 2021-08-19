@@ -2,11 +2,9 @@
 .navbar {
   display: none;
   position: absolute;
-  top: 9%;
   background-color: white;
   z-index: 1;
   height: 100vh;
-  max-height: 509px;
   width: 170px;
   @media only screen and (min-width: $break-m) {
     display: block;
@@ -21,11 +19,10 @@
     width: 191px;
     max-height: none;
 }
-
 //code for small height of the screen. It adds a scroll button on the right of the navbar
 @media only screen and (max-height: $break-hs) {
   //top: 5px;
-  height: 100vh;
+  //height: 100vh;
   overflow-y: overlay;
 }
 }
@@ -38,8 +35,8 @@
   border: 1px $green-brand solid;
   border-radius: 4px;
   position: fixed;
-  top: 44%;
-  z-index: 1;
+  top: 0%;
+  z-index: 101;
   margin: 10px;
   @media only screen and (min-width: $break-m) {
     display: none;
@@ -78,6 +75,8 @@
   @media only screen and (max-height: $break-hs) {
     margin-bottom: 0;
     margin-top: -30%;
+    width:auto !important;
+    top: 2rem;
 }
   margin-bottom: 0;
   font-size: 6rem;
@@ -88,10 +87,7 @@
   top: 1rem;
   width: 138px;
   padding-left: 2rem;
-
-
 @media only screen and (min-width: $break-m) {
-
   font-size: 10rem;
   line-height: 188px;
   margin-bottom: 5rem;
@@ -182,11 +178,10 @@
   font-weight: 600;
   border-bottom: 2px $green-brand solid;
   border-top: 2px $green-brand solid;
-  padding: 8px 14px 8px 34px;
+  padding: 8px 14px 8px 33px;
   width: 122px;
   @media only screen and (min-width: $break-m) {
     width: 144px;
-
 }
 }
 
@@ -194,10 +189,7 @@
   display: flex;
   margin-top: 1rem;
   padding-left: 4px;
-  @media only screen and (min-width: $break-m) {
-
-  
-  
+  @media only screen and (min-width: $break-m) {  
   padding-left: 24px;
 }
 }
@@ -215,16 +207,16 @@
 }
 
 .social-logo:hover {
-     transform: scale(1.5);
+    transform: scale(1.5);
+}
 
- }
-
-
- .blocker {
+//Added this div to make it fill the space when sidebar is open so that user can click on it (or anywhere) to close the sidebar
+.blocker {
+  display: none;
   position: fixed;
   top: 0;
   left: 170px;
   bottom: 0;
   right: -260px;
-  border: 1px yellow solid;
+  //border: 5px yellow solid;
 }
