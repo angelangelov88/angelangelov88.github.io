@@ -10,13 +10,16 @@
     
     
 <!-- CSS -->
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     
 <!-- Poppins font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <!-- Hamburger menu -->
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <!-- <link href="dist/hamburgers.css" rel="stylesheet"> -->
+
+<!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 
     <title>SCS Scheme</title>
 
@@ -35,7 +38,7 @@
                   <a href="about-me.html">About Me</a>
                 </div>
                 <div class="my-portfolio">
-                  <a href="../index.html#portfolio-link">My Portfolio</a>
+                  <a href="index.html#portfolio-link">My Portfolio</a>
                 </div>
                 <div class="coding-examples">
                   <a href="coding-examples.html">Coding Examples</a>
@@ -45,7 +48,7 @@
                 </div>
               </div>
               <div class="contact-me">
-                <a href="../index.html#contact">Contact Me</a>
+                <a href="index.html#contact">Contact Me</a>
               </div>
               <div class="social-media">
                 <div class="social-links">
@@ -82,11 +85,15 @@
             </div>
     </header>
     <div class="scs-container">
+      <div class="scs-hero">
+        <!-- Added gradient div to make the background darker and text be easily readable -->
+          <div class="gradient-div-scs"></div>
+            <h1>SCS Scheme</h1>
+          </div>
       <div class="scs-content">
         <div class="scs-title">
-          <img src="../images/treehouse.png">
-          <img src="../images/netmatters-logo.png">
-          <h1>SCS Scheme</h1>
+          <img src="images/treehouse.png">
+          <img src="images/netmatters-logo.png">
         </div>
         <div class="introduction-scs">
           <h3>Introduction to Scion Coalition Scheme</h3>
@@ -117,5 +124,9 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+    <script src="js/main.js"></script>
+
   </body>
 </html>

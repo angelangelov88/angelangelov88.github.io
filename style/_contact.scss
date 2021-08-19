@@ -95,7 +95,8 @@
 }
 
 .contact-form {
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   @media only screen and (min-width: $break-xl) {
     max-width: 35rem;
 }
@@ -149,6 +150,7 @@
   margin: .3rem auto;
   width: 93%;
   margin-left: 8px;
+  margin-right: 8px;
   @media only screen and (min-width: $break-m) {
     width: 96%;
 }
@@ -172,36 +174,37 @@
 }
 
 //Specific styling for each element of the form
-.fname {
-  width: 100%;
+#fname {
+  //width: 100%;
   @media only screen and (min-width: $break-m) {
-    width: 37% !important;
+    width: 36.8% !important;
 }
 }
 
-.lname {  
-  width: 100%;
+#lname {  
+  //width: 100%;
+  margin-right: 0;
   @media only screen and (min-width: $break-m) {
-    width: 56% !important;  
+    width: 54.8% !important;  
     margin-left: 0 !important;
 }
   @media only screen and (min-width: $break-l) {
-    width: 58.9% !important;
+    width: 58.2% !important;
 }
   @media only screen and (min-width: $break-xl) {
-    width: 57% !important;
+    width: 56% !important;
 }
   @media only screen and (min-width: $break-xxl) {
-    width: 59% !important;
+    width: 58.5% !important;
 }
 }
 
-.message {
+#message {
   height: 2rem !important;
   padding-bottom: 10.3rem;
 }
 
-.submit {
+#submit {
   background-color: white !important;
   color: black;
   border: 2px black solid !important;
@@ -212,7 +215,15 @@
 }
 
 
+input:focus:invalid {
+  border: 1px red solid;
+}
 
+form label {
+  color: red;
+  display: none;
+  font-weight: 600;
+}
 
 
 

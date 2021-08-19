@@ -1,6 +1,13 @@
 //NAVBAR container - not visible for screens smaller than M
 .navbar {
   display: none;
+  position: absolute;
+  top: 9%;
+  background-color: white;
+  z-index: 1;
+  height: 100vh;
+  max-height: 509px;
+  width: 170px;
   @media only screen and (min-width: $break-m) {
     display: block;
     position: fixed;
@@ -11,11 +18,13 @@
     margin-right: 2rem;
     border-right: 2px $green-brand solid;
     z-index: 1;
+    width: 191px;
+    max-height: none;
 }
 
 //code for small height of the screen. It adds a scroll button on the right of the navbar
 @media only screen and (max-height: $break-hs) {
-  top: 5px;
+  //top: 5px;
   height: 100vh;
   overflow-y: overlay;
 }
@@ -29,8 +38,9 @@
   border: 1px $green-brand solid;
   border-radius: 4px;
   position: fixed;
-  top: 0%;
+  top: 44%;
   z-index: 1;
+  margin: 10px;
   @media only screen and (min-width: $break-m) {
     display: none;
 }
@@ -69,23 +79,35 @@
     margin-bottom: 0;
     margin-top: -30%;
 }
-  font-size: 10rem;
+  margin-bottom: 0;
+  font-size: 6rem;
+  font-family: Brush Script MT;
   color: $green-brand;
   border-bottom: 2px $green-brand solid;
-  line-height: 188px;
   position: relative;
   top: 1rem;
+  width: 138px;
+  padding-left: 2rem;
+
+
+@media only screen and (min-width: $break-m) {
+
+  font-size: 10rem;
+  line-height: 188px;
   margin-bottom: 5rem;
   margin-top: 1rem;
   width: 160px;
-  padding-left: 2rem;
-  font-family: Brush Script MT;
+}
 }
 
 .logo a {
   color: $green-brand;
   position: relative;
   left: 0;
+  padding-left: 30px;
+  @media only screen and (min-width: $break-m) {
+    padding-left: 0;
+}
 }
 
 //The stylinig for the links in the navbar
@@ -93,7 +115,10 @@
   font-weight: 600;
   line-height: 90px;
   padding-bottom: 2rem;
+  padding-left: 10px;
+  @media only screen and (min-width: $break-m) {
   padding-left: 28px;
+}
 }
 
 .navbar-items a {
@@ -103,7 +128,10 @@
 .contact-me a {
   color: black;
   position: relative;
-  left: -5px;
+  left: -22px;
+  @media only screen and (min-width: $break-m) {
+    left: -5px;
+}  
 }
 
 .about-me {
@@ -154,14 +182,24 @@
   font-weight: 600;
   border-bottom: 2px $green-brand solid;
   border-top: 2px $green-brand solid;
-  width: 144px;
   padding: 8px 14px 8px 34px;
+  width: 122px;
+  @media only screen and (min-width: $break-m) {
+    width: 144px;
+
+}
 }
 
 .social-links {
   display: flex;
   margin-top: 1rem;
+  padding-left: 4px;
+  @media only screen and (min-width: $break-m) {
+
+  
+  
   padding-left: 24px;
+}
 }
 
 .facebook,
@@ -180,3 +218,13 @@
      transform: scale(1.5);
 
  }
+
+
+ .blocker {
+  position: fixed;
+  top: 0;
+  left: 170px;
+  bottom: 0;
+  right: -260px;
+  border: 1px yellow solid;
+}
