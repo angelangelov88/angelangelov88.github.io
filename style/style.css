@@ -136,6 +136,61 @@ h1 {
   }
 }
 
+.photo-reflection {
+  position: relative;
+  left: 0;
+}
+@media only screen and (min-width: 992px) {
+  .photo-reflection {
+    left: -7rem;
+  }
+}
+
+.photo-axure {
+  position: relative;
+  left: 0;
+}
+@media only screen and (min-width: 992px) {
+  .photo-axure {
+    left: -236px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .photo-axure {
+    left: -8rem;
+  }
+}
+
+.photo-portfolio {
+  position: relative;
+  left: 0;
+}
+@media only screen and (min-width: 992px) {
+  .photo-portfolio {
+    left: -158px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .photo-portfolio {
+    left: -7rem;
+  }
+}
+
+.photo-reflection-js {
+  position: relative;
+  left: 0;
+}
+@media only screen and (min-width: 992px) {
+  .photo-reflection-js {
+    left: -119px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .photo-reflection-js {
+    left: -4.5rem;
+  }
+}
+
 .project-title {
   color: #4CAF50;
   text-decoration: none;
@@ -396,7 +451,8 @@ h1 {
 }
 
 .contact-form {
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media only screen and (min-width: 1200px) {
   .contact-form {
@@ -457,6 +513,7 @@ h1 {
   margin: 0.3rem auto;
   width: 93%;
   margin-left: 8px;
+  margin-right: 8px;
 }
 @media only screen and (min-width: 768px) {
   .contact-form input {
@@ -486,46 +543,43 @@ h1 {
   background-color: white;
 }
 
-.fname {
-  width: 100%;
-}
 @media only screen and (min-width: 768px) {
-  .fname {
-    width: 37% !important;
+  #fname {
+    width: 36.8% !important;
   }
 }
 
-.lname {
-  width: 100%;
+#lname {
+  margin-right: 0;
 }
 @media only screen and (min-width: 768px) {
-  .lname {
-    width: 56% !important;
+  #lname {
+    width: 54.8% !important;
     margin-left: 0 !important;
   }
 }
 @media only screen and (min-width: 992px) {
-  .lname {
-    width: 58.9% !important;
+  #lname {
+    width: 58.2% !important;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .lname {
-    width: 57% !important;
+  #lname {
+    width: 56% !important;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .lname {
-    width: 59% !important;
+  #lname {
+    width: 58.5% !important;
   }
 }
 
-.message {
+#message {
   height: 2rem !important;
   padding-bottom: 10.3rem;
 }
 
-.submit {
+#submit {
   background-color: white !important;
   color: black;
   border: 2px black solid !important;
@@ -535,8 +589,25 @@ h1 {
   padding-right: 12px;
 }
 
+input:focus:invalid {
+  border: 1px red solid;
+}
+
+form label {
+  color: red;
+  display: none;
+  font-weight: 600;
+}
+
 .navbar {
   display: none;
+  position: absolute;
+  top: 9%;
+  background-color: white;
+  z-index: 1;
+  height: 100vh;
+  max-height: 509px;
+  width: 170px;
 }
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -549,11 +620,12 @@ h1 {
     margin-right: 2rem;
     border-right: 2px #4CAF50 solid;
     z-index: 1;
+    width: 191px;
+    max-height: none;
   }
 }
 @media only screen and (max-height: 600px) {
   .navbar {
-    top: 5px;
     height: 100vh;
     overflow-y: overlay;
   }
@@ -566,8 +638,9 @@ h1 {
   border: 1px #4CAF50 solid;
   border-radius: 4px;
   position: fixed;
-  top: 0%;
+  top: 44%;
   z-index: 1;
+  margin: 10px;
 }
 @media only screen and (min-width: 768px) {
   .hamburger {
@@ -605,17 +678,15 @@ h1 {
 }
 
 .logo {
-  font-size: 10rem;
+  margin-bottom: 0;
+  font-size: 6rem;
+  font-family: Brush Script MT;
   color: #4CAF50;
   border-bottom: 2px #4CAF50 solid;
-  line-height: 188px;
   position: relative;
   top: 1rem;
-  margin-bottom: 5rem;
-  margin-top: 1rem;
-  width: 160px;
+  width: 138px;
   padding-left: 2rem;
-  font-family: Brush Script MT;
 }
 @media only screen and (max-height: 600px) {
   .logo {
@@ -623,18 +694,38 @@ h1 {
     margin-top: -30%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 10rem;
+    line-height: 188px;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    width: 160px;
+  }
+}
 
 .logo a {
   color: #4CAF50;
   position: relative;
   left: 0;
+  padding-left: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .logo a {
+    padding-left: 0;
+  }
 }
 
 .navbar-items {
   font-weight: 600;
   line-height: 90px;
   padding-bottom: 2rem;
-  padding-left: 28px;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-items {
+    padding-left: 28px;
+  }
 }
 
 .navbar-items a {
@@ -644,7 +735,12 @@ h1 {
 .contact-me a {
   color: black;
   position: relative;
-  left: -5px;
+  left: -22px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-me a {
+    left: -5px;
+  }
 }
 
 .about-me {
@@ -695,14 +791,24 @@ h1 {
   font-weight: 600;
   border-bottom: 2px #4CAF50 solid;
   border-top: 2px #4CAF50 solid;
-  width: 144px;
   padding: 8px 14px 8px 34px;
+  width: 122px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-me {
+    width: 144px;
+  }
 }
 
 .social-links {
   display: flex;
   margin-top: 1rem;
-  padding-left: 24px;
+  padding-left: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .social-links {
+    padding-left: 24px;
+  }
 }
 
 .facebook,
@@ -719,6 +825,15 @@ h1 {
 
 .social-logo:hover {
   transform: scale(1.5);
+}
+
+.blocker {
+  position: fixed;
+  top: 0;
+  left: 170px;
+  bottom: 0;
+  right: -260px;
+  border: 1px yellow solid;
 }
 
 .about-me-image-container {
@@ -745,7 +860,45 @@ h1 {
 }
 @media only screen and (min-width: 1200px) {
   .about-me-image-container {
-    height: 50vh;
+    height: 42vh;
+  }
+}
+
+.gradient-div-about-me {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  width: 100%;
+  height: inherit;
+}
+
+.about-me-image-container h1 {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+}
+@media screen and (-ms-high-contrast: none) {
+  .about-me-image-container h1 {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .about-me-image-container h1 {
+    width: 64%;
+  }
+}
+@media only screen and (min-width: 576px) and (-ms-high-contrast: none) {
+  .about-me-image-container h1 {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about-me-text-container {
+    margin-left: 12rem;
   }
 }
 
@@ -756,7 +909,6 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   .about-me-text {
-    margin-left: 12rem;
     padding: 0 9rem;
   }
 }
@@ -839,7 +991,7 @@ h1 {
   background-size: cover;
   position: relative;
   left: 0%;
-  height: 100vh;
+  height: 42vh;
   width: 100%;
 }
 .gradient-div {
@@ -1028,21 +1180,16 @@ tr:nth-child(even) {
   position: relative;
   left: 0rem;
   height: 30vh;
-  padding: 3rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media only screen and (min-width: 768px) {
   .scs-container {
-    padding: 1rem;
-    left: 6rem;
-    width: calc(100% - 14rem);
+    left: 12rem;
+    width: calc(100% - 12rem);
   }
 }
 @media only screen and (min-width: 1200px) {
   .scs-container {
-    height: 50vh;
+    height: 42vh;
   }
 }
 
@@ -1054,6 +1201,57 @@ tr:nth-child(even) {
 .scs-title img {
   width: 49%;
   margin: 1px;
+}
+
+.scs-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.scs-hero {
+  background-image: url(../images/scion-scheme.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 0%;
+  height: 42vh;
+  width: 100%;
+}
+
+.gradient-div-scs {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.scs-hero h1 {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+}
+@media screen and (-ms-high-contrast: none) {
+  .scs-hero h1 {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .scs-hero h1 {
+    width: 64%;
+  }
+}
+@media only screen and (min-width: 576px) and (-ms-high-contrast: none) {
+  .scs-hero h1 {
+    width: auto;
+  }
 }
 
 body {

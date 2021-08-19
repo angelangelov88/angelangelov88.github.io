@@ -10,13 +10,16 @@
     
     
 <!-- CSS -->
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     
 <!-- Poppins font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Hamburger menu -->
-    <link href="dist/hamburgers.css" rel="stylesheet">
+<!-- Hamburger menu
+    <link href="dist/hamburgers.css" rel="stylesheet"> -->
+
+<!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 
     <title>Coding Examples</title>
 
@@ -28,14 +31,14 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <a href="../index.html">A</a>
+          <a href="index.html">A</a>
         </div>
         <div class="navbar-items">
           <div class="about-me">
             <a href="about-me.html">About Me</a>
           </div>
           <div class="my-portfolio">
-            <a href="../index.html#portfolio-link">My Portfolio</a>
+            <a href="index.html#portfolio-link">My Portfolio</a>
           </div>
           <div class="coding-examples">
             <a href="coding-examples.html">Coding Examples</a>
@@ -45,7 +48,7 @@
           </div>
         </div>
         <div class="contact-me">
-          <a href="../index.html#contact">Contact Me</a>
+          <a href="index.html#contact">Contact Me</a>
         </div>
         <div class="social-media">
           <div class="social-links">
@@ -68,7 +71,9 @@
           </div>
         </div>
         </nav>
-        <div class="hamburger hamburger-about-me">
+        <div class="blocker" onclick="closeNav()"></div>
+
+        <div class="hamburger hamburger-about-me" onclick="openNav()">
           <a href="#">
             <div id="menu-lines">
               <div class="menu-line"></div>
@@ -83,19 +88,8 @@
       <div class="coding-examples-hero">
 <!-- Added gradient div to make the background darker and text be easily readable -->
         <div class="gradient-div"></div>
-        <h1>More Examples</h1>
-<!-- I added this as a separate h1 in order to make them stay the same in all screen sizes -->
-        <h1 id="second-line">Coming Soon...</h1>
-
-<!-- Scroll down text and arrow -->
-        <div class="scroll">
-          <a href="#coding-link" class="scroll-down-arrow">Scroll Down
-            <br>
-          <i class="fas fa-chevron-down"></i>
-          </a>
-        </div>
+        <h1>Coding Examples</h1>
       </div>
-
 
 <!-- CODING EXAMPLES -->
       <div id="coding-link" class="coding-examples-content-container">
@@ -258,7 +252,7 @@ Example code
     </div>
       <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
-      <script src="../js/main.js"></script>
+      <script src="js/main.js"></script>
   
   
   </body>

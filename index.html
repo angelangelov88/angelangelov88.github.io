@@ -17,15 +17,17 @@
 <!-- Hamburger menu
     <link href="dist/hamburgers.css" rel="stylesheet"> -->
 
-    <title>Angel's Portfolio</title>
 
 <!-- jQuery cdn -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
-
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+ -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
+<!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 
+    <title>Angel's Portfolio</title>
 
   </head>
 
@@ -39,16 +41,16 @@
         </div>
         <div class="navbar-items">
           <div class="about-me">
-            <a href="html/about-me.html">About Me</a>
+            <a href="about-me.html">About Me</a>
           </div>
           <div class="my-portfolio">
             <a href="#portfolio-link">My Portfolio</a>
           </div>
           <div class="coding-examples">
-            <a href="html/coding-examples.html">Coding Examples</a>
+            <a href="coding-examples.html">Coding Examples</a>
           </div>
           <div class="scs">
-            <a href="html/scs-scheme.html">SCS Scheme</a>
+            <a href="scs-scheme.html">SCS Scheme</a>
           </div>
         </div>
         <div class="contact-me">
@@ -77,7 +79,9 @@
       </nav>
 
 <!-- Small hamburger style navbar for small screens -->
-      <div class="hamburger">
+<div class="blocker" onclick="closeNav()"></div>
+
+      <div class="hamburger" onclick="openNav()">
         <a href="#">
           <div id="menu-lines">
             <div class="menu-line"></div>
@@ -116,7 +120,7 @@
 
 <!-- Project 1 -->
         <div class="project-1 project">
-          <a href="https://angel-angelov.netmatters-scs.co.uk/projects/reflection/" target="_blank">
+          <a href="http://netmatters.angel-angelov.netmatters-scs.co.uk/" target="_blank">
             <div class="img-container">
               <img src="images/netmatters-reflection2.png" class="photo-reflection photo-project" alt="photo-reflection">
             </div>
@@ -150,11 +154,10 @@
 
 <!-- Project 3 -->
         <div class="project-3 project">
-          <a href="https://angel-angelov.netmatters-scs.co.uk/" target="_blank">
             <div class="img-container">
-              <img src="images/portfolio.PNG" class="photo-change-name photo-project" alt="photo-change-name"></div>
+              <img src="images/portfolio.PNG" class="photo-portfolio photo-project" alt="photo-portfolio"></div>
             <p class="project-title project-title-3">Portfolio</p> 
-          </a>       
+                
           <a href="https://github.com/angelangelov88/portfolio" target="_blank" class="project-details">View Project Files
             <i class="fas fa-arrow-circle-right"></i>
           </a>
@@ -167,10 +170,10 @@
         <div class="project-4 project">          
           <a href="https://angel-angelov.netmatters-scs.co.uk/projects/JavaScript-reflection/Netmatters-website-reflection-JS/" target="_blank">
             <div class="img-container">
-              <img src="images/js-reflection.PNG" class="photo-change-name photo-project" alt="photo-change-name"></div>
+              <img src="images/js-reflection.PNG" class="photo-reflection-js photo-project" alt="photo-change-name"></div>
             <p class="project-title project-title-3">JavaScript Reflection</p> 
           </a>       
-          <a href="#" class="project-details">View Project Files
+          <a href="https://github.com/angelangelov88/Reflection-JavaScript" target="_blank" class="project-details">View Project Files
             <i class="fas fa-arrow-circle-right"></i>
           </a>
           <button class="btn-project more-info-btn-4">More Info...</button>
@@ -182,10 +185,10 @@
         <div class="project-5 project">          
           <a href="https://angel-angelov.netmatters-scs.co.uk/projects/JavaScript-reflection/Image-assigner-task/"  target="_blank">
             <div class="img-container">
-              <img src="images/image-assigner-task.PNG" class="photo-change-name photo-project" alt="photo-change-name"></div>
+              <img src="images/image-assigner-task.PNG" class="photo-image-assigner photo-project" alt="photo-image-assigner"></div>
             <p class="project-title project-title-3">Image Assigner</p>  
           </a>      
-          <a href="#" class="project-details">View Project Files 
+          <a href="https://github.com/angelangelov88/JavaScript-Reflection-Task2" target="_blank" class="project-details">View Project Files 
             <i class="fas fa-arrow-circle-right"></i>
           </a>
           <button class="btn-project more-info-btn-5">More Info...</button>
@@ -229,12 +232,13 @@
 <!-- Actual contact form with the fields and placeholders-->
           <form class="contact-form">
             <div class="contact-form-2">
-              <input class="fname" type="text" required="required" placeholder="First Name">
-              <input class="lname" type="text" required="required" placeholder="Last Name">
-              <input class="email" type="email" required="required" placeholder="Email Address">
-              <input class="subject" type="text" required="required" placeholder="Subject">
-              <input class="message" type="text" required="required" placeholder="Your text here...">
-              <input class="submit" type="submit" value="Submit">
+              <input id="fname" type="text" required="required" placeholder="First Name*">
+              <input id="lname" type="text" required="required" placeholder="Last Name*">
+              <input id="email" type="email" required="required" placeholder="Email Address*">
+              <label id="error-message">Make sure you type a valid email address!</label>
+              <input id="subject" type="text" required="required" placeholder="Subject*">
+              <input id="message" type="text" placeholder="Your text here...">
+              <input id="submit" type="submit" value="Submit">
             </div>
           </form>
         </div>
