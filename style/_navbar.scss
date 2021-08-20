@@ -1,7 +1,7 @@
 //NAVBAR container - not visible for screens smaller than M
 .navbar {
-  display: none;
-  position: absolute;
+  display: inline-block;
+  position: fixed;
   background-color: white;
   z-index: 1;
   height: 100vh;
@@ -218,5 +218,6 @@
   left: 170px;
   bottom: 0;
   right: -260px;
+  background-color: rgba(0, 0, 0, 0.6);
   //border: 5px yellow solid;
 }
