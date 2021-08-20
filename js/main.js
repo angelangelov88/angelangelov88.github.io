@@ -12,7 +12,7 @@ const blocker = document.getElementsByClassName('blocker')[0];
 //This is the function that is triggered on click on burger menu button. It basically shows the sidebar, changes the colour of the background, the color of the hero text, stops the scrolling option for the page and shows the blocker div on top. This last thing allows the user to close the sidebar by clicking anywhere but on it.
 function openNav() {
     navbar.style.display = 'block';
-    gradient.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+    // gradient.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
     fontColor.style.color = '#ffffff9e';
     scrollDisappear.style.position = 'initial';
     blocker.style.zIndex = 100;
@@ -24,7 +24,7 @@ function openNav() {
 function openNav2() {
   navbar.style.display = 'block';
   blocker.style.zIndex = 100;
-  blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+  // blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
   blocker.style.display = 'block';
   body.style.overflow = 'hidden';
 }
@@ -34,7 +34,7 @@ function openNav2() {
 function closeNav() {
     navbar.style.display = 'none';
     navbar.style.backgroundColor = 'none';
-    gradient.style.backgroundColor = 'initial';
+    // gradient.style.backgroundColor = 'initial';
     fontColor.style.color = 'white';
     scrollDisappear.style.position = 'block';
     blocker.style.zIndex = 0;
@@ -51,7 +51,7 @@ function closeNav() {
     // fontColor.style.color = 'white';
     // scrollDisappear.style.position = 'block';
     blocker.style.zIndex = 0;
-    blocker.style.backgroundColor = 'initial';
+    // blocker.style.backgroundColor = 'initial';
     blocker.style.display = 'none';
     body.style.overflow = 'auto';
     hamburger.style.left = '0px';
