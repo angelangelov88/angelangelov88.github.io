@@ -72,6 +72,11 @@
 }
 }
 
+.about-me-icons {
+  max-width: 700px;
+  margin: auto;
+}
+
 .icons-container {
   display: flex;
   justify-content: center;
@@ -105,7 +110,10 @@
 .html-icon,
 .css-icon,
 .axure-icon,
-.js-icon{
+.js-icon,
+.jquery-icon,
+.sql-icon,
+.php-icon {
   content: "";
     background-color: $green-brand;
     width: 100px;
@@ -125,6 +133,9 @@
 .html-icon:hover,
 .css-icon:hover,
 .axure-icon:hover,
-.js-icon:hover {
+.js-icon:hover,
+.jquery-icon:hover,
+.sql-icon:hover,
+.php-icon:hover {
   transform: scale(1.2);
  }

@@ -64,6 +64,37 @@
                 <h4>JavaScript</h4>
               </div>
              </div>
+
+             <div class="jquery-container">
+              <div class="jquery-icon">
+                <img src="" class="logo-icon">
+              </div>
+              <div class="icon-text">
+                <h4>jQuery</h4>
+              </div>
+             </div>
+
+             <div class="sql-container">
+              <div class="sql-icon">
+                <i class="fas fa-database logo-icon"></i>
+              </div>
+              <div class="icon-text">
+                <h4>SQL</h4>
+              </div>
+             </div>
+
+
+             <div class="php-container">
+              <div class="php-icon">
+                <i class="fab fa-php logo-icon"></i>
+              </div>
+              <div class="icon-text">
+                <h4>PHP</h4>
+              </div>
+             </div>
+
+
+
             </div>
           </div>
         </div>
