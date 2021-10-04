@@ -1,7 +1,14 @@
+<!-- Database connection file -->
+<?php 
+  require __DIR__ . '/inc/connection.php';
+  require __DIR__ . '/inc/functions.php';
+?>
+
 <!-- HTML head -->
 <?php include "./inc/head.php" ?>
 
-  <body>
+<!-- Function to check if there is error text in the form and if there is one to scroll the page directly to the form -->
+  <body onload="checkSpanContent()">
 
 <!-- Navbar -->
 <?php include "./inc/navbar.php" ?>
@@ -125,6 +132,21 @@
         </div>
       </div>
 
+<?php
+// Make sure the form is validated before submitting it 
+        if (isset($_POST['submit'])) {
+          $array = validateForm();
+//Message to user that contains the errors that need to be fixed
+          $message = createMessage($array); 
+          if ($array["passed"]) {
+            $dbSuccess = postContact($GLOBALS["db"], $array["array"]);
+          } 
+          else {
+            $errorArray = $array["array"];
+          }
+        }
+?>
+
 <!-- Contact form container. I have added second container for the purpose of styling and in order to make sure that it works on all screen sizes-->
       <div id="contact" class="contact">
         <div class="contact-2">
@@ -143,19 +165,35 @@
           </div>
 
 <!-- Actual contact form with the fields and placeholders-->
-          <form class="contact-form">
+          <div class="contact-form-div">         
+            <!-- <div id="scroll-js"></div> -->
+          
+          <div class="message">        
+            <span id="messageText">
+              <?php 
+              if (isset($message)) echo $message ?></span>
+          <label id="error-message-email">Make sure you type a valid email address!</label>
+          </div>
+
+          <form action="/index.php" method="post" onsubmit="return emailValidationFunction()" class="contact-form">          
+
             <div class="contact-form-2">
-              <input id="fname" type="text" required="required" placeholder="First Name*">
-              <input id="lname" type="text" required="required" placeholder="Last Name*">
-              <input id="email" type="email" required="required" placeholder="Email Address*">
-              <label id="error-message">Make sure you type a valid email address!</label>
-              <input id="subject" type="text" required="required" placeholder="Subject*">
-              <input id="message" type="text" placeholder="Your text here...">
-              <input id="submit" type="submit" value="Submit">
+              <input id="fname" type="text" name="fname" required placeholder="First Name*" value="<?php if (isset($_POST['fname']) && isset($errorArray)) echo $_POST['fname']?>">
+              <input id="lname" type="text" name="lname" required placeholder="Last Name*" value="<?php if (isset($_POST['lname']) && isset($errorArray)) echo $_POST['lname']?>">
+              <input id="email" type="email" name="email" required placeholder="Email Address*" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
+              <input id="subject" type="text" name="subject" required placeholder="Subject*" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
+              <input id="message" type="text" name="message" required placeholder="Your text here...*" value="<?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?>">
+              <input id="submit-button" type="submit" name="submit" value="Submit">
             </div>
           </form>
         </div>
       </div>
+
+
+
+      </div> 
+
+
 
 <!--Scroll up button  -->
       <div class="scroll-up">
