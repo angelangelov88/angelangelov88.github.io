@@ -31,22 +31,40 @@ typewriter.typeString('<h1>My Name is Angel Angelov</h1>').pauseFor(50).typeStri
 //Email validation
 const email = document.getElementById('email');
 let validation = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-const error = document.getElementById('error-message');
+const errorEmail = document.getElementById('error-message-email');
+const submitButton = document.getElementById("submit-button");
 
 function emailValidationFunction() {
   if (email.value.match(validation)) {
     console.log('Email correct');
-    error.style.display = 'none';
+    errorEmail.style.display = 'none';
     return true;
   } else {
     console.log('error with email');
-    error.style.display = 'block';
+    errorEmail.style.display = 'block';
+    email.style.border = "1px red solid";
     return false;
   }
 }
 
-document.getElementById("submit").addEventListener("click", emailValidationFunction);
+submitButton.addEventListener("click", emailValidationFunction);
 
+
+//Scroll the page to the form on submit
+const spanContent = document.getElementById("error-text");
+
+
+function checkSpanContent() {
+if (!spanContent.innerHTML == "") {
+  setTimeout(function() {
+    window.location = (""+window.location).replace(/#[A-Za-z0-9_-]*$/,'')+"#contact"
+   }
+    , 1);
+
+}
+}
+
+// submitButton.addEventListener("load", checkSpanContent());
 
 
 

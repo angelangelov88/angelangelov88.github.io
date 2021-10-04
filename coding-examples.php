@@ -1,87 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HTML head -->
+<?php include "./inc/head.php" ?>
 
-<!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
-    
-    
-<!-- CSS -->
-    <link rel="stylesheet" href="style/style.css">
-    
-<!-- Poppins font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-<!-- Hamburger menu
-    <link href="dist/hamburgers.css" rel="stylesheet"> -->
-
-<!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
-
-    <title>Coding Examples</title>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-
-
-  </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html">A</a>
-        </div>
-        <div class="navbar-items">
-          <div class="about-me">
-            <a href="about-me.html">About Me</a>
-          </div>
-          <div class="my-portfolio">
-            <a href="index.html#portfolio-link">My Portfolio</a>
-          </div>
-          <div class="coding-examples">
-            <a href="coding-examples.html">Coding Examples</a>
-          </div>
-          <div class="scs">
-            <a href="scs-scheme.html">SCS Scheme</a>
-          </div>
-        </div>
-        <div class="contact-me">
-          <a href="index.html#contact">Contact Me</a>
-        </div>
-        <div class="social-media">
-          <div class="social-links">
-              <div class="gap"></div>
-            <a class="github" href="https://github.com/angelangelov88" target="_blank">
-              <i class="fab fa-github social-logo"></i>
-            </a>
-              <div class="gap"></div>
-            <a class="linkedin" href="https://www.linkedin.com/in/ang-angelov/" target="_blank">
-              <i class="fab fa-linkedin-in social-logo"></i>
-            </a>
-              <div class="gap"></div>
-              <a class="facebook" href="https://www.facebook.com/ang.angelov88" target="_blank">
-                <i class="fab fa-facebook-f social-logo"></i>
-              </a>
-                <div class="gap"></div>
-              <a class="twitter" href="https://twitter.com/Angel69010637" target="_blank">
-                <i class="fab fa-twitter social-logo"></i>
-              </a>
-          </div>
-        </div>
-        </nav>
-        <div class="blocker" onclick="closeNav2()"></div>
-        <div class="hamburger hamburger-about-me" onclick="openNav2()">
-            <div id="menu-lines">
-              <div class="menu-line"></div>
-              <div class="menu-line"></div>
-              <div class="menu-line"></div>	
-            </div>
-            <p class="hamburger-title">MENU</p>							
-        </div>
-    </header>
-    <div class="coding-examples-container">
+<!-- Navbar -->
+<?php include "./inc/navbar2.php" ?>
+
+
+
+<div class="coding-examples-container">
       <div class="coding-examples-hero">
 <!-- Added gradient div to make the background darker and text be easily readable -->
         <div class="gradient-div"></div>
@@ -247,9 +173,11 @@ Example code
       Back To Top
       </a>
     </div>
-      <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-      <script src="js/main.js"></script>
-  
+
+    
+<!-- Scripts -->
+<?php include "./inc/scripts.php" ?>
+
 
   </body>
   </html>

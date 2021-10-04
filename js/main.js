@@ -17,6 +17,7 @@ function openNav() {
     scrollDisappear.style.position = 'initial';
     blocker.style.zIndex = 100;
     blocker.style.display = 'block';
+    blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
     body.style.overflow = 'hidden';
 }
 

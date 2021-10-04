@@ -345,12 +345,42 @@ h1 {
   .contact {
     flex-direction: row;
     margin-top: 2rem;
+    width: 99%;
   }
 }
 @media only screen and (min-width: 1600px) {
   .contact {
-    max-width: 1650px;
     justify-content: space-between;
+  }
+}
+
+.contact-form-div {
+  margin-left: -8px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-form-div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 632px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-form-div {
+    width: 767px;
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-form-div {
+    margin-left: inherit;
+    margin-right: -9px;
+    max-width: none;
+    width: 556px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .contact-form-div {
+    width: 950px;
   }
 }
 
@@ -434,13 +464,13 @@ h1 {
 }
 @media only screen and (min-width: 992px) {
   .contact-form-2 {
-    width: 750px;
+    width: 733px;
     max-width: none;
   }
 }
 @media only screen and (min-width: 1200px) {
   .contact-form-2 {
-    width: 548px;
+    width: 532px;
     margin-top: 1rem;
   }
 }
@@ -560,7 +590,7 @@ h1 {
 }
 @media only screen and (min-width: 992px) {
   #lname {
-    width: 58.2% !important;
+    width: 57.9% !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -579,7 +609,7 @@ h1 {
   padding-bottom: 10.3rem;
 }
 
-#submit {
+#submit-button {
   background-color: white !important;
   color: black;
   border: 2px black solid !important;
@@ -593,9 +623,44 @@ input:focus:invalid {
   border: 1px red solid;
 }
 
-form label {
+#error-message-email {
   color: red;
   display: none;
+  font-weight: 600;
+}
+
+.message {
+  margin-right: 19px;
+  padding-left: 28px;
+}
+@media only screen and (min-width: 768px) {
+  .message {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 623px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .message {
+    max-width: 777px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .message {
+    margin-left: inherit;
+    margin-right: inherit;
+    max-width: inherit;
+    padding-left: 20px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .message {
+    padding-left: 27px;
+  }
+}
+
+#messageText {
+  color: red;
   font-weight: 600;
 }
 
@@ -1266,6 +1331,4 @@ body {
   .content {
     margin-left: 12rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

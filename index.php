@@ -1,85 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Database connection file -->
+<?php 
+  require __DIR__ . '/inc/connection.php';
+  require __DIR__ . '/inc/functions.php';
+?>
 
-<!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>
-    
-<!-- CSS -->
-    <link rel="stylesheet" href="style/style.css">
-    
-<!-- Poppins font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- HTML head -->
+<?php include "./inc/head.php" ?>
 
-<!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+<!-- Function to check if there is error text in the form and if there is one to scroll the page directly to the form -->
+  <body onload="checkSpanContent()">
 
-    <title>Angel's Portfolio</title>
-
-  </head>
-
-  <body>
-    <header>
-
-<!-- SIDE NAVBAR for screens over M-->
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html">A</a>
-        </div>
-        <div class="navbar-items">
-          <div class="about-me">
-            <a href="about-me.html">About Me</a>
-          </div>
-          <div class="my-portfolio">
-            <a href="#portfolio-link">My Portfolio</a>
-          </div>
-          <div class="coding-examples">
-            <a href="coding-examples.html">Coding Examples</a>
-          </div>
-          <div class="scs">
-            <a href="scs-scheme.html">SCS Scheme</a>
-          </div>
-        </div>
-        <div class="contact-me">
-          <a href="#contact">Contact Me</a>
-        </div>
-        <div class="social-media">
-          <div class="social-links">
-              <div class="gap"></div>
-            <a class="github" href="https://github.com/angelangelov88" target="_blank">
-              <i class="fab fa-github social-logo"></i>
-            </a>
-              <div class="gap"></div>
-            <a class="linkedin" href="https://www.linkedin.com/in/ang-angelov/" target="_blank">
-              <i class="fab fa-linkedin-in social-logo"></i>
-            </a>
-              <div class="gap"></div>
-              <a class="facebook" href="https://www.facebook.com/ang.angelov88" target="_blank">
-                <i class="fab fa-facebook-f social-logo"></i>
-              </a>
-                <div class="gap"></div>
-              <a class="twitter" href="https://twitter.com/Angel69010637" target="_blank">
-                <i class="fab fa-twitter social-logo"></i>
-              </a>
-          </div>
-        </div>
-      </nav>
-
-<!-- Small hamburger style navbar for small screens -->
-<div class="blocker" onclick="closeNav()"></div>
-
-      <div class="hamburger" onclick="openNav()">
-          <div id="menu-lines">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>	
-          </div>
-          <p class="hamburger-title">MENU</p>							
-      </div>
-    </header>
+<!-- Navbar -->
+<?php include "./inc/navbar.php" ?>
   
 <!-- Beginning of the main content. I have added content div to wrap everything up-->
     <div class="content">
@@ -200,6 +132,21 @@
         </div>
       </div>
 
+<?php
+// Make sure the form is validated before submitting it 
+        if (isset($_POST['submit'])) {
+          $array = validateForm();
+//Message to user that contains the errors that need to be fixed
+          $message = createMessage($array); 
+          if ($array["passed"]) {
+            $dbSuccess = postContact($GLOBALS["db"], $array["array"]);
+          } 
+          else {
+            $errorArray = $array["array"];
+          }
+        }
+?>
+
 <!-- Contact form container. I have added second container for the purpose of styling and in order to make sure that it works on all screen sizes-->
       <div id="contact" class="contact">
         <div class="contact-2">
@@ -209,32 +156,48 @@
             <div class="get-in-touch-2">
               <h2>Get In Touch</h2>
               <ul class="contact-ul">
-                <li>sed interdum est vel solicitudin bibendum. Proin at accumsan nulla, non facilisis massa.</li>
+                <li>Interested in working together? Fill out the form below with your details or contact me with any questions you may have.</li>
                 <li class="phone"><a href="tel:07553692967">07553692967</a></li>
                 <li class="phone"><a href="mailto:ang.angelov88@gmail.com">ang.angelov88@gmail.com</a></li>
-                <li>Phasellus cursus urna in neque faucibus, eu dapibus magna vehicula. Sed tempus cursus mauris et scelerisque. Pellentesque ornare mi at fringilla egestas.</li> 
+                <li>I'll get back to you as soon as I can. That's a promise!</li> 
               </ul>
             </div>
           </div>
 
 <!-- Actual contact form with the fields and placeholders-->
-          <form class="contact-form">
+          <div class="contact-form-div">         
+            <!-- <div id="scroll-js"></div> -->
+          
+          <div class="message">        
+            <span id="messageText">
+              <?php 
+              if (isset($message)) echo $message ?></span>
+          <label id="error-message-email">Make sure you type a valid email address!</label>
+          </div>
+
+          <form action="/index.php" method="post" onsubmit="return emailValidationFunction()" class="contact-form">          
+
             <div class="contact-form-2">
-              <input id="fname" type="text" required="required" placeholder="First Name*">
-              <input id="lname" type="text" required="required" placeholder="Last Name*">
-              <input id="email" type="email" required="required" placeholder="Email Address*">
-              <label id="error-message">Make sure you type a valid email address!</label>
-              <input id="subject" type="text" required="required" placeholder="Subject*">
-              <input id="message" type="text" placeholder="Your text here...">
-              <input id="submit" type="submit" value="Submit">
+              <input id="fname" type="text" name="fname" required placeholder="First Name*" value="<?php if (isset($_POST['fname']) && isset($errorArray)) echo $_POST['fname']?>">
+              <input id="lname" type="text" name="lname" required placeholder="Last Name*" value="<?php if (isset($_POST['lname']) && isset($errorArray)) echo $_POST['lname']?>">
+              <input id="email" type="email" name="email" required placeholder="Email Address*" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
+              <input id="subject" type="text" name="subject" required placeholder="Subject*" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
+              <input id="message" type="text" name="message" required placeholder="Your text here...*" value="<?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?>">
+              <input id="submit-button" type="submit" name="submit" value="Submit">
             </div>
           </form>
         </div>
       </div>
 
+
+
+      </div> 
+
+
+
 <!--Scroll up button  -->
       <div class="scroll-up">
-        <a href="index.html" class="scroll-up-text">
+        <a href="#" class="scroll-up-text">
         <i class="fas fa-chevron-up"></i>
         <br>
         Back To Top
@@ -242,10 +205,12 @@
       </div>
     </div>  
 
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-    <script src="js/core.js"></script>
-    <script src="js/index-page.js"></script>
-    <script src="js/main.js"></script>
+
+<!-- Scripts -->
+
+<?php include "./inc/scripts.php" ?>
+<script src="js/index-page.js"></script>
+
 
   </body>
 </html>
