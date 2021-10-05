@@ -28,26 +28,52 @@ typewriter.typeString('<h1>My Name is Angel Angelov</h1>').pauseFor(50).typeStri
 })();
 
 
-//Email validation
+//Form validation
 const email = document.getElementById('email');
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const subject = document.getElementById('subject');
+const message = document.getElementById('message');
+
 let validation = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-const errorEmail = document.getElementById('error-message-email');
+const errorForm = document.getElementById('error-message-form');
 const submitButton = document.getElementById("submit-button");
 
-function emailValidationFunction() {
-  if (email.value.match(validation)) {
-    console.log('Email correct');
-    errorEmail.style.display = 'none';
-    return true;
-  } else {
+function validationFunction() {
+  if (!email.value.match(validation)) {
     console.log('error with email');
-    errorEmail.style.display = 'block';
+    errorForm.style.display = 'block';
     email.style.border = "1px red solid";
     return false;
+  } else if (fname.value.length == 0) {
+    console.log('error with fname');
+    errorForm.style.display = 'block';
+    fname.style.border = "1px red solid";
+    return false;
+   } else if (lname.value.length == 0) {
+    console.log('error with lname');
+    errorForm.style.display = 'block';
+    lname.style.border = "1px red solid";
+    return false;
+  } else if (subject.value.length == 0) {
+    console.log('error with subject');
+    errorForm.style.display = 'block';
+    subject.style.border = "1px red solid";
+    return false;
+  } else if (message.value.length == 0) {
+    console.log('error with message');
+    errorForm.style.display = 'block';
+    message.style.border = "1px red solid";
+    return false;
+  }
+  else {
+    console.log('form correct');
+    errorForm.style.display = 'none';
+    return true;
   }
 }
 
-submitButton.addEventListener("click", emailValidationFunction);
+submitButton.addEventListener("click", validationFunction);
 
 
 //Scroll the page to the form on submit

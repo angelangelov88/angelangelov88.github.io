@@ -3,7 +3,7 @@
 $dsn = "mysql";
 $host = "localhost";
 $port = 3306;
-$dbname = "angelang_contact-page-portfolio";
+$dbname = "angelang_portfolio";
 $user = "angelang_user";
 $pass = "l633,mF7Ysh&";
  

@@ -1,5 +1,9 @@
 <?php
 
+//Prevent XSS input
+$_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+
 //Add user input to the database
 function postContact($db, $contactArray) {
   try {
@@ -88,4 +92,23 @@ function createMessage($array) {
     $message .= implode(", ",$array["array"]);
   }
   return $message;
+}
+
+
+//Function to pull the projects data from the database
+function pullProjects($db) {
+  try {
+    $query = "
+    SELECT title, link, project_files_link, image_link, text 
+    FROM projects Order by date 
+    LIMIT 6;
+    ";
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $results;
+  } catch (Exception $e) {
+    echo "Unable to connect - ";
+    echo $e->getMessage();
+}
 }

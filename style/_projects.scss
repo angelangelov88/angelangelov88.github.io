@@ -63,47 +63,6 @@
 }
 }
 
-//Adjusting the images of the project, so that they look good
-.photo-reflection {
-  position: relative;
-  left: 0;
-  @media only screen and (min-width: $break-l) {
-    left: -7rem;
-}
-}
-
-.photo-axure {
-  position: relative;
-  left: 0;
-  @media only screen and (min-width: $break-l) {
-    left: -236px;
-}
-  @media only screen and (min-width: $break-xl) {
-    left: -8rem;
-}
-}
-
-.photo-portfolio {
-  position: relative;  
-  left: 0;
-  @media only screen and (min-width: $break-l) {
-    left: -158px;
-}
-  @media only screen and (min-width: $break-xl) {
-    left: -7rem;
-}
-}
-
-.photo-reflection-js {
-  position: relative;
-  left: 0;
-  @media only screen and (min-width: $break-l) {
-    left: -119px;
-}
-  @media only screen and (min-width: $break-xl) {
-    left: -4.5rem;
-}
-}
 
 
 .project-title{
@@ -170,6 +129,9 @@
     width: 600px;
     height: 300px;
 }
+  @media only screen and (min-width: $break-xl) {
+    margin-left: -70px;
+}
 }
 
 .photo-project:hover {
@@ -179,6 +141,48 @@
   transition: 0.4s;
 }
 }
+
+//Adjusting the images of the project, so that they look good
+// .photo-reflection {
+//   position: relative;
+//   left: 0;
+//   @media only screen and (min-width: $break-l) {
+//     left: -7rem;
+// }
+// }
+
+// .photo-axure {
+//   position: relative;
+//   left: 0;
+//   @media only screen and (min-width: $break-l) {
+//     left: -236px;
+// }
+//   @media only screen and (min-width: $break-xl) {
+//     left: -8rem;
+// }
+// }
+
+// .photo-portfolio {
+//   position: relative;  
+//   left: 0;
+//   @media only screen and (min-width: $break-l) {
+//     left: -158px;
+// }
+//   @media only screen and (min-width: $break-xl) {
+//     left: -7rem;
+// }
+// }
+
+// .photo-reflection-js {
+//   position: relative;
+//   left: 0;
+//   @media only screen and (min-width: $break-l) {
+//     left: -119px;
+// }
+//   @media only screen and (min-width: $break-xl) {
+//     left: -4.5rem;
+// }
+// }
 
 .btn-project {
   display: none;

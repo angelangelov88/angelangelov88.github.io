@@ -67,7 +67,7 @@
 
              <div class="jquery-container">
               <div class="jquery-icon">
-                <img src="" class="logo-icon">
+                <img src="./images/jquery.png" class="logo-icon">
               </div>
               <div class="icon-text">
                 <h4>jQuery</h4>
@@ -93,7 +93,23 @@
               </div>
              </div>
 
+             <!-- <div class="wordpress-container">
+              <div class="wordpress-icon">
+                <i class="fab fa-wordpress logo-icon"></i>
+              </div>
+              <div class="icon-text">
+                <h4>Wordpress</h4>
+              </div>
+             </div> -->
 
+             <!-- <div class="react-container">
+              <div class="react-icon">
+                <i class="fab fa-react logo-icon"></i>
+              </div>
+              <div class="icon-text">
+                <h4>React</h4>
+              </div>
+             </div> -->
 
             </div>
           </div>

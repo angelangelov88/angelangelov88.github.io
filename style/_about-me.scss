@@ -113,7 +113,9 @@
 .js-icon,
 .jquery-icon,
 .sql-icon,
-.php-icon {
+.php-icon,
+.wordpress-icon,
+.react-icon {
   content: "";
     background-color: $green-brand;
     width: 100px;
@@ -126,9 +128,11 @@
     margin: 7px;
 }
 
-.axure-icon img {
+.axure-icon img,
+.jquery-icon img {
   width: 50%;
 }
+
 .sass-icon:hover,
 .html-icon:hover,
 .css-icon:hover,
@@ -136,6 +140,8 @@
 .js-icon:hover,
 .jquery-icon:hover,
 .sql-icon:hover,
-.php-icon:hover {
+.php-icon:hover,
+.wordpress-icon:hover,
+.react-icon:hover {
   transform: scale(1.2);
  }

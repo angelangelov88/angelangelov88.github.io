@@ -136,61 +136,6 @@ h1 {
   }
 }
 
-.photo-reflection {
-  position: relative;
-  left: 0;
-}
-@media only screen and (min-width: 992px) {
-  .photo-reflection {
-    left: -7rem;
-  }
-}
-
-.photo-axure {
-  position: relative;
-  left: 0;
-}
-@media only screen and (min-width: 992px) {
-  .photo-axure {
-    left: -236px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .photo-axure {
-    left: -8rem;
-  }
-}
-
-.photo-portfolio {
-  position: relative;
-  left: 0;
-}
-@media only screen and (min-width: 992px) {
-  .photo-portfolio {
-    left: -158px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .photo-portfolio {
-    left: -7rem;
-  }
-}
-
-.photo-reflection-js {
-  position: relative;
-  left: 0;
-}
-@media only screen and (min-width: 992px) {
-  .photo-reflection-js {
-    left: -119px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .photo-reflection-js {
-    left: -4.5rem;
-  }
-}
-
 .project-title {
   color: #4CAF50;
   text-decoration: none;
@@ -252,6 +197,11 @@ h1 {
   .photo-project {
     width: 600px;
     height: 300px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .photo-project {
+    margin-left: -70px;
   }
 }
 
@@ -623,7 +573,7 @@ input:focus:invalid {
   border: 1px red solid;
 }
 
-#error-message-email {
+#error-message-form {
   color: red;
   display: none;
   font-weight: 600;
@@ -1025,7 +975,9 @@ input:focus:invalid {
 .js-icon,
 .jquery-icon,
 .sql-icon,
-.php-icon {
+.php-icon,
+.wordpress-icon,
+.react-icon {
   content: "";
   background-color: #4CAF50;
   width: 100px;
@@ -1038,7 +990,8 @@ input:focus:invalid {
   margin: 7px;
 }
 
-.axure-icon img {
+.axure-icon img,
+.jquery-icon img {
   width: 50%;
 }
 
@@ -1049,7 +1002,9 @@ input:focus:invalid {
 .js-icon:hover,
 .jquery-icon:hover,
 .sql-icon:hover,
-.php-icon:hover {
+.php-icon:hover,
+.wordpress-icon:hover,
+.react-icon:hover {
   transform: scale(1.2);
 }
 
