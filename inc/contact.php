@@ -6,6 +6,7 @@
           $message = createMessage($array); 
           if ($array["passed"]) {
             $dbSuccess = postContact($GLOBALS["db"], $array["array"]);
+            sendEmail();
           } 
           else {
             $errorArray = $array["array"];

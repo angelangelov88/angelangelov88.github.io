@@ -112,3 +112,52 @@ function pullProjects($db) {
     echo $e->getMessage();
 }
 }
+
+//Sent email on form submission
+//PHP mailer import classes
+use PHPMailer\PHPMailer\PHPMailer;
+
+//Composer autoloader
+require_once "vendor/autoload.php";
+
+
+
+
+function sendEmail() {
+//PHPMailer Object
+$mail = new PHPMailer(true); //Argument true in constructor enables exceptions
+
+try {
+//Configure the server settings
+$mail->SMTPDebug = false;                   // Enable verbose debug output
+$mail->isSMTP();                        // Set mailer to use SMTP
+$mail->Host       = 'smtp.sendgrid.net;';    // Specify main SMTP server
+$mail->SMTPAuth   = true;               // Enable SMTP authentication
+$mail->Username   = 'apikey';     // SMTP username
+$mail->Password   = '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';         // SMTP password
+$mail->SMTPSecure = 'tls';              // Enable TLS encryption, 'ssl' also accepted
+$mail->Port       = 587;                // TCP port to connect to
+
+
+$mail->setFrom('angel.angelov@netmatters-scs.com', 'Website form feedback');           // Set sender of the mail
+$mail->addAddress('angel.levski@gmail.com');           // Add a recipient
+
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$visitor_email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+$mail->isHTML(true);                                  
+$mail->Subject = "Form submission on angel-angelov.netmatters-scs.co.uk";
+$mail->Body    = '<h1>You have received an email through the form on your website.</h1> <br><h2>Message contents: </h2><br><h3>From: </h3>' . $fname . " " . $lname . " - " . $visitor_email . "<br><h3>Subject: </h3>" . $subject . "<br><h3>Message: </h3>" . $message;
+
+$mail->send();
+//echo 'Message has been sent';
+} catch (\Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+
+
+}
+
