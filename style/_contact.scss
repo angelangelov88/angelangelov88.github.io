@@ -9,13 +9,10 @@
   @media only screen and (min-width: $break-xl) {
     flex-direction: row;
     margin-top: 2rem;
-    
     width: 99%;
 }
   @media only screen and (min-width: $break-xxl) {
-    //max-width: 1650px;
     justify-content: space-between;
-
 }
 }
 
@@ -25,22 +22,20 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 632px;
-  }
+}
   @media only screen and (min-width: $break-l) {
     width: 767px;
     max-width: none;
-
-  }
+}
   @media only screen and (min-width: $break-xl) {
     margin-left: inherit;
     margin-right: -9px;
     max-width: none;
     width: 556px;
-
-  }
+}
   @media only screen and (min-width: $break-xxl) {
     width: 950px;
-  }
+}
 }
 
 //I have added second container in order to fix the position of the elements for all screen sizes
@@ -158,8 +153,11 @@
 
 .phone a{
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
+  @media only screen and (min-width: $break-xs) {
+    font-size: 1.2rem;
+}
   @media only screen and (min-width: $break-m) {
     font-size: 1.3rem;
 }
@@ -212,7 +210,6 @@
 }
 
 #lname {  
-  //width: 100%;
   margin-right: 0;
   @media only screen and (min-width: $break-m) {
     width: 54.8% !important;  
@@ -242,6 +239,7 @@
   width: 130px !important;
   height: 40px;
   padding-right: 12px;
+  cursor: pointer;
 }
 
 
@@ -272,11 +270,9 @@ input:focus:invalid {
     max-width: inherit;
     padding-left: 20px;
 }
-@media only screen and (min-width: $break-xxl) {
-  padding-left: 27px;
-
+  @media only screen and (min-width: $break-xxl) {
+    padding-left: 27px;
 }
-
 }
 
 #messageText {
@@ -284,23 +280,23 @@ input:focus:invalid {
   font-weight: 600;
 }
 
-//Added this div to make the page show up on the form on load if there is a message to display
-// #scroll-js {
-//   position: absolute;
-//   top: 166rem;
-//   @media only screen and (min-width: $break-s) {
-//     top: 190rem;
-// }
-//   @media only screen and (min-width: $break-m) {
-//     top: 215rem;
-// }
-//   @media only screen and (min-width: $break-l) {
-//     top: 80rem;
-// }
-//   @media only screen and (min-width: $break-xl) {
-//     top: 90rem;
-// }
-// }
+.g-recaptcha {
+  margin: 8px;
+  transform: scale(0.78);
+  transform-origin: 0 0;
+  @media only screen and (min-width: $break-xs) {
+    transform: scale(1);
+}
+  @media only screen and (min-width: $break-l) {
+    margin-left: 0;
+    margin-right: 0;
+}
+}
+
+.rc-anchor-normal{
+  width: 800px;
+}
+
 
 
 

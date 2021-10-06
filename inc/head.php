@@ -17,6 +17,9 @@
 <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
 
+<!-- reCAPTCHA widget -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <title>Angel's Portfolio</title>
 
   </head>

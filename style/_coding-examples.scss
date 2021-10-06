@@ -1,8 +1,13 @@
 //The image container
 .coding-examples-container {
-  //border: springgreen 2px solid;
+  //margin-right: -20px;
+  @media only screen and (min-width: $break-xs) {
+    //margin-right: 0px;
+
+  }
   @media only screen and (min-width: $break-m) {
     margin-left: 12rem;
+    margin-right: 0;
 }
 }
 
@@ -17,8 +22,6 @@
   left: 0%;
 	height: 42vh;
   width: 100%;
-  @media only screen and (min-width: $break-s) {
-}
 }
 
 //Gradient div
@@ -42,7 +45,6 @@
     width: auto;
 }
   @media only screen and (min-width: $break-s) {
-    //top: 22%;
     width: 64%;
     @media screen and (-ms-high-contrast: none) {
       width: auto;
@@ -83,11 +85,9 @@
 .coding-example {
   //border: 2px hotpink solid;
   margin: 2rem;
-  width: 100%;
+  //width: 100%;
   @media only screen and (min-width: $break-s) {
-    width: 100%;
-}
-  @media only screen and (min-width: $break-xxl) {
+    //width: 100%;
 }
 }
 
@@ -108,14 +108,13 @@
 //The text I have added to each example with explanation. I added code for all of them but then had to add some more for each separately as they have different length
 .coding-text {
   float: right;
-  @media only screen and (min-width: $break-l) {
+  @media only screen and (min-width: $break-xl) {
     margin-top: 0 !important;
     margin-left: 36rem !important;
 }
 }
 
 .coding-text-1 {
-  //border: aqua 2px solid;
   margin-left: 8px;
   margin-top: 11rem;
   @media only screen and (min-width: $break-s) {
@@ -144,10 +143,6 @@
   float: left;
   margin-left: 10px;
   border-collapse: collapse;
-  @media only screen and (min-width: $break-l) {
-    margin-top: 0 !important;
-    margin-left: 36rem !important;
-}
 }
 
 td, th {
@@ -161,19 +156,36 @@ tr:nth-child(even) {
   color: white;
 }
 
+tbody,
+tr {
+  font-size: 10px;
+  @media only screen and (min-width: $break-xs) {
+    font-size: 1rem;
+}
+}
+
 .coding-text-4 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 18rem;
+  @media only screen and (min-width: $break-s) {
+    margin-top: 28rem;
+}
 }
 
 .coding-text-5 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 15rem;
+  @media only screen and (min-width: $break-s) {
+    margin-top: 23rem;
+}
 }
 
 .coding-text-6 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 22rem;
+  @media only screen and (min-width: $break-s) {
+    margin-top: 35rem;
+}
 }
 
 //I added a snippet of the code so that users can copy it
@@ -185,7 +197,7 @@ tr:nth-child(even) {
   @media only screen and (min-width: $break-s) {
     font-size: large;
 }  
-  @media only screen and (min-width: $break-l) {
+  @media only screen and (min-width: $break-xl) {
     max-width: 560px;
 }
 }

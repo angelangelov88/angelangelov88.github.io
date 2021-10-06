@@ -13,14 +13,14 @@
       <div id="about-me-text-container">
 
       <div class="about-me-text">
-        <h5>My name is Angel. I started my web development journey in April 2021 and have completed a few projects since. I have worked with HTML and CSS (SASS). My first project was to clone the <a href="https://www.netmatters.co.uk/" class="about-me-links">Netmatters' website</a> using only HTML and CSS. 
+        <h5>My name is Angel and I am a Cambridge based web developer. I started my web development journey in February 2021 after a Covid related redundancy and have completed a few projects since. I have worked with HTML and CSS (SASS), JavaScript, jQuery, SQL and PHP. My first project was to clone the <a href="https://www.netmatters.co.uk/" class="about-me-links">Netmatters' website</a>. I have done that at stages using the skills I've just learnt.
         </h5>
         <a href="index.php#portfolio-link" class="about-me-links">
         <h4>Netmatters Website Task</h4></a>
-        <h5>My second assignment was to create an online shopping website with all the tools needed for great user experience, such as basket, add/remove products, calculation of the total and subtotal, etc. It was implemented using Axure prototype.
-        </h5>
-        <a href="index.php#portfolio-link" class="about-me-links"><h4>Axure Prototype Task</h4></a>
-        <h5>I have started my journey quite recently but have gained invaluable knowledge and experience in a short period of time. I am interested to continue learning and improve my skills.
+        <h5>I have started my journey quite recently but have gained invaluable knowledge and experience in a short period of time. I am interested to continue learning and improving my skills. After obtaining a degree in Intenration Tourism Management and working for more than 5 years in the travel and tourism industry, I got the opportunity to start something new. I started this course in order to turn my career to a new direction. I have always been quite interested in technology and have been fixing friends and family computers since I was a kid. 
+        <br>
+        <br>
+        When I am not coding I will most probably be watching football or for a walk in the nature with my dog. I also love traveling and exploring the World and new cultures and places. 
         </h5>
         <div class="about-me-icons">
           <div class="icons-container">

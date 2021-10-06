@@ -62,6 +62,7 @@
 
 <?php include "./inc/scripts.php" ?>
 <script src="js/index-page.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
 
   </body>

@@ -38,6 +38,7 @@
   top: 0%;
   z-index: 101;
   margin: 10px;
+  cursor: pointer;
   @media only screen and (min-width: $break-m) {
     display: none;
 }

@@ -469,8 +469,13 @@ h1 {
 
 .phone a {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+@media only screen and (min-width: 575px) {
+  .phone a {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .phone a {
@@ -566,6 +571,7 @@ h1 {
   width: 130px !important;
   height: 40px;
   padding-right: 12px;
+  cursor: pointer;
 }
 
 input:focus:invalid {
@@ -613,6 +619,27 @@ input:focus:invalid {
   font-weight: 600;
 }
 
+.g-recaptcha {
+  margin: 8px;
+  transform: scale(0.78);
+  transform-origin: 0 0;
+}
+@media only screen and (min-width: 575px) {
+  .g-recaptcha {
+    transform: scale(1);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .g-recaptcha {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.rc-anchor-normal {
+  width: 800px;
+}
+
 .navbar {
   display: inline-block;
   position: fixed;
@@ -652,6 +679,7 @@ input:focus:invalid {
   top: 0%;
   z-index: 101;
   margin: 10px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .hamburger {
@@ -1010,6 +1038,7 @@ input:focus:invalid {
 @media only screen and (min-width: 768px) {
   .coding-examples-container {
     margin-left: 12rem;
+    margin-right: 0;
   }
 }
 
@@ -1024,6 +1053,7 @@ input:focus:invalid {
   height: 42vh;
   width: 100%;
 }
+
 .gradient-div {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   position: absolute;
@@ -1090,12 +1120,6 @@ input:focus:invalid {
 
 .coding-example {
   margin: 2rem;
-  width: 100%;
-}
-@media only screen and (min-width: 576px) {
-  .coding-example {
-    width: 100%;
-  }
 }
 .scroll-up-examples {
   max-width: 1650px;
@@ -1115,7 +1139,7 @@ input:focus:invalid {
 .coding-text {
   float: right;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .coding-text {
     margin-top: 0 !important;
     margin-left: 36rem !important;
@@ -1157,12 +1181,6 @@ input:focus:invalid {
   margin-left: 10px;
   border-collapse: collapse;
 }
-@media only screen and (min-width: 992px) {
-  .example-3-table {
-    margin-top: 0 !important;
-    margin-left: 36rem !important;
-  }
-}
 
 td, th {
   border: 1px solid #dddddd;
@@ -1175,19 +1193,45 @@ tr:nth-child(even) {
   color: white;
 }
 
+tbody,
+tr {
+  font-size: 10px;
+}
+@media only screen and (min-width: 575px) {
+  tbody,
+tr {
+    font-size: 1rem;
+  }
+}
+
 .coding-text-4 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 18rem;
+}
+@media only screen and (min-width: 576px) {
+  .coding-text-4 {
+    margin-top: 28rem;
+  }
 }
 
 .coding-text-5 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 15rem;
+}
+@media only screen and (min-width: 576px) {
+  .coding-text-5 {
+    margin-top: 23rem;
+  }
 }
 
 .coding-text-6 {
   margin-left: 10px;
-  margin-top: 10rem;
+  margin-top: 22rem;
+}
+@media only screen and (min-width: 576px) {
+  .coding-text-6 {
+    margin-top: 35rem;
+  }
 }
 
 .coding-snippet {
@@ -1200,7 +1244,7 @@ tr:nth-child(even) {
     font-size: large;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .coding-snippet {
     max-width: 560px;
   }

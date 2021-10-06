@@ -6,6 +6,7 @@
           $message = createMessage($array); 
           if ($array["passed"]) {
             $dbSuccess = postContact($GLOBALS["db"], $array["array"]);
+//Function that sends email on submit
             sendEmail();
           } 
           else {
@@ -50,6 +51,8 @@
               <input id="email" type="email" name="email" required placeholder="Email Address*" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
               <input id="subject" type="text" name="subject" required placeholder="Subject*" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
               <input id="message" type="text" name="message" required placeholder="Your text here...*" value="<?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?>">
+              <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LepxbAcAAAAADFzX2tQQ_tAxZCrJ5zmzAytXnBJ"></div>
+
               <input type="submit" name="submit" id="submit-button" value="Submit">
             </div>
           </form>

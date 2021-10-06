@@ -36,10 +36,6 @@
               <a class="facebook" href="https://www.facebook.com/ang.angelov88" target="_blank">
                 <i class="fab fa-facebook-f social-logo"></i>
               </a>
-                <div class="gap"></div>
-              <a class="twitter" href="https://twitter.com/Angel69010637" target="_blank">
-                <i class="fab fa-twitter social-logo"></i>
-              </a>
           </div>
         </div>
       </nav>

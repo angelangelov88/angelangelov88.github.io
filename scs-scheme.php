@@ -27,7 +27,7 @@
           <h3>Treehouse</h3>
           <h5>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.
           </h5>
-          <h5>Total Score: 7910 points</h5>
+          <h5>Total Score: 18442 points</h5>
           <h5><a href="https://teamtreehouse.com/angelangelov3" target="_blank">Profile: Angel Angelov</a></h5>
         <hr>
         </div>
