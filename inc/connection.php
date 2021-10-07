@@ -1,11 +1,17 @@
-<?php  
+<?php
 
-$dsn = "mysql";
-$host = "localhost";
-$port = 3306;
-$dbname = "angelang_portfolio";
-$user = "angelang_user";
-$pass = "l633,mF7Ysh&";
+
+require __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+
+$dsn = $_ENV['DB_DSN'];
+$host = $_ENV['DB_HOST'];
+$port = $_ENV['DB_PORT'];
+$dbname = $_ENV['DB_NAME'];
+$user = $_ENV['DB_USER'];
+$pass = $_ENV['DB_PASS'];
  
 try {
     $db = new PDO("$dsn:host=$host;port=$port;dbname=$dbname", $user, $pass);

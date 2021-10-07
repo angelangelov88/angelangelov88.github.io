@@ -20,6 +20,11 @@
 <!-- reCAPTCHA widget -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+<!-- Composer autoloader -->
+<?php
+require __DIR__ . '/../vendor/autoload.php';
+?>
+
     <title>Angel's Portfolio</title>
 
   </head>

@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
+
 // Make sure the form is validated before submitting it 
         if (isset($_POST['submit'])) {
           $array = validateForm();
@@ -51,15 +53,14 @@
               <input id="email" type="email" name="email" required placeholder="Email Address*" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
               <input id="subject" type="text" name="subject" required placeholder="Subject*" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
               <input id="message" type="text" name="message" required placeholder="Your text here...*" value="<?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?>">
-              <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LepxbAcAAAAADFzX2tQQ_tAxZCrJ5zmzAytXnBJ"></div>
+              <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="<?php echo $_ENV['SITE_KEY']; ?>"></div>
 
               <input type="submit" name="submit" id="submit-button" value="Submit">
             </div>
           </form>
         </div>
       </div>
-
-
+  
 
       </div> 
 

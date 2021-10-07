@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
+
 //Prevent XSS input
 $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
@@ -66,7 +68,7 @@ function validateForm() {
     $errorArray[] = "reCAPTCHA";
   }
   
-  $secretKey = "6LepxbAcAAAAAKdJCN3jbNWoYHlY6wB-frfNZoXE";
+  $secretKey = $_ENV['SECRET_KEY'];
   $ip = $_SERVER['REMOTE_ADDR'];
   // post request to server
   $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
@@ -148,18 +150,18 @@ $mail = new PHPMailer(true); //Argument true in constructor enables exceptions
 
 try {
 //Configure the server settings
-$mail->SMTPDebug = false;                   // Enable verbose debug output
+$mail->SMTPDebug = getenv('SMTP_DEBUG');                   // Enable verbose debug output
 $mail->isSMTP();                        // Set mailer to use SMTP
-$mail->Host       = 'smtp-relay.sendinblue.com;';    // Specify main SMTP server
-$mail->SMTPAuth   = true;               // Enable SMTP authentication
-$mail->Username   = 'angel.angelov@netmatters-scs.com';     // SMTP username
-$mail->Password   = 'QNmrVnCA6gWXJbkx';         // SMTP password
-$mail->SMTPSecure = 'tls';              // Enable TLS encryption, 'ssl' also accepted
-$mail->Port       = 587;                // TCP port to connect to
+$mail->Host       = getenv('SMTP_HOST');    // Specify main SMTP server
+$mail->SMTPAuth   = getenv('SMTP_AUTH');               // Enable SMTP authentication
+$mail->Username   = getenv('SMTP_USERNAME');     // SMTP username
+$mail->Password   = getenv('SMTP_PASSWORD');         // SMTP password
+$mail->SMTPSecure = getenv('SMTP_SECURE');              // Enable TLS encryption, 'ssl' also accepted
+$mail->Port       = getenv('SMTP_PORT');                // TCP port to connect to
 
 
-$mail->setFrom('angel.angelov@netmatters-scs.com', 'Website form feedback');           // Set sender of the mail
-$mail->addAddress('angel.levski@gmail.com');           // Add a recipient
+$mail->setFrom(getenv('MAILFROM_EMAIL'), getenv('MAILFROM_NAME'));           // Set sender of the mail
+$mail->addAddress(getenv('MAILTO_EMAIL'));           // Add a recipient
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];

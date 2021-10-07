@@ -45,8 +45,6 @@
 <?php include "./inc/contact.php" ?>
 
 
-
-
 <!--Scroll up button  -->
       <div class="scroll-up">
         <a href="#" class="scroll-up-text">
