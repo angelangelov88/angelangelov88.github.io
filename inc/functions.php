@@ -150,18 +150,18 @@ $mail = new PHPMailer(true); //Argument true in constructor enables exceptions
 
 try {
 //Configure the server settings
-$mail->SMTPDebug = getenv('SMTP_DEBUG');                   // Enable verbose debug output
+$mail->SMTPDebug = $_ENV['SMTP_DEBUG'];                   // Enable verbose debug output
 $mail->isSMTP();                        // Set mailer to use SMTP
-$mail->Host       = getenv('SMTP_HOST');    // Specify main SMTP server
-$mail->SMTPAuth   = getenv('SMTP_AUTH');               // Enable SMTP authentication
-$mail->Username   = getenv('SMTP_USERNAME');     // SMTP username
-$mail->Password   = getenv('SMTP_PASSWORD');         // SMTP password
-$mail->SMTPSecure = getenv('SMTP_SECURE');              // Enable TLS encryption, 'ssl' also accepted
-$mail->Port       = getenv('SMTP_PORT');                // TCP port to connect to
+$mail->Host       = $_ENV['SMTP_HOST'];    // Specify main SMTP server
+$mail->SMTPAuth   = $_ENV['SMTP_AUTH'];               // Enable SMTP authentication
+$mail->Username   = $_ENV['SMTP_USERNAME'];     // SMTP username
+$mail->Password   = $_ENV['SMTP_PASSWORD'];         // SMTP password
+$mail->SMTPSecure = $_ENV['SMTP_SECURE'];              // Enable TLS encryption, 'ssl' also accepted
+$mail->Port       = $_ENV['SMTP_PORT'];                // TCP port to connect to
 
 
-$mail->setFrom(getenv('MAILFROM_EMAIL'), getenv('MAILFROM_NAME'));           // Set sender of the mail
-$mail->addAddress(getenv('MAILTO_EMAIL'));           // Add a recipient
+$mail->setFrom($_ENV['MAILFROM_EMAIL'], $_ENV['MAILFROM_NAME']);           // Set sender of the mail
+$mail->addAddress($_ENV['MAILTO_EMAIL']);           // Add a recipient
 
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
@@ -176,7 +176,7 @@ $mail->Body    = '<h1>You have received an email through the form on your websit
 $mail->send();
 // echo 'Message has been sent';
 } catch (\Exception $e) {
-    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
 
