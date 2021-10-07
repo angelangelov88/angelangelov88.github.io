@@ -174,7 +174,7 @@ $mail->Subject = "Form submission on angel-angelov.netmatters-scs.co.uk";
 $mail->Body    = '<h1>You have received an email through the form on your website.</h1> <br><h2>Message contents: </h2><br><h3>From: </h3>' . $fname . " " . $lname . " - " . $visitor_email . "<br><h3>Subject: </h3>" . $subject . "<br><h3>Message: </h3>" . $message;
 
 $mail->send();
-// echo 'Message has been sent';
+//echo 'Message has been sent';
 } catch (\Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

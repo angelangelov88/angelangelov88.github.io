@@ -24,7 +24,7 @@
           <!-- <h1>My Name is Angel Angelov</h1>
           <h2>I'm a Web Developer</h2> -->
           <div id="app"></div>
-
+            <img src="images/share-imagae.jpg" style="display: none;">
         </div>
 <!-- Scroll down text and arrow -->
         <div class="scroll">
