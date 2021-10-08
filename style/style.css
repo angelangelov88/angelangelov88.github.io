@@ -50,6 +50,7 @@
 .scroll-up {
   max-width: 1650px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .scroll-up-text:visited {
@@ -170,7 +171,7 @@ h1 {
 
 .project-title:hover {
   text-decoration: underline;
-  color: #6ec071;
+  color: #3d8b40;
 }
 
 .project-details {
@@ -178,7 +179,7 @@ h1 {
   position: absolute;
   left: 1rem;
   top: 23rem;
-  color: black;
+  color: #4CAF50;
 }
 @media only screen and (min-width: 992px) {
   .project-details {
@@ -186,7 +187,8 @@ h1 {
   }
 }
 .project-details:hover {
-  color: gray;
+  color: #3d8b40;
+  text-decoration: underline;
 }
 
 .photo-project {
@@ -208,7 +210,6 @@ h1 {
 @media only screen and (min-width: 992px) {
   .photo-project:hover {
     transform: scale(1.1);
-    opacity: 0.7;
     transition: 0.4s;
   }
 }
@@ -468,7 +469,7 @@ h1 {
 }
 
 .phone a {
-  color: black;
+  color: #4CAF50;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -484,7 +485,7 @@ h1 {
 }
 
 .phone a:hover {
-  color: #4CAF50;
+  color: #3d8b40;
   text-decoration: underline;
 }
 
@@ -493,6 +494,7 @@ h1 {
   border: none;
   border-radius: 5px;
   padding-left: 10px;
+  padding-right: 10px;
   height: 30px;
   margin: 0.3rem auto;
   width: 93%;
@@ -501,7 +503,7 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   .contact-form input {
-    width: 96%;
+    width: 95%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -540,27 +542,27 @@ h1 {
 }
 
 #lname {
-  margin-right: 0;
+  margin-right: -25px;
 }
 @media only screen and (min-width: 768px) {
   #lname {
-    width: 54.8% !important;
+    width: 52.5% !important;
     margin-left: 0 !important;
   }
 }
 @media only screen and (min-width: 992px) {
   #lname {
-    width: 57.9% !important;
+    width: 56.8% !important;
   }
 }
 @media only screen and (min-width: 1200px) {
   #lname {
-    width: 55.5% !important;
+    width: 54% !important;
   }
 }
 @media only screen and (min-width: 1600px) {
   #lname {
-    width: 58.5% !important;
+    width: 57.7% !important;
   }
 }
 
@@ -570,6 +572,7 @@ h1 {
   border: none;
   border-radius: 5px;
   padding-left: 9px;
+  padding-right: 9px;
   padding-top: 8px;
   height: 30px;
   margin: 0.3rem auto;
@@ -581,7 +584,7 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   #message {
-    width: 96%;
+    width: 95%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -602,14 +605,15 @@ h1 {
 }
 
 #submit-button {
-  background-color: white !important;
-  color: black;
-  border: 2px black solid !important;
-  font-weight: 600;
+  background-color: #4CAF50 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 17px;
   width: 130px !important;
   height: 40px;
-  padding-right: 12px;
+  padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 input:focus:invalid {
@@ -627,7 +631,7 @@ input:focus:invalid {
 
 .message {
   margin-right: 19px;
-  padding-left: 70px;
+  padding-left: 28px;
 }
 @media only screen and (min-width: 768px) {
   .message {
@@ -713,8 +717,8 @@ input:focus:invalid {
 
 .hamburger {
   background-color: white;
-  height: 42px;
-  width: 40px;
+  height: 62px;
+  width: 60px;
   border: 1px #4CAF50 solid;
   border-radius: 4px;
   position: fixed;
@@ -730,7 +734,7 @@ input:focus:invalid {
 }
 
 #menu-lines {
-  padding: 5px 0 4px 3px;
+  padding: 6px 0 6px 4px;
 }
 @media only screen and (min-width: 768px) {
   #menu-lines {
@@ -743,19 +747,19 @@ input:focus:invalid {
 }
 
 .menu-line {
-  width: 33px;
-  height: 3px;
   background-color: #4CAF50;
-  margin-bottom: 5px;
+  width: 53px;
+  height: 5px;
+  margin-bottom: 7px;
 }
 
 .hamburger-title {
-  font-size: 10px;
   font-weight: 600;
   position: relative;
-  top: -17px;
-  left: 5px;
   color: #4CAF50;
+  font-size: 19px;
+  top: -33px;
+  left: 2px;
 }
 
 .logo {
@@ -799,6 +803,10 @@ input:focus:invalid {
   }
 }
 
+.logo a:hover {
+  color: #3d8b40;
+}
+
 .navbar-items {
   font-weight: 600;
   line-height: 90px;
@@ -812,11 +820,15 @@ input:focus:invalid {
 }
 
 .navbar-items a {
-  color: black;
+  color: #4CAF50;
+}
+
+.navbar-items a:hover {
+  color: #3d8b40;
 }
 
 .contact-me a {
-  color: black;
+  color: #4CAF50;
   position: relative;
   left: -22px;
 }
@@ -824,6 +836,10 @@ input:focus:invalid {
   .contact-me a {
     left: -5px;
   }
+}
+
+.contact-me a:hover {
+  color: #3d8b40;
 }
 
 .about-me {
@@ -835,6 +851,7 @@ input:focus:invalid {
 
 .about-me:hover {
   border-bottom: 2px #4CAF50 solid;
+  border-color: #3d8b40;
 }
 
 .my-portfolio {
@@ -846,6 +863,7 @@ input:focus:invalid {
 
 .my-portfolio:hover {
   border-bottom: 2px #4CAF50 solid;
+  border-color: #3d8b40;
 }
 
 .coding-examples {
@@ -857,6 +875,7 @@ input:focus:invalid {
 
 .coding-examples:hover {
   border-bottom: 2px #4CAF50 solid;
+  border-color: #3d8b40;
 }
 
 .scs {
@@ -868,6 +887,7 @@ input:focus:invalid {
 
 .scs:hover {
   border-bottom: 2px #4CAF50 solid;
+  border-color: #3d8b40;
 }
 
 .contact-me {
@@ -904,10 +924,12 @@ input:focus:invalid {
 
 .social-logo {
   font-size: 25px;
+  transition: transform 0.52s;
 }
 
 .social-logo:hover {
   transform: scale(1.5);
+  color: #3d8b40;
 }
 
 .blocker {

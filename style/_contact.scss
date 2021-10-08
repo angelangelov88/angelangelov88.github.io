@@ -152,7 +152,7 @@
 }
 
 .phone a{
-  color: black;
+  color: $green-brand;
   font-size: 1rem;
   font-weight: 600;
   @media only screen and (min-width: $break-xs) {
@@ -164,7 +164,7 @@
 }
 
 .phone a:hover {
-  color: $green-brand;
+  color: darken($color: $green-brand, $amount: 10);
   text-decoration: underline;
 }
 
@@ -174,13 +174,14 @@
   border: none;
   border-radius: 5px;
   padding-left: 10px;
+  padding-right: 10px;
   height: 30px;
   margin: .3rem auto;
   width: 93%;
   margin-left: 8px;
   margin-right: 8px;
   @media only screen and (min-width: $break-m) {
-    width: 96%;
+    width: 95%;
 }
   @media only screen and (min-width: $break-l) {
     width: 98.2%;
@@ -216,19 +217,19 @@
 }
 
 #lname {  
-  margin-right: 0;
+  margin-right: -25px;
   @media only screen and (min-width: $break-m) {
-    width: 54.8% !important;  
+    width: 52.5% !important;  
     margin-left: 0 !important;
 }
   @media only screen and (min-width: $break-l) {
-    width: 57.9% !important;
+    width: 56.8% !important;
 }
   @media only screen and (min-width: $break-xl) {
-    width: 55.5% !important;
+    width: 54% !important;
 }
   @media only screen and (min-width: $break-xxl) {
-    width: 58.5% !important;
+    width: 57.7% !important;
 }
 }
 
@@ -238,6 +239,7 @@
   border: none;
   border-radius: 5px;
   padding-left: 9px;
+  padding-right: 9px;
   padding-top: 8px;
   height: 30px;
   margin: .3rem auto;
@@ -247,7 +249,7 @@
   font-family: Arial, Helvetica, sans-serif;
   resize: vertical;
   @media only screen and (min-width: $break-m) {
-    width: 96%;
+    width: 95%;
 }
   @media only screen and (min-width: $break-l) {
     width: 98.2%;
@@ -262,14 +264,15 @@
 }
 
 #submit-button {
-  background-color: white !important;
-  color: black;
-  border: 2px black solid !important;
-  font-weight: 600;
+  background-color: $green-brand !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 17px;
   width: 130px !important;
   height: 40px;
-  padding-right: 12px;
+  padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 input:focus:invalid {
@@ -289,13 +292,12 @@ input:focus:invalid {
 
 .message {
   margin-right: 19px;
-  padding-left: 70px;
+  padding-left: 28px;
   @media only screen and (min-width: $break-m) {
     margin-left: auto;
     margin-right: auto;
     max-width: 623px;
     padding-left: 28px;
-
 }
   @media only screen and (min-width: $break-l) {
     max-width: 777px;

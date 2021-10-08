@@ -19,6 +19,8 @@ function openNav() {
     blocker.style.display = 'block';
     blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
     body.style.overflow = 'hidden';
+    // hamburger.style.display = 'none';
+
 }
 
 //The second function was needed because console gives errors as some of the properties in the first one are not available on other pages. This way on click it opens the sidenav for all pages but index.html
@@ -28,6 +30,8 @@ function openNav2() {
   // blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
   blocker.style.display = 'block';
   body.style.overflow = 'hidden';
+  // hamburger.style.display = 'none';
+
 }
 
 
@@ -42,6 +46,8 @@ function closeNav() {
     blocker.style.display = 'none';
     body.style.overflow = 'auto';
     hamburger.style.left = '0px';
+    // hamburger.style.display = 'block';
+
   }
 
 //Again second function for all the pages but index.html
@@ -56,6 +62,7 @@ function closeNav() {
     blocker.style.display = 'none';
     body.style.overflow = 'auto';
     hamburger.style.left = '0px';
+    // hamburger.style.display = 'block';
   }
 
 

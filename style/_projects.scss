@@ -95,7 +95,7 @@
 
 .project-title:hover {
   text-decoration: underline;
-  color: lighten($color: $green-brand, $amount: 10);
+  color: darken($color: $green-brand, $amount: 10);
 }
 
 //Button View Project
@@ -107,7 +107,7 @@
   position: absolute;
   left: 1rem;
   top: 23rem;
-  color: black;
+  color: $green-brand;
   @media only screen and (min-width: $break-l) {
     display: block;
 }
@@ -117,7 +117,8 @@
 }
 
 .project-details:hover {
-  color: lighten($color: #000000, $amount: 50);
+  color: darken($color: $green-brand, $amount: 10);
+  text-decoration: underline;
 }
 
 
@@ -137,8 +138,8 @@
 .photo-project:hover {
   @media only screen and (min-width: $break-l) {
   transform: scale(1.1);
-  opacity: .7;
   transition: 0.4s;
+
 }
 }
 

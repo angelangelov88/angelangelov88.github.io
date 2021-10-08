@@ -64,7 +64,8 @@ function validateForm() {
   if(!empty($_POST['g-recaptcha-response'])){
     $captcha = $_POST['g-recaptcha-response'];
   } 
-  if(!$captcha){
+  
+  if(!$captcha = $_POST['g-recaptcha-response']){
     $errorArray[] = "reCAPTCHA";
   }
   
@@ -111,7 +112,7 @@ function createMessage($array) {
     $message = "<p id='error-text' style='color:green;'>Form was submitted successfully!</p>";
 
   } else {
-    $message = "Please make sure all fields are correct and checkbox is ticked! Current error: ";
+    $message = "<p id='error-text'>Please make sure all fields are correct and checkbox is ticked! Current error: </p>";
     $message .= implode(", ",$array["array"]);
   }
   return $message;

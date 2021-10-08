@@ -12,7 +12,7 @@
       echo '</div>';
       echo '<p class="project-title">'. $projects['title'] .'</p>';
       echo '</a>';
-      echo '<a href="' . $projects['project_files_link'] .'" target="_blank" class="project-details">View Project Files';
+      echo '<a href="' . $projects['project_files_link'] .'" target="_blank" class="project-details">View Project Files ';
       echo '<i class="fas fa-arrow-circle-right"></i>';
       echo '</a>';
       echo '<button class="btn-project more-info-btn-1">More Info...</button>';

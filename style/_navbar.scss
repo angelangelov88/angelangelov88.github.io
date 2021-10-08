@@ -30,8 +30,11 @@
 //The hamburger button for small screens
 .hamburger {
   background-color: white;
-  height: 42px;
-  width: 40px;
+  // height: 42px;
+  // width: 40px;
+  height: 62px;
+  width: 60px;
+
   border: 1px $green-brand solid;
   border-radius: 4px;
   position: fixed;
@@ -45,7 +48,9 @@
 }
 
 #menu-lines {
-  padding: 5px 0 4px 3px;
+  // padding: 5px 0 4px 3px;
+  padding: 6px 0 6px 4px;
+
   @media only screen and (min-width: $break-m) {
     padding: 0;
     display: flex;
@@ -56,19 +61,29 @@
 }
 
 .menu-line {
-  width: 33px;
-  height: 3px;
+  // width: 33px;
+  // height: 3px;
+  // margin-bottom: 5px;
   background-color: $green-brand;
-  margin-bottom: 5px;
+
+  width: 53px;
+  height: 5px;
+  margin-bottom: 7px;
+
 }
 
 .hamburger-title {
-  font-size: 10px;
+  // font-size: 10px;
   font-weight: 600;
   position: relative;
-  top: -17px;
-  left: 5px;
+  // top: -17px;
+  // left: 5px;
   color: $green-brand;
+
+  font-size: 19px;
+  top: -33px;
+  left: 2px;
+
 }
 
 //The A letter in the top left corner of the navbar
@@ -107,6 +122,10 @@
 }
 }
 
+.logo a:hover {
+  color: darken($color: $green-brand, $amount: 10);
+}
+
 //The stylinig for the links in the navbar
 .navbar-items {
   font-weight: 600;
@@ -119,17 +138,26 @@
 }
 
 .navbar-items a {
-  color: black;
+  color: $green-brand;
+}
+
+.navbar-items a:hover {
+  color: darken($color: $green-brand, $amount: 10);
 }
 
 .contact-me a {
-  color: black;
+  color: $green-brand;
   position: relative;
   left: -22px;
   @media only screen and (min-width: $break-m) {
     left: -5px;
 }  
 }
+
+.contact-me a:hover {
+  color: darken($color: $green-brand, $amount: 10);
+}
+
 
 .about-me {
   border-bottom: 2px transparent solid;
@@ -140,6 +168,8 @@
 
 .about-me:hover {
   border-bottom: 2px $green-brand solid;
+  border-color: darken($color: $green-brand, $amount: 10);
+  
 }
 
 .my-portfolio {
@@ -151,6 +181,7 @@
 
 .my-portfolio:hover {
   border-bottom: 2px $green-brand solid;
+  border-color: darken($color: $green-brand, $amount: 10);
 }
 
 .coding-examples {
@@ -162,6 +193,7 @@
 
 .coding-examples:hover {
   border-bottom: 2px $green-brand solid;
+  border-color: darken($color: $green-brand, $amount: 10);
 }
 
 .scs {
@@ -173,6 +205,7 @@
 
 .scs:hover {
   border-bottom: 2px $green-brand solid;
+  border-color: darken($color: $green-brand, $amount: 10);
 }
 
 .contact-me {
@@ -205,10 +238,13 @@
 
 .social-logo {
   font-size: 25px;
+  transition: transform .52s;
 }
 
 .social-logo:hover {
-    transform: scale(1.5);
+   transform: scale(1.5);
+   color: darken($color: $green-brand, $amount: 10);
+
 }
 
 //Added this div to make it fill the space when sidebar is open so that user can click on it (or anywhere) to close the sidebar
