@@ -20,6 +20,9 @@
 <!-- reCAPTCHA widget -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+
 <!-- Composer autoloader -->
 <?php
 require __DIR__ . '/../vendor/autoload.php';

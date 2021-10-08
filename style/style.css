@@ -527,6 +527,12 @@ h1 {
   background-color: white;
 }
 
+.contact-form #message:focus {
+  border: 1px solid #DDDDDD;
+  outline: 0;
+  background-color: white;
+}
+
 @media only screen and (min-width: 768px) {
   #fname {
     width: 36.8% !important;
@@ -549,7 +555,7 @@ h1 {
 }
 @media only screen and (min-width: 1200px) {
   #lname {
-    width: 56% !important;
+    width: 55.5% !important;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -559,8 +565,40 @@ h1 {
 }
 
 #message {
-  height: 2rem !important;
-  padding-bottom: 10.3rem;
+  min-height: 10.3rem !important;
+  background-color: #DDDDDD;
+  border: none;
+  border-radius: 5px;
+  padding-left: 9px;
+  padding-top: 8px;
+  height: 30px;
+  margin: 0.3rem auto;
+  width: 93%;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: vertical;
+}
+@media only screen and (min-width: 768px) {
+  #message {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #message {
+    width: 98.2%;
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #message {
+    width: 97%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #message {
+    width: 98%;
+  }
 }
 
 #submit-button {
@@ -578,21 +616,25 @@ input:focus:invalid {
   border: 1px red solid;
 }
 
+#message:focus:invalid {
+  border: 1px red solid;
+}
+
 #error-message-form {
   color: red;
-  display: none;
   font-weight: 600;
 }
 
 .message {
   margin-right: 19px;
-  padding-left: 28px;
+  padding-left: 70px;
 }
 @media only screen and (min-width: 768px) {
   .message {
     margin-left: auto;
     margin-right: auto;
     max-width: 623px;
+    padding-left: 28px;
   }
 }
 @media only screen and (min-width: 992px) {

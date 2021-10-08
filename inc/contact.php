@@ -36,23 +36,22 @@ require __DIR__ . '/../vendor/autoload.php';
 
 <!-- Actual contact form with the fields and placeholders-->
           <div class="contact-form-div">         
-            <!-- <div id="scroll-js"></div> -->
           
           <div class="message">        
             <span id="messageText">
               <?php 
               if (isset($message)) echo $message ?></span>
-          <label id="error-message-form">Please make sure all fields are correct!</label>
+          <label id="error-message-form"></label>
           </div>
 
           <form action="/index.php" method="post" class="contact-form" onsubmit="return validationFunction()">          
 
-            <div class="contact-form-2">
+            <div class="contact-form-2" id="contact-error-message-js">
               <input id="fname" type="text" name="fname" required placeholder="First Name*" value="<?php if (isset($_POST['fname']) && isset($errorArray)) echo $_POST['fname']?>">
               <input id="lname" type="text" name="lname" required placeholder="Last Name*" value="<?php if (isset($_POST['lname']) && isset($errorArray)) echo $_POST['lname']?>">
               <input id="email" type="email" name="email" required placeholder="Email Address*" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
               <input id="subject" type="text" name="subject" required placeholder="Subject*" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
-              <input id="message" type="text" name="message" required placeholder="Your text here...*" value="<?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?>">
+              <textarea id="message" type="text" name="message" required placeholder="Your text here...*" value="<?php if (isset($_POST['message']) && isset($errorArray)) echo $_POST['message']?>"></textarea>
               <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="<?php echo $_ENV['SITE_KEY']; ?>"></div>
 
               <input type="submit" name="submit" id="submit-button" value="Submit">
@@ -60,7 +59,5 @@ require __DIR__ . '/../vendor/autoload.php';
           </form>
         </div>
       </div>
-  
-
       </div> 
 

@@ -34,53 +34,61 @@ const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const subject = document.getElementById('subject');
 const message = document.getElementById('message');
-// var response = grecaptcha.getResponse();
-// const recaptcha = document.getElementsByClassName('g-recaptcha')[0];
+
 let recaptcha_validation = false;
 
 let validation = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 const errorForm = document.getElementById('error-message-form');
 const submitButton = document.getElementById("submit-button");
 
+//Variable set to false on load and change to true if error occurs
+let errorDisplay = false;
 
 function recaptchaCallback() {
   recaptcha_validation = true;
 }
 
 function validationFunction() {
+  // submitted.value = 1;
+
    if (fname.value.length == 0) {
       console.log('error with fname');
-      errorForm.style.display = 'block';
+      errorForm.innerHTML = "Please make sure first name field is correct!";
+      errorDisplay = true;
       fname.style.border = "1px red solid";
       return false;
    } else if (lname.value.length == 0) {
       console.log('error with lname');
-      errorForm.style.display = 'block';
+      errorForm.innerHTML = "Please make sure last name field is correct!";
+      errorDisplay = true;
       lname.style.border = "1px red solid";
       return false;
    } else if (!email.value.match(validation)) {
       console.log('error with email');
-      errorForm.style.display = 'block';
+      errorForm.innerHTML = "Please make sure email field is correct!";
+      errorDisplay = true;
       email.style.border = "1px red solid";
       return false;
   } else if (subject.value.length == 0) {
       console.log('error with subject');
-      errorForm.style.display = 'block';
+      errorForm.innerHTML = "Please make sure subject field is correct!";
+      errorDisplay = true;
       subject.style.border = "1px red solid";
       return false;
   } else if (message.value.length == 0) {
       console.log('error with message');
-      errorForm.style.display = 'block';
+      errorForm.innerHTML = "Please make sure message field is correct!";
+      errorDisplay = true;
       message.style.border = "1px red solid";
       return false;
   } else if (recaptcha_validation == false) {
       console.log('error with reCAPTCHA');
-      errorForm.style.display = 'block';
-      errorForm.innerHTML = "Make sure reCAPTCHA has been checked!"
+      errorDisplay = true;
+      errorForm.innerHTML = "Make sure reCAPTCHA has been checked!";
       return false;
   } else {
       console.log('form correct');
-      errorForm.style.display = 'none';
+      errorDisplay = false;
       return true;
   }
 }
@@ -88,29 +96,39 @@ function validationFunction() {
 submitButton.addEventListener("click", validationFunction);
 
 
-//Scroll the page to the form on submit
+//Scroll the page to the form on successful submit
 const spanContent = document.getElementById("error-text");
 
-
 function checkSpanContent() {
-if (!spanContent.innerHTML == "") {
+  if (spanContent) {
   setTimeout(function() {
-    window.location = (""+window.location).replace(/#[A-Za-z0-9_-]*$/,'')+"#contact"
+    window.location = (""+window.location).replace(/#[A-Za-z0-9_-]*$/,'')+"#messageText"
    }
     , 1);
-
 }
 }
 
-// submitButton.addEventListener("load", checkSpanContent());
 
-//reCAPTCHA
-// var onloadCallback = function() {
-//   grecaptcha.render('html_element', {
-//     'sitekey' : '6LepxbAcAAAAADFzX2tQQ_tAxZCrJ5zmzAytXnBJ'
-//   });
-// };
+//Scroll the page to the error message. Added for small screens sizes where the message is not visible if you go to submit button. This function will scroll back to the error message to alert the user
+function checkErrorMessage() {
+    if (errorDisplay == true) {  
+    setTimeout(function() {
+      window.location = (""+window.location).replace(/#[A-Za-z0-9_-]*$/,'')+"#messageText" 
+     } 
+      , 1);
+    }
+  }
+
+ submitButton.addEventListener("click", checkErrorMessage);
 
 
+//Function to remove the success message after 8 sec so that the user is not confused if they want to send another request
+ setTimeout(function(){
+  document.getElementById('messageText').style.visibility = 'hidden';
+}, 8000);
 
 
+//I added this JS code to make sure that the user can't resubmit the form with same details once it has been pushed to the database
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}

@@ -143,7 +143,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 //Composer autoloader
 require_once "vendor/autoload.php";
 
-
 function sendEmail() {
 //PHPMailer Object
 $mail = new PHPMailer(true); //Argument true in constructor enables exceptions
@@ -158,8 +157,6 @@ $mail->Username   = $_ENV['SMTP_USERNAME'];     // SMTP username
 $mail->Password   = $_ENV['SMTP_PASSWORD'];         // SMTP password
 $mail->SMTPSecure = $_ENV['SMTP_SECURE'];              // Enable TLS encryption, 'ssl' also accepted
 $mail->Port       = $_ENV['SMTP_PORT'];                // TCP port to connect to
-
-
 $mail->setFrom($_ENV['MAILFROM_EMAIL'], $_ENV['MAILFROM_NAME']);           // Set sender of the mail
 $mail->addAddress($_ENV['MAILTO_EMAIL']);           // Add a recipient
 

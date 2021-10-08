@@ -201,6 +201,12 @@
   background-color: white;
 }
 
+.contact-form #message:focus {
+  border: 1px solid #DDDDDD;
+  outline: 0;
+  background-color: white;
+}
+
 //Specific styling for each element of the form
 #fname {
   //width: 100%;
@@ -219,7 +225,7 @@
     width: 57.9% !important;
 }
   @media only screen and (min-width: $break-xl) {
-    width: 56% !important;
+    width: 55.5% !important;
 }
   @media only screen and (min-width: $break-xxl) {
     width: 58.5% !important;
@@ -227,8 +233,32 @@
 }
 
 #message {
-  height: 2rem !important;
-  padding-bottom: 10.3rem;
+  min-height: 10.3rem !important;
+  background-color: #DDDDDD;
+  border: none;
+  border-radius: 5px;
+  padding-left: 9px;
+  padding-top: 8px;
+  height: 30px;
+  margin: .3rem auto;
+  width: 93%;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: vertical;
+  @media only screen and (min-width: $break-m) {
+    width: 96%;
+}
+  @media only screen and (min-width: $break-l) {
+    width: 98.2%;
+    margin-left: 0px;
+}
+  @media only screen and (min-width: $break-xl) {
+    width: 97%;
+}
+  @media only screen and (min-width: $break-xxl) {
+    width: 98%;
+}
 }
 
 #submit-button {
@@ -242,24 +272,30 @@
   cursor: pointer;
 }
 
-
 input:focus:invalid {
   border: 1px red solid;
 }
 
+#message:focus:invalid {
+  border: 1px red solid;
+}
+
 #error-message-form {
+
   color: red;
-  display: none;
+  //display: none;
   font-weight: 600;
 }
 
 .message {
   margin-right: 19px;
-  padding-left: 28px;
+  padding-left: 70px;
   @media only screen and (min-width: $break-m) {
     margin-left: auto;
     margin-right: auto;
     max-width: 623px;
+    padding-left: 28px;
+
 }
   @media only screen and (min-width: $break-l) {
     max-width: 777px;
