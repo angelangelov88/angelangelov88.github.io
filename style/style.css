@@ -581,6 +581,7 @@ h1 {
   margin-right: 8px;
   font-family: Arial, Helvetica, sans-serif;
   resize: vertical;
+  font-size: 13px;
 }
 @media only screen and (min-width: 768px) {
   #message {
@@ -717,8 +718,8 @@ input:focus:invalid {
 
 .hamburger {
   background-color: white;
-  height: 62px;
-  width: 60px;
+  height: 42px;
+  width: 40px;
   border: 1px #4CAF50 solid;
   border-radius: 4px;
   position: fixed;
@@ -734,7 +735,7 @@ input:focus:invalid {
 }
 
 #menu-lines {
-  padding: 6px 0 6px 4px;
+  padding: 5px 0 4px 3px;
 }
 @media only screen and (min-width: 768px) {
   #menu-lines {
@@ -747,19 +748,19 @@ input:focus:invalid {
 }
 
 .menu-line {
+  width: 33px;
+  height: 3px;
+  margin-bottom: 5px;
   background-color: #4CAF50;
-  width: 53px;
-  height: 5px;
-  margin-bottom: 7px;
 }
 
 .hamburger-title {
+  font-size: 10px;
   font-weight: 600;
   position: relative;
+  top: -17px;
+  left: 5px;
   color: #4CAF50;
-  font-size: 19px;
-  top: -33px;
-  left: 2px;
 }
 
 .logo {
@@ -1079,6 +1080,21 @@ input:focus:invalid {
   transition: 0.2s ease all;
   cursor: default;
   margin: 7px;
+  transform: scale(0.8);
+}
+@media only screen and (min-width: 992px) {
+  .sass-icon,
+.html-icon,
+.css-icon,
+.axure-icon,
+.js-icon,
+.jquery-icon,
+.sql-icon,
+.php-icon,
+.wordpress-icon,
+.react-icon {
+    transform: scale(1);
+  }
 }
 
 .axure-icon img,

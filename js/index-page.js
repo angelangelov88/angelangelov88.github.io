@@ -55,7 +55,7 @@ function validationFunction() {
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       fname.style.border = "1px red solid";
-      // document.getElementById('messageText').style.visibility = 'hidden';
+      document.getElementById('success-text').style.visibility = 'hidden';
       return false;
    } else {
     fname.style.border = "1px green solid";
@@ -66,7 +66,7 @@ function validationFunction() {
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       lname.style.border = "1px red solid";
-      // document.getElementById('messageText').style.visibility = 'hidden';
+      document.getElementById('success-text').style.visibility = 'hidden';
       return false;
    } else {
       lname.style.border = "1px green solid";
@@ -77,7 +77,7 @@ function validationFunction() {
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       email.style.border = "1px red solid";
-      // document.getElementById('messageText').style.visibility = 'hidden';
+      document.getElementById('success-text').style.visibility = 'hidden';
       return false;
   } else {
     email.style.border = "1px green solid";
@@ -88,7 +88,7 @@ function validationFunction() {
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       subject.style.border = "1px red solid";
-      // document.getElementById('messageText').style.visibility = 'hidden';
+      document.getElementById('success-text').style.visibility = 'hidden';
       return false;
   } else {
     subject.style.border = "1px green solid";
@@ -99,7 +99,7 @@ function validationFunction() {
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       message.style.border = "1px red solid";
-      // document.getElementById('messageText').style.visibility = 'hidden';
+      document.getElementById('success-text').style.visibility = 'hidden';
       return false;
   } else {
     message.style.border = "1px green solid";
@@ -109,7 +109,7 @@ function validationFunction() {
       console.log('error with reCAPTCHA');
       errorDisplay = true;
       errorForm.innerHTML = "Make sure reCAPTCHA has been checked!";
-      // document.getElementById('messageText').style.visibility = 'hidden';
+      document.getElementById('success-text').style.visibility = 'hidden';
       return false;
   } 
   else {
@@ -124,10 +124,11 @@ submitButton.addEventListener("click", validationFunction);
 
 
 //Scroll the page to the form on successful submit
-const spanContent = document.getElementById("error-text");
+const spanContent = document.getElementById("success-text");
+const spanContentError = document.getElementById("error-text");
 
 function checkSpanContent() {
-  if (spanContent) {
+  if (spanContent || spanContentError) {
   setTimeout(function() {
     window.location = (""+window.location).replace(/#[A-Za-z0-9_-]*$/,'')+"#messageText"
    }
@@ -147,12 +148,6 @@ function checkErrorMessage() {
   }
 
  submitButton.addEventListener("click", checkErrorMessage);
-
-
-//Function to remove the success message after 8 sec so that the user is not confused if they want to send another request
-//  setTimeout(function(){
-//   document.getElementById('messageText').style.visibility = 'hidden';
-// }, 8000);
 
 
 //I added this JS code to make sure that the user can't resubmit the form with same details once it has been pushed to the database

@@ -19,7 +19,7 @@ function openNav() {
     blocker.style.display = 'block';
     blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
     body.style.overflow = 'hidden';
-    // hamburger.style.display = 'none';
+    hamburger.style.display = 'none';
 
 }
 
@@ -30,7 +30,7 @@ function openNav2() {
   // blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
   blocker.style.display = 'block';
   body.style.overflow = 'hidden';
-  // hamburger.style.display = 'none';
+  hamburger.style.display = 'none';
 
 }
 
@@ -46,7 +46,7 @@ function closeNav() {
     blocker.style.display = 'none';
     body.style.overflow = 'auto';
     hamburger.style.left = '0px';
-    // hamburger.style.display = 'block';
+    hamburger.style.display = 'block';
 
   }
 
@@ -62,7 +62,7 @@ function closeNav() {
     blocker.style.display = 'none';
     body.style.overflow = 'auto';
     hamburger.style.left = '0px';
-    // hamburger.style.display = 'block';
+    hamburger.style.display = 'block';
   }
 
 
@@ -76,6 +76,8 @@ function showNavbar2(y) {
     blocker.style.backgroundColor = 'initial';
   }  else {
     navbar.style.display = 'none';
+    hamburger.style.display = 'block';
+
   }
 }
 
@@ -94,9 +96,10 @@ y.addListener(showNavbar2) // Attach listener function on state changes
       scrollDisappear.style.position = 'block';
       blocker.style.zIndex = 0;
       body.style.overflow = 'auto';
-      hamburger.style.left = '0px';
+      hamburger.style.display = 'none';
     }  else {
       navbar.style.display = 'none';
+      hamburger.style.display = 'block';
     }
   }
   

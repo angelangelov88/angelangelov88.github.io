@@ -30,10 +30,10 @@
 //The hamburger button for small screens
 .hamburger {
   background-color: white;
-  // height: 42px;
-  // width: 40px;
-  height: 62px;
-  width: 60px;
+  height: 42px;
+  width: 40px;
+  // height: 62px;
+  // width: 60px;
 
   border: 1px $green-brand solid;
   border-radius: 4px;
@@ -48,8 +48,8 @@
 }
 
 #menu-lines {
-  // padding: 5px 0 4px 3px;
-  padding: 6px 0 6px 4px;
+  padding: 5px 0 4px 3px;
+  // padding: 6px 0 6px 4px;
 
   @media only screen and (min-width: $break-m) {
     padding: 0;
@@ -61,28 +61,28 @@
 }
 
 .menu-line {
-  // width: 33px;
-  // height: 3px;
-  // margin-bottom: 5px;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 5px;
   background-color: $green-brand;
 
-  width: 53px;
-  height: 5px;
-  margin-bottom: 7px;
+  // width: 53px;
+  // height: 5px;
+  // margin-bottom: 7px;
 
 }
 
 .hamburger-title {
-  // font-size: 10px;
+  font-size: 10px;
   font-weight: 600;
   position: relative;
-  // top: -17px;
-  // left: 5px;
+  top: -17px;
+  left: 5px;
   color: $green-brand;
 
-  font-size: 19px;
-  top: -33px;
-  left: 2px;
+  // font-size: 19px;
+  // top: -33px;
+  // left: 2px;
 
 }
 

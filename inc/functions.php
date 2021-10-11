@@ -109,7 +109,7 @@ function validateForm() {
 //Message to the user that the form has been submitted or error has occured
 function createMessage($array) {
   if ($array["passed"]) {
-    $message = "<p id='error-text' style='color:green;'>Form was submitted successfully!</p>";
+    $message = "<p id='success-text' style='color:green;'>Form was submitted successfully!</p>";
 
   } else {
     $message = "<p id='error-text'>Please make sure all fields are correct and checkbox is ticked! Current error: </p>";

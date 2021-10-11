@@ -117,15 +117,19 @@
 .wordpress-icon,
 .react-icon {
   content: "";
-    background-color: $green-brand;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    color: #21244a;
-    transition: 0.2s ease all;
-    cursor: default;
-    margin: 7px;
+  background-color: $green-brand;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  color: #21244a;
+  transition: 0.2s ease all;
+  cursor: default;
+  margin: 7px;
+  transform: scale(.8);
+  @media only screen and (min-width: $break-l) {
+    transform: scale(1);
+}
 }
 
 .axure-icon img,
