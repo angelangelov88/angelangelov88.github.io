@@ -125,7 +125,7 @@ function pullProjects($db) {
     $query = "
     SELECT title, link, project_files_link, image_link, text 
     FROM projects Order by importance
-    LIMIT 6;
+    LIMIT 9;
     ";
     $stmt = $db->prepare($query);
     $stmt->execute();
