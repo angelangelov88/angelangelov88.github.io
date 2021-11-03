@@ -1,6 +1,8 @@
+<!-- Add this variable here to make sure that the title reflect the page -->
+<?php $title="About Me" ?>
+
 <!-- HTML head -->
 <?php include "./inc/head.php" ?>
-
   <body>
 <!-- Navbar -->
 <?php include "./inc/navbar2.php" ?>
@@ -13,15 +15,15 @@
       <div id="about-me-text-container">
 
       <div class="about-me-text">
-        <h5>My name is Angel and I am a Cambridge based web developer. I started my web development journey in February 2021 after a Covid related redundancy and have completed a few projects since. I have worked with HTML and CSS (SASS), JavaScript, jQuery, SQL and PHP. My first project was to clone the <a href="https://www.netmatters.co.uk/" class="about-me-links">Netmatters' website</a>. I have done that at stages using the skills I've just learnt.
-        </h5>
+        <p>My name is Angel and I am a Cambridge based web developer. I started my web development journey in February 2021 after a Covid related redundancy and have completed a few projects since. I have worked with HTML and CSS (SASS), JavaScript, jQuery, SQL and PHP. My first project was to clone the <a href="https://www.netmatters.co.uk/" class="about-me-links">Netmatters' website</a>. I have done that at stages using the skills I've just learnt.
+        </p>
         <a href="index.php#portfolio-link" class="about-me-links">
-        <h4>Netmatters Website Task</h4></a>
-        <h5>I have started my journey quite recently but have gained invaluable knowledge and experience in a short period of time. I am interested to continue learning and improving my skills. After obtaining a degree in Intenration Tourism Management and working for more than 5 years in the travel and tourism industry, I got the opportunity to start something new. I started this course in order to turn my career to a new direction. I have always been quite interested in technology and have been fixing friends and family computers since I was a kid. 
+        <h4 id="about-me-text-h4">Netmatters Website Task</h4></a>
+        <p>I have started my journey quite recently but have gained invaluable knowledge and experience in a short period of time. I am interested to continue learning and improving my skills. After obtaining a degree in Intenration Tourism Management and working for more than 5 years in the travel and tourism industry, I got the opportunity to start something new. I started this course in order to turn my career to a new direction. I have always been quite interested in technology and have been fixing friends and family computers since I was a kid. 
         <br>
         <br>
-        When I am not coding I will most probably be watching football or for a walk in the nature with my dog. I also love traveling and exploring the World and new cultures and places. 
-        </h5>
+        When I am not coding I will most probably be watching football or go for a walk in the nature with my dog. I also love traveling and exploring the World and new cultures and places. 
+        </p>
         <div class="about-me-icons">
           <div class="icons-container">
             <div class="html-container">
@@ -50,7 +52,7 @@
             </div>
             <div class="axure-container">
               <div class="axure-icon">
-                <img src="images/axure_white.png" class="logo-icon">
+                <img src="images/axure_white.png" class="logo-icon" alt="axure-logo">
               </div>
               <div class="icon-text">
                 <h4>Axure</h4>
@@ -67,7 +69,7 @@
 
              <div class="jquery-container">
               <div class="jquery-icon">
-                <img src="./images/jquery.png" class="logo-icon">
+                <img src="./images/jquery.png" class="logo-icon" alt="jquery-logo">
               </div>
               <div class="icon-text">
                 <h4>jQuery</h4>
@@ -93,14 +95,14 @@
               </div>
              </div>
 
-             <!-- <div class="wordpress-container">
+             <div class="wordpress-container">
               <div class="wordpress-icon">
                 <i class="fab fa-wordpress logo-icon"></i>
               </div>
               <div class="icon-text">
                 <h4>Wordpress</h4>
               </div>
-             </div> -->
+             </div>
 
              <!-- <div class="react-container">
               <div class="react-icon">

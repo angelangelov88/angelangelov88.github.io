@@ -4,6 +4,9 @@
   require __DIR__ . '/inc/functions.php';
 ?>
 
+<!-- Add this variable here to make sure that the title reflect the page -->
+<?php $title="Angel's Portfolio" ?>
+
 <!-- HTML head -->
 <?php include "./inc/head.php" ?>
 
@@ -24,7 +27,7 @@
           <!-- <h1>My Name is Angel Angelov</h1>
           <h2>I'm a Web Developer</h2> -->
           <div id="app"></div>
-            <img src="images/share-imagae.jpg" style="display: none;">
+            <img src="images/share-imagae.jpg" style="display: none;" alt="share-image">
         </div>
 <!-- Scroll down text and arrow -->
         <div class="scroll">

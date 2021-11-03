@@ -1,3 +1,6 @@
+<!-- Add this variable here to make sure that the title reflect the page -->
+<?php $title="Coding Examples" ?>
+
 <!-- HTML head -->
 <?php include "./inc/head.php" ?>
 
@@ -6,7 +9,9 @@
 <?php include "./inc/navbar2.php" ?>
 
 
-
+<?php 
+  $title = "Coding";
+?>
 <div class="coding-examples-container">
       <div class="coding-examples-hero">
 <!-- Added gradient div to make the background darker and text be easily readable -->

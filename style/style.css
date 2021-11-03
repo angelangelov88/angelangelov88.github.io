@@ -201,11 +201,6 @@ h1 {
     height: 300px;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .photo-project {
-    margin-left: -70px;
-  }
-}
 
 @media only screen and (min-width: 992px) {
   .photo-project:hover {
@@ -433,7 +428,17 @@ h1 {
 
 .contact-form {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .contact-form {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    padding-right: 30px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .contact-form {
@@ -546,7 +551,7 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   #lname {
-    width: 52.5% !important;
+    width: 52% !important;
     margin-left: 0 !important;
   }
 }
@@ -576,8 +581,8 @@ h1 {
   padding-top: 8px;
   height: 30px;
   margin: 0.3rem auto;
-  width: 93%;
-  margin-left: 8px;
+  width: 93.5%;
+  margin-left: 7px;
   margin-right: 8px;
   font-family: Arial, Helvetica, sans-serif;
   resize: vertical;
@@ -585,23 +590,23 @@ h1 {
 }
 @media only screen and (min-width: 768px) {
   #message {
-    width: 95%;
+    width: 95.4%;
   }
 }
 @media only screen and (min-width: 992px) {
   #message {
-    width: 98.2%;
+    width: 98.4%;
     margin-left: 0px;
   }
 }
 @media only screen and (min-width: 1200px) {
   #message {
-    width: 97%;
+    width: 97.5%;
   }
 }
 @media only screen and (min-width: 1600px) {
   #message {
-    width: 98%;
+    width: 98.2%;
   }
 }
 
@@ -1012,7 +1017,7 @@ input:focus:invalid {
 .about-me-text {
   padding: 1rem;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
 }
 @media only screen and (min-width: 768px) {
   .about-me-text {
@@ -1025,6 +1030,11 @@ input:focus:invalid {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+#about-me-text-h4 {
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .about-me-icons {
@@ -1040,6 +1050,7 @@ input:focus:invalid {
 
 .icons-container h4 {
   margin-top: 10px;
+  text-align: center;
 }
 
 .about-me-links {
@@ -1201,6 +1212,12 @@ input:focus:invalid {
 .coding-example {
   margin: 2rem;
 }
+@media only screen and (min-width: 576px) {
+  .coding-example {
+    max-width: 1000px;
+  }
+}
+
 .scroll-up-examples {
   max-width: 1650px;
   text-align: center;
@@ -1260,6 +1277,11 @@ input:focus:invalid {
   float: left;
   margin-left: 10px;
   border-collapse: collapse;
+}
+@media only screen and (min-width: 1200px) {
+  .example-3-table {
+    margin-top: -15rem;
+  }
 }
 
 td, th {
@@ -1362,6 +1384,7 @@ tr {
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
+  line-height: 30px;
 }
 
 .scs-hero {

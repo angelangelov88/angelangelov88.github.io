@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
+
 // Make sure the form is validated before submitting it 
         if (isset($_POST['submit'])) {
           $array = validateForm();
@@ -16,6 +17,7 @@ require __DIR__ . '/../vendor/autoload.php';
           }
         }
 ?>
+
 
 <!-- Contact form container. I have added second container for the purpose of styling and in order to make sure that it works on all screen sizes-->
       <div id="contact" class="contact">
@@ -39,8 +41,8 @@ require __DIR__ . '/../vendor/autoload.php';
           
           <div class="message">        
             <span id="messageText"><?php if (isset($message)) echo $message?>
-          <p id="error-message-form"></p>
-          </span>
+              <span id="error-message-form"></span>
+            </span>
           </div>
 
           <form action="/index.php" method="post" class="contact-form" onsubmit="return validationFunction()">          
@@ -51,7 +53,7 @@ require __DIR__ . '/../vendor/autoload.php';
               <input id="email" type="email" name="email" required placeholder="Email Address*" value="<?php if (isset($_POST['email']) && isset($errorArray)) echo $_POST['email']?>">
               <input id="subject" type="text" name="subject" required placeholder="Subject*" value="<?php if (isset($_POST['subject']) && isset($errorArray)) echo $_POST['subject']?>">
               
-              <textarea id="message" type="text" name="message" required placeholder="Your text here...*"><?php if (isset($_POST['message']) && isset($errorArray))echo $_POST['message'];?></textarea>
+              <textarea id="message" name="message" required placeholder="Your text here...*"><?php if (isset($_POST['message']) && isset($errorArray))echo $_POST['message'];?></textarea>
 
               <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="<?php echo $_ENV['SITE_KEY']; ?>"></div>
 

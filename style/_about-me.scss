@@ -59,7 +59,7 @@
 .about-me-text {
   padding: 1rem;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   @media only screen and (min-width: $break-m) {
     //margin-left: 12rem;
     //width: calc(100% - 14rem);
@@ -70,6 +70,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+}
+
+#about-me-text-h4 {
+  font-weight: 600;
+  font-size: 19px;
 }
 
 .about-me-icons {
@@ -86,6 +91,7 @@
 
 .icons-container h4 {
   margin-top: 10px;
+  text-align: center;
 }
 
 .about-me-links {

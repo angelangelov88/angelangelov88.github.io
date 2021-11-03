@@ -28,6 +28,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 ?>
 
-    <title>Angel's Portfolio</title>
+<!-- I made the title dynamic so it changes every time a different page is opened -->
+    <title><?php echo $title; ?></title>
 
   </head>
