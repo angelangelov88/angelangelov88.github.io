@@ -104,14 +104,14 @@
               </div>
              </div>
 
-             <!-- <div class="react-container">
+             <div class="react-container">
               <div class="react-icon">
                 <i class="fab fa-react logo-icon"></i>
               </div>
               <div class="icon-text">
                 <h4>React</h4>
               </div>
-             </div> -->
+             </div>
 
             </div>
           </div>
