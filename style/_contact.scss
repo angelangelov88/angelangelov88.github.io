@@ -177,7 +177,7 @@
 //The contact form styling
 .contact-form input {
   background-color: #DDDDDD;
-  border: none;
+  border: 1px #DDDDDD solid;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -242,7 +242,7 @@
 #message {
   min-height: 10.3rem !important;
   background-color: #DDDDDD;
-  border: none;
+  border: 1px #DDDDDD solid;
   border-radius: 5px;
   padding-left: 9px;
   padding-right: 9px;

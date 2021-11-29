@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Web Developer - Angel Angelov. This page contains links to my projects. My experience include: HTML, CSS(SASS), JavaScript, React, Vue, SQL, PHP, Wordpress.">
 
 <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ebb02e5adb.js" crossorigin="anonymous"></script>

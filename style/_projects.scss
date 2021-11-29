@@ -9,6 +9,8 @@
 }
   @media only screen and (min-width: $break-xxl) {
     max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 
@@ -81,7 +83,7 @@
   @media only screen and (min-width: $break-m) {
     font-size: 1.3rem;
     padding-left: 0;
-    margin-left: 0.3rem;
+    margin-left: 1rem;
     //margin: 1rem;
 }
   @media only screen and (min-width: $break-xl) {
@@ -222,16 +224,20 @@
   border: 2px $green-brand solid;
   overflow-y: auto;
   position: absolute;    
-  bottom: 57px;
+  bottom: 16%;
+  width: 95%;
+  height: auto;
+  max-height: 83%;
+
   @media only screen and (min-width: $break-m) {
     bottom: 17%;
-    width: 94%;
+    width: 95%;
     height: auto;
-    max-height: 72%;
+    max-height: 82%;
 }
   @media only screen and (min-width: $break-l) {
     width: 90%;
-    bottom: 28%;
+    bottom: 17%;
 }
   @media only screen and (min-width: $break-xl) {
     width: 92%;
@@ -240,4 +246,19 @@
 
 .shown {
   display: block;
+}
+
+.text-holder::-webkit-scrollbar {
+  width: 20px;
+}
+
+.text-holder::-webkit-scrollbar-track {
+  background-color: ccc;
+  opacity: 0.5;
+  border-radius: 100px;
+}
+
+.text-holder::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 100px;
 }
