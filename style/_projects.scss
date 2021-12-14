@@ -131,13 +131,13 @@
   @media only screen and (min-width: $break-m) {
     width: 600px;
     height: 300px;
+    transition: 0.4s ease-in-out;
 }
 }
 
 .photo-project:hover {
   @media only screen and (min-width: $break-l) {
   transform: scale(1.1);
-  transition: 0.4s;
 
 }
 }

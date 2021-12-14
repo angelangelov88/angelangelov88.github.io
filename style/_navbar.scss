@@ -11,12 +11,12 @@
     position: fixed;
     top: -55px;
     left: -32px;
-    height: 108vh;
+    height: 110vh;
     margin-left: 2rem;
     margin-right: 2rem;
     border-right: 2px $green-brand solid;
     z-index: 1;
-    width: 191px;
+    width: 202px;
     max-height: none;
 }
 //code for small height of the screen. It adds a scroll button on the right of the navbar
@@ -108,17 +108,23 @@
   line-height: 188px;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  width: 160px;
+  // width: 160px;
+  width: 202px;
+  padding-left: 0;
+
 }
 }
 
 .logo a {
   color: $green-brand;
-  position: relative;
-  left: 0;
+  // position: relative;
+  // left: 0;
   padding-left: 13px;
   @media only screen and (min-width: $break-m) {
     padding-left: 0;
+    
+    display: inline-block;
+    margin-left: calc(50% - 52px);
 }
 }
 
@@ -142,7 +148,9 @@
 }
 
 .navbar-items a:hover {
+  border-bottom: 2px darken($color: $green-brand, $amount: 10) solid;
   color: darken($color: $green-brand, $amount: 10);
+
 }
 
 .contact-me a {
@@ -155,7 +163,7 @@
 }
 
 .contact-me a:hover {
-  color: darken($color: $green-brand, $amount: 10);
+   color: darken($color: $green-brand, $amount: 10);
 }
 
 
@@ -166,22 +174,11 @@
   height: 60px;
 }
 
-.about-me:hover {
-  border-bottom: 2px $green-brand solid;
-  border-color: darken($color: $green-brand, $amount: 10);
-  
-}
-
 .my-portfolio {
   border-bottom: 2px transparent solid;
   width: 7rem;
   padding-bottom: 1px;
   height: 60px;
-}
-
-.my-portfolio:hover {
-  border-bottom: 2px $green-brand solid;
-  border-color: darken($color: $green-brand, $amount: 10);
 }
 
 .coding-examples {
@@ -191,21 +188,11 @@
   height: 60px;
 }
 
-.coding-examples:hover {
-  border-bottom: 2px $green-brand solid;
-  border-color: darken($color: $green-brand, $amount: 10);
-}
-
 .scs {
   border-bottom: 2px transparent solid;
   width: 7rem;
   padding-bottom: 1px;
   height: 60px;
-}
-
-.scs:hover {
-  border-bottom: 2px $green-brand solid;
-  border-color: darken($color: $green-brand, $amount: 10);
 }
 
 .contact-me {
@@ -215,7 +202,7 @@
   padding: 8px 14px 8px 33px;
   width: 122px;
   @media only screen and (min-width: $break-m) {
-    width: 144px;
+    width: 155px;
 }
 }
 
