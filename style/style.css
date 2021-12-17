@@ -791,7 +791,7 @@ input:focus:invalid {
 .logo {
   margin-bottom: 0;
   font-size: 6rem;
-  font-family: Brush Script MT;
+  font-family: Brush Script MT, Lucida Handwriting, Comic Sans MS;
   color: #4CAF50;
   border-bottom: 2px #4CAF50 solid;
   position: relative;

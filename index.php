@@ -20,7 +20,7 @@
     <div class="content">
 
 <!-- Hero image and text part -->
-      <div class="hero-image">
+      <div class="hero-image" importance="high">
         <div class="gradient-div-brand"></div>
 
         <div class="hero-text">

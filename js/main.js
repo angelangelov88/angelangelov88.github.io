@@ -14,7 +14,7 @@ function openNav() {
     navbar.style.display = 'block';
     // gradient.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
     fontColor.style.color = '#ffffff9e';
-    scrollDisappear.style.position = 'initial';
+    // scrollDisappear.style.position = 'initial';
     blocker.style.zIndex = 100;
     blocker.style.display = 'block';
     blocker.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
