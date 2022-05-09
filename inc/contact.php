@@ -30,7 +30,7 @@ require __DIR__ . '/../vendor/autoload.php';
               <ul class="contact-ul">
                 <li>Interested in working together? Fill out the form below with your details or contact me with any questions you may have.</li>
                 <li class="phone"><a href="tel:07553692967">07553692967</a></li>
-                <li class="phone" id="error-small-screen"><a href="mailto:ang.angelov88@gmail.com">ang.angelov88@gmail.com</a></li>
+                <li class="phone" id="error-small-screen"><a href="mailto:contact@angelov.uk">contact@angelov.uk</a></li>
                 <li>I'll get back to you as soon as I can. That's a promise!</li> 
               </ul>
             </div>

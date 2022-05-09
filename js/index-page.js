@@ -51,7 +51,7 @@ function recaptchaCallback() {
 
 function validationFunction() {
    if (!fname.value.match(nameRegex)) {
-      console.log('error with fname');
+      // console.log('error with fname');
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       fname.style.border = "1px red solid";
@@ -62,7 +62,7 @@ function validationFunction() {
    }
    
    if (!fname.value.match(nameRegex)) {
-      console.log('error with lname');
+      // console.log('error with lname');
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       lname.style.border = "1px red solid";
@@ -73,7 +73,7 @@ function validationFunction() {
    }
    
    if (!email.value.match(validation)) {
-      console.log('error with email');
+      // console.log('error with email');
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       email.style.border = "1px red solid";
@@ -84,7 +84,7 @@ function validationFunction() {
  }
   
   if (subject.value.length == 0) {
-      console.log('error with subject');
+      // console.log('error with subject');
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       subject.style.border = "1px red solid";
@@ -95,7 +95,7 @@ function validationFunction() {
  }
   
   if (message.value.length == 0) {
-      console.log('error with message');
+      // console.log('error with message');
       errorForm.innerHTML = "Please make sure all fields are correct!";
       errorDisplay = true;
       message.style.border = "1px red solid";
@@ -113,7 +113,7 @@ function validationFunction() {
       return false;
   } 
   else {
-      console.log('form correct');
+      // console.log('form correct');
       errorDisplay = false;
       fname.style.border = "1px blue solid";
       return true;
